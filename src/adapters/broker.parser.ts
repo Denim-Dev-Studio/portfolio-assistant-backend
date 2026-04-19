@@ -1,10 +1,10 @@
 import * as XLSX from "xlsx";
-import { CreatePortfolioItemInput } from "../models/types";
+import { ParsedPortfolioItemInput } from "../models/types";
 
 // Entry point (used by service)
 export const parsePortfolioFile = (
   file: Express.Multer.File,
-): CreatePortfolioItemInput[] => {
+): ParsedPortfolioItemInput[] => {
   const mime = file.mimetype;
 
   if (mime === "text/csv" || file.originalname.endsWith(".csv")) {
@@ -24,7 +24,7 @@ export const parsePortfolioFile = (
 
 // ================= CSV =================
 
-const parseCSV = (buffer: Buffer): CreatePortfolioItemInput[] => {
+const parseCSV = (buffer: Buffer): ParsedPortfolioItemInput[] => {
   const content = buffer.toString("utf-8");
 
   const lines = content
@@ -52,7 +52,7 @@ const parseCSV = (buffer: Buffer): CreatePortfolioItemInput[] => {
 
 // ================= XLSX =================
 
-const parseXLSX = (buffer: Buffer) => {
+const parseXLSX = (buffer: Buffer): ParsedPortfolioItemInput[] => {
   const workbook = XLSX.read(buffer, { type: "buffer" });
 
   const sheetName = workbook.SheetNames[0];
@@ -100,16 +100,16 @@ const parseXLSX = (buffer: Buffer) => {
     .map((row) => {
       try {
         return normalizeRow(row);
-      } catch (err) {
+      } catch {
         return null;
       }
     })
-    .filter(Boolean);
+    .filter((item): item is ParsedPortfolioItemInput => item !== null);
 };
 
 // ================= NORMALIZER =================
 
-const normalizeRow = (row: Record<string, any>) => {
+const normalizeRow = (row: Record<string, any>): ParsedPortfolioItemInput => {
   const normalized: Record<string, any> = {};
 
   // Normalize keys (lowercase + remove spaces)
@@ -117,43 +117,52 @@ const normalizeRow = (row: Record<string, any>) => {
     normalized[key.toLowerCase().replace(/\s+/g, "")] = row[key];
   });
 
-  // ===== SYMBOL =====
-  const symbol =
-    normalized.scripname || // ✅ Upstox
-    normalized.symbol ||
-    normalized.tradingsymbol ||
-    normalized.instrument ||
-    normalized.isin;
+  // ===== DISPLAY NAME (Scrip Name) =====
+  const displayName =
+    normalized.scripname ||        // ✅ Upstox
+    normalized.companyname ||
+    normalized.name;
+
+  // ===== ISIN (MANDATORY) =====
+  const isin =
+    normalized.isin ||
+    normalized.isinnumber;
 
   // ===== QUANTITY =====
   const quantity =
-    normalized.currentqty || // ✅ Upstox
+    normalized.currentqty ||       // ✅ Upstox
     normalized.freeqty ||
     normalized.quantity ||
     normalized.qty;
 
   // ===== AVG PRICE =====
   const avgPrice =
-    normalized.avgprice || // ✅ Your manual column
+    normalized.avgprice ||         // manual / optional
     normalized.averageprice ||
     normalized.buyprice;
 
-  // ===== CURRENT PRICE (optional but useful later) =====
+  // ===== CURRENT PRICE =====
   const currentPrice =
-    normalized.rate || // ✅ Upstox
+    normalized.rate ||             // ✅ Upstox
     normalized.ltp ||
     normalized.price;
 
-  if (!symbol || !quantity) {
+  // ===== VALIDATION =====
+  if (!displayName || !isin || !quantity) {
     throw new Error(
-      `Invalid row: missing symbol/quantity → ${JSON.stringify(row)}`,
+      `Invalid row: missing displayName/isin/quantity → ${JSON.stringify(row)}`
     );
   }
 
   return {
-    symbol: String(symbol).trim(),
+    displayName: String(displayName).trim(),
+    isin: String(isin).trim(),
     quantity: Number(quantity),
-    avgPrice: avgPrice ? Number(avgPrice) : Number(currentPrice), // fallback
+    avgPrice: avgPrice
+      ? Number(avgPrice)
+      : currentPrice
+      ? Number(currentPrice)
+      : 0,
     currentPrice: currentPrice ? Number(currentPrice) : undefined,
   };
 };

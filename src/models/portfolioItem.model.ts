@@ -1,5 +1,5 @@
-import { DataTypes, Model } from 'sequelize';
-import { sequelize } from '../config/database';
+import { DataTypes, Model } from "sequelize";
+import { sequelize } from "../config/database";
 
 export class PortfolioItem extends Model {
   public id!: string;
@@ -11,7 +11,7 @@ export class PortfolioItem extends Model {
 
   static associate(models: any) {
     PortfolioItem.belongsTo(models.Portfolio, {
-      foreignKey: 'portfolioId',
+      foreignKey: "portfolioId",
     });
   }
 }
@@ -26,7 +26,7 @@ PortfolioItem.init(
     portfolioId: {
       type: DataTypes.UUID,
       allowNull: false,
-      field: 'portfolio_id',
+      field: "portfolio_id",
     },
     symbol: {
       type: DataTypes.STRING,
@@ -39,18 +39,27 @@ PortfolioItem.init(
     avgPrice: {
       type: DataTypes.FLOAT,
       allowNull: false,
-      field: 'avg_price',
+      field: "avg_price",
     },
     currentPrice: {
       type: DataTypes.FLOAT,
       allowNull: true,
-      field: 'current_price',
+      field: "current_price",
+    },
+    displayName: {
+      type: DataTypes.STRING,
+      allowNull: false,
+      field: "display_name",
+    },
+    isin: {
+      type: DataTypes.STRING,
+      allowNull: false,
     },
   },
   {
     sequelize,
-    tableName: 'portfolio_items',
+    tableName: "portfolio_items",
     timestamps: true,
     underscored: true,
-  }
+  },
 );

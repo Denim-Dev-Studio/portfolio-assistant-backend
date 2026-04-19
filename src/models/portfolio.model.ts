@@ -24,6 +24,11 @@ Portfolio.init(
       type: DataTypes.STRING,
       allowNull: false,
     },
+    fileName: {
+      type: DataTypes.STRING,
+      allowNull: true,
+      field: "file_name",
+    },
   },
   {
     sequelize,

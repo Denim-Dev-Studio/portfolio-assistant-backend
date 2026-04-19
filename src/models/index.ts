@@ -1,9 +1,11 @@
 import { Portfolio } from './portfolio.model';
 import { PortfolioItem } from './portfolioItem.model';
+import { CacheEntry } from './cacheEntry.model';
 
 const models = {
   Portfolio,
   PortfolioItem,
+  CacheEntry,
 };
 
 // Run associations AFTER all models are initialized
@@ -14,4 +16,4 @@ Object.values(models).forEach((model: any) => {
 });
 
 export default models;
-export { Portfolio, PortfolioItem };
+export { Portfolio, PortfolioItem, CacheEntry };

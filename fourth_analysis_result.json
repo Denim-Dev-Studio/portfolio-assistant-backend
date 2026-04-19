@@ -1,0 +1,1816 @@
+{
+  "success": true,
+  "data": {
+    "portfolioId": "a94aa95e-8f18-4289-a6e4-1a74868924f8",
+    "portfolioName": "Harsh Rupera Upstox Holding",
+    "generatedAt": "2026-04-19T20:30:39.959Z",
+    "summary": {
+      "totalHoldings": 50,
+      "fullyAnalyzed": 49,
+      "partiallyAnalyzed": 1,
+      "failed": 0
+    },
+    "items": [
+      {
+        "symbol": "ADANIPORTS.NS",
+        "action": "HOLD",
+        "score": 68,
+        "confidence": 44,
+        "reasoning": [
+          "P/E 27.23 is still within a reasonable range.",
+          "ROE 19.41 supports durable business quality.",
+          "Debt/equity 81.56 is too aggressive for a quality screen.",
+          "RSI 61.56 is constructive but getting extended.",
+          "Price 1573.1 is above the 50 DMA 1460.32 and 200 DMA 1434.98.",
+          "News signal unavailable: MarketAux returned no recent related news for ADANIPORTS.NS."
+        ],
+        "signals": {
+          "fundamental": {
+            "provider": "yahoo-finance2",
+            "status": "available",
+            "message": "Fundamental data loaded from Yahoo Finance for ADANIPORTS.NS."
+          },
+          "priceHistory": {
+            "provider": "stock-nse-india",
+            "status": "available",
+            "message": "Loaded 268 daily price bars from NSE history for ADANIPORTS.NS."
+          },
+          "technical": {
+            "provider": "derived",
+            "status": "available",
+            "message": "Technical indicators were computed from 268 daily bars."
+          },
+          "news": {
+            "provider": "marketaux",
+            "status": "no_data",
+            "message": "MarketAux returned no recent related news for ADANIPORTS.NS."
+          }
+        }
+      },
+      {
+        "symbol": "ADANIPOWER.NS",
+        "action": "SELL",
+        "score": 24,
+        "confidence": 47,
+        "reasoning": [
+          "P/E 33.78 is full; upside may already be priced in.",
+          "ROE metric was not returned by the fundamentals provider.",
+          "Debt/equity 81.25 is too aggressive for a quality screen.",
+          "RSI 81.18 is overheated and raises near-term pullback risk.",
+          "Price 198.4 sits below both 50 DMA 151.47 and 200 DMA 281.14.",
+          "News signal unavailable: MarketAux returned no recent related news for ADANIPOWER.NS."
+        ],
+        "signals": {
+          "fundamental": {
+            "provider": "yahoo-finance2",
+            "status": "available",
+            "message": "Fundamental data loaded from Yahoo Finance for ADANIPOWER.NS."
+          },
+          "priceHistory": {
+            "provider": "stock-nse-india",
+            "status": "available",
+            "message": "Loaded 268 daily price bars from NSE history for ADANIPOWER.NS."
+          },
+          "technical": {
+            "provider": "derived",
+            "status": "available",
+            "message": "Technical indicators were computed from 268 daily bars."
+          },
+          "news": {
+            "provider": "marketaux",
+            "status": "no_data",
+            "message": "MarketAux returned no recent related news for ADANIPOWER.NS."
+          }
+        }
+      },
+      {
+        "symbol": "ABCAPITAL.NS",
+        "action": "HOLD",
+        "score": 67,
+        "confidence": 43,
+        "reasoning": [
+          "P/E 25.64 is still within a reasonable range.",
+          "ROE metric was not returned by the fundamentals provider.",
+          "Debt/equity 459.78 is too aggressive for a quality screen.",
+          "RSI 50.83 reflects healthy momentum without being overheated.",
+          "Price 340.2 is above the 50 DMA 332.52 and 200 DMA 311.3.",
+          "News signal unavailable: MarketAux returned no recent related news for ABCAPITAL.NS."
+        ],
+        "signals": {
+          "fundamental": {
+            "provider": "yahoo-finance2",
+            "status": "available",
+            "message": "Fundamental data loaded from Yahoo Finance for ABCAPITAL.NS."
+          },
+          "priceHistory": {
+            "provider": "stock-nse-india",
+            "status": "available",
+            "message": "Loaded 268 daily price bars from NSE history for ABCAPITAL.NS."
+          },
+          "technical": {
+            "provider": "derived",
+            "status": "available",
+            "message": "Technical indicators were computed from 268 daily bars."
+          },
+          "news": {
+            "provider": "marketaux",
+            "status": "no_data",
+            "message": "MarketAux returned no recent related news for ABCAPITAL.NS."
+          }
+        }
+      },
+      {
+        "symbol": "AEQUS.NS",
+        "action": "SELL",
+        "score": 26,
+        "confidence": 46,
+        "reasoning": [
+          "P/E 1140 is expensive versus a disciplined entry framework.",
+          "ROE metric was not returned by the fundamentals provider.",
+          "Debt/equity 108 is too aggressive for a quality screen.",
+          "RSI 76.11 is overheated and raises near-term pullback risk.",
+          "Only 86 daily bars were available, so the moving-average trend picture is incomplete.",
+          "News signal unavailable: MarketAux returned no recent related news for AEQUS.NS."
+        ],
+        "signals": {
+          "fundamental": {
+            "provider": "yahoo-finance2",
+            "status": "available",
+            "message": "Fundamental data loaded from Yahoo Finance for AEQUS.NS."
+          },
+          "priceHistory": {
+            "provider": "stock-nse-india",
+            "status": "available",
+            "message": "Loaded 86 daily price bars from NSE history for AEQUS.NS."
+          },
+          "technical": {
+            "provider": "derived",
+            "status": "insufficient_history",
+            "message": "Technical indicators were partially computed from 86 daily bars; SMA200 is unavailable."
+          },
+          "news": {
+            "provider": "marketaux",
+            "status": "no_data",
+            "message": "MarketAux returned no recent related news for AEQUS.NS."
+          }
+        }
+      },
+      {
+        "symbol": "AGI.NS",
+        "action": "WATCH",
+        "score": 50,
+        "confidence": 37,
+        "reasoning": [
+          "P/E 11.36 looks attractive for accumulation.",
+          "ROE metric was not returned by the fundamentals provider.",
+          "Debt/equity 20.88 is too aggressive for a quality screen.",
+          "RSI 51.5 reflects healthy momentum without being overheated.",
+          "Price 585.45 sits below both 50 DMA 561.83 and 200 DMA 748.25.",
+          "News signal unavailable: MarketAux returned no recent related news for AGI.NS."
+        ],
+        "signals": {
+          "fundamental": {
+            "provider": "yahoo-finance2",
+            "status": "available",
+            "message": "Fundamental data loaded from Yahoo Finance for AGI.NS."
+          },
+          "priceHistory": {
+            "provider": "stock-nse-india",
+            "status": "available",
+            "message": "Loaded 268 daily price bars from NSE history for AGI.NS."
+          },
+          "technical": {
+            "provider": "derived",
+            "status": "available",
+            "message": "Technical indicators were computed from 268 daily bars."
+          },
+          "news": {
+            "provider": "marketaux",
+            "status": "no_data",
+            "message": "MarketAux returned no recent related news for AGI.NS."
+          }
+        }
+      },
+      {
+        "symbol": "APOLLOTYRE.NS",
+        "action": "WATCH",
+        "score": 50,
+        "confidence": 55,
+        "reasoning": [
+          "P/E 30.53 is full; upside may already be priced in.",
+          "ROE metric was not returned by the fundamentals provider.",
+          "Debt/equity 29.09 is too aggressive for a quality screen.",
+          "RSI 43.97 suggests room for upside without crowding.",
+          "Price 445.3 sits below both 50 DMA 449.68 and 200 DMA 478.86.",
+          "Average news sentiment 4.33 is strongly positive across 3 articles."
+        ],
+        "signals": {
+          "fundamental": {
+            "provider": "yahoo-finance2",
+            "status": "available",
+            "message": "Fundamental data loaded from Yahoo Finance for APOLLOTYRE.NS."
+          },
+          "priceHistory": {
+            "provider": "stock-nse-india",
+            "status": "available",
+            "message": "Loaded 268 daily price bars from NSE history for APOLLOTYRE.NS."
+          },
+          "technical": {
+            "provider": "derived",
+            "status": "available",
+            "message": "Technical indicators were computed from 268 daily bars."
+          },
+          "news": {
+            "provider": "marketaux",
+            "status": "available",
+            "message": "Loaded 3 related news articles for APOLLOTYRE.NS."
+          }
+        }
+      },
+      {
+        "symbol": "ASHOKLEY.NS",
+        "action": "WATCH",
+        "score": 54,
+        "confidence": 38,
+        "reasoning": [
+          "P/E 31.03 is full; upside may already be priced in.",
+          "ROE metric was not returned by the fundamentals provider.",
+          "Debt/equity 327.89 is too aggressive for a quality screen.",
+          "RSI 36.05 suggests room for upside without crowding.",
+          "Price 174.75 remains above long-term trend support near 168.85.",
+          "News signal unavailable: MarketAux returned no recent related news for ASHOKLEY.NS."
+        ],
+        "signals": {
+          "fundamental": {
+            "provider": "yahoo-finance2",
+            "status": "available",
+            "message": "Fundamental data loaded from Yahoo Finance for ASHOKLEY.NS."
+          },
+          "priceHistory": {
+            "provider": "stock-nse-india",
+            "status": "available",
+            "message": "Loaded 268 daily price bars from NSE history for ASHOKLEY.NS."
+          },
+          "technical": {
+            "provider": "derived",
+            "status": "available",
+            "message": "Technical indicators were computed from 268 daily bars."
+          },
+          "news": {
+            "provider": "marketaux",
+            "status": "no_data",
+            "message": "MarketAux returned no recent related news for ASHOKLEY.NS."
+          }
+        }
+      },
+      {
+        "symbol": "ASTRAL.NS",
+        "action": "WATCH",
+        "score": 54,
+        "confidence": 38,
+        "reasoning": [
+          "P/E 86.74 is expensive versus a disciplined entry framework.",
+          "ROE metric was not returned by the fundamentals provider.",
+          "Debt/equity 6.77 is too aggressive for a quality screen.",
+          "RSI 48.4 reflects healthy momentum without being overheated.",
+          "Price 1612.85 is above the 50 DMA 1598.04 and 200 DMA 1484.88.",
+          "News signal unavailable: MarketAux returned no recent related news for ASTRAL.NS."
+        ],
+        "signals": {
+          "fundamental": {
+            "provider": "yahoo-finance2",
+            "status": "available",
+            "message": "Fundamental data loaded from Yahoo Finance for ASTRAL.NS."
+          },
+          "priceHistory": {
+            "provider": "stock-nse-india",
+            "status": "available",
+            "message": "Loaded 268 daily price bars from NSE history for ASTRAL.NS."
+          },
+          "technical": {
+            "provider": "derived",
+            "status": "available",
+            "message": "Technical indicators were computed from 268 daily bars."
+          },
+          "news": {
+            "provider": "marketaux",
+            "status": "no_data",
+            "message": "MarketAux returned no recent related news for ASTRAL.NS."
+          }
+        }
+      },
+      {
+        "symbol": "BANKINDIA.NS",
+        "action": "BUY_MORE",
+        "score": 78,
+        "confidence": 48,
+        "reasoning": [
+          "P/E 6.87 looks attractive for accumulation.",
+          "ROE 12.05 is acceptable but not exceptional.",
+          "Debt-to-equity metric was not returned by the fundamentals provider.",
+          "RSI 36.64 suggests room for upside without crowding.",
+          "Price 148.1 remains above long-term trend support near 137.83.",
+          "News signal unavailable: MarketAux returned no recent related news for BANKINDIA.NS."
+        ],
+        "signals": {
+          "fundamental": {
+            "provider": "yahoo-finance2",
+            "status": "available",
+            "message": "Fundamental data loaded from Yahoo Finance for BANKINDIA.NS."
+          },
+          "priceHistory": {
+            "provider": "stock-nse-india",
+            "status": "available",
+            "message": "Loaded 268 daily price bars from NSE history for BANKINDIA.NS."
+          },
+          "technical": {
+            "provider": "derived",
+            "status": "available",
+            "message": "Technical indicators were computed from 268 daily bars."
+          },
+          "news": {
+            "provider": "marketaux",
+            "status": "no_data",
+            "message": "MarketAux returned no recent related news for BANKINDIA.NS."
+          }
+        }
+      },
+      {
+        "symbol": "MAHABANK.NS",
+        "action": "BUY_MORE",
+        "score": 87,
+        "confidence": 51,
+        "reasoning": [
+          "P/E 8.63 looks attractive for accumulation.",
+          "ROE 21.17 indicates strong capital efficiency.",
+          "Debt-to-equity metric was not returned by the fundamentals provider.",
+          "RSI 60.56 is constructive but getting extended.",
+          "Price 72.72 is above the 50 DMA 66.38 and 200 DMA 59.87.",
+          "News signal unavailable: MarketAux returned no recent related news for MAHABANK.NS."
+        ],
+        "signals": {
+          "fundamental": {
+            "provider": "yahoo-finance2",
+            "status": "available",
+            "message": "Fundamental data loaded from Yahoo Finance for MAHABANK.NS."
+          },
+          "priceHistory": {
+            "provider": "stock-nse-india",
+            "status": "available",
+            "message": "Loaded 268 daily price bars from NSE history for MAHABANK.NS."
+          },
+          "technical": {
+            "provider": "derived",
+            "status": "available",
+            "message": "Technical indicators were computed from 268 daily bars."
+          },
+          "news": {
+            "provider": "marketaux",
+            "status": "no_data",
+            "message": "MarketAux returned no recent related news for MAHABANK.NS."
+          }
+        }
+      },
+      {
+        "symbol": "BEL.NS",
+        "action": "HOLD",
+        "score": 67,
+        "confidence": 43,
+        "reasoning": [
+          "P/E 56.73 is expensive versus a disciplined entry framework.",
+          "ROE metric was not returned by the fundamentals provider.",
+          "Debt/equity 0.27 leaves ample balance-sheet flexibility.",
+          "RSI 60.78 is constructive but getting extended.",
+          "Price 462.7 is above the 50 DMA 432.49 and 200 DMA 410.05.",
+          "News signal unavailable: MarketAux returned no recent related news for BEL.NS."
+        ],
+        "signals": {
+          "fundamental": {
+            "provider": "yahoo-finance2",
+            "status": "available",
+            "message": "Fundamental data loaded from Yahoo Finance for BEL.NS."
+          },
+          "priceHistory": {
+            "provider": "stock-nse-india",
+            "status": "available",
+            "message": "Loaded 268 daily price bars from NSE history for BEL.NS."
+          },
+          "technical": {
+            "provider": "derived",
+            "status": "available",
+            "message": "Technical indicators were computed from 268 daily bars."
+          },
+          "news": {
+            "provider": "marketaux",
+            "status": "no_data",
+            "message": "MarketAux returned no recent related news for BEL.NS."
+          }
+        }
+      },
+      {
+        "symbol": "BPCL.NS",
+        "action": "WATCH",
+        "score": 50,
+        "confidence": 55,
+        "reasoning": [
+          "P/E 5.44 looks attractive for accumulation.",
+          "ROE metric was not returned by the fundamentals provider.",
+          "Debt/equity 56.39 is too aggressive for a quality screen.",
+          "RSI 34.16 suggests room for upside without crowding.",
+          "Price 312.05 sits below both 50 DMA 332.6 and 200 DMA 339.62.",
+          "Average news sentiment 0 is broadly neutral."
+        ],
+        "signals": {
+          "fundamental": {
+            "provider": "yahoo-finance2",
+            "status": "available",
+            "message": "Fundamental data loaded from Yahoo Finance for BPCL.NS."
+          },
+          "priceHistory": {
+            "provider": "stock-nse-india",
+            "status": "available",
+            "message": "Loaded 268 daily price bars from NSE history for BPCL.NS."
+          },
+          "technical": {
+            "provider": "derived",
+            "status": "available",
+            "message": "Technical indicators were computed from 268 daily bars."
+          },
+          "news": {
+            "provider": "marketaux",
+            "status": "available",
+            "message": "Loaded 3 related news articles for BPCL.NS."
+          }
+        }
+      },
+      {
+        "symbol": "CANBK.NS",
+        "action": "BUY_MORE",
+        "score": 88,
+        "confidence": 52,
+        "reasoning": [
+          "P/E 6.39 looks attractive for accumulation.",
+          "ROE 18.22 supports durable business quality.",
+          "Debt-to-equity metric was not returned by the fundamentals provider.",
+          "RSI 44.6 suggests room for upside without crowding.",
+          "Price 142.35 is above the 50 DMA 142.25 and 200 DMA 132.6.",
+          "News signal unavailable: MarketAux returned no recent related news for CANBK.NS."
+        ],
+        "signals": {
+          "fundamental": {
+            "provider": "yahoo-finance2",
+            "status": "available",
+            "message": "Fundamental data loaded from Yahoo Finance for CANBK.NS."
+          },
+          "priceHistory": {
+            "provider": "stock-nse-india",
+            "status": "available",
+            "message": "Loaded 268 daily price bars from NSE history for CANBK.NS."
+          },
+          "technical": {
+            "provider": "derived",
+            "status": "available",
+            "message": "Technical indicators were computed from 268 daily bars."
+          },
+          "news": {
+            "provider": "marketaux",
+            "status": "no_data",
+            "message": "MarketAux returned no recent related news for CANBK.NS."
+          }
+        }
+      },
+      {
+        "symbol": "CARRARO.NS",
+        "action": "WATCH",
+        "score": 51,
+        "confidence": 37,
+        "reasoning": [
+          "P/E 29.66 is still within a reasonable range.",
+          "ROE metric was not returned by the fundamentals provider.",
+          "Debt/equity 37.2 is too aggressive for a quality screen.",
+          "RSI 74.23 is overheated and raises near-term pullback risk.",
+          "Price 587.95 is above the 50 DMA 504.94 and 200 DMA 491.02.",
+          "News signal unavailable: MarketAux returned no recent related news for CARRARO.NS."
+        ],
+        "signals": {
+          "fundamental": {
+            "provider": "yahoo-finance2",
+            "status": "available",
+            "message": "Fundamental data loaded from Yahoo Finance for CARRARO.NS."
+          },
+          "priceHistory": {
+            "provider": "stock-nse-india",
+            "status": "available",
+            "message": "Loaded 268 daily price bars from NSE history for CARRARO.NS."
+          },
+          "technical": {
+            "provider": "derived",
+            "status": "available",
+            "message": "Technical indicators were computed from 268 daily bars."
+          },
+          "news": {
+            "provider": "marketaux",
+            "status": "no_data",
+            "message": "MarketAux returned no recent related news for CARRARO.NS."
+          }
+        }
+      },
+      {
+        "symbol": "COALINDIA.NS",
+        "action": "HOLD",
+        "score": 72,
+        "confidence": 45,
+        "reasoning": [
+          "P/E 9.05 looks attractive for accumulation.",
+          "ROE metric was not returned by the fundamentals provider.",
+          "Debt/equity 12.98 is too aggressive for a quality screen.",
+          "RSI 54.77 reflects healthy momentum without being overheated.",
+          "Price 438.7 is above the 50 DMA 433.77 and 200 DMA 404.27.",
+          "News signal unavailable: MarketAux returned no recent related news for COALINDIA.NS."
+        ],
+        "signals": {
+          "fundamental": {
+            "provider": "yahoo-finance2",
+            "status": "available",
+            "message": "Fundamental data loaded from Yahoo Finance for COALINDIA.NS."
+          },
+          "priceHistory": {
+            "provider": "stock-nse-india",
+            "status": "available",
+            "message": "Loaded 268 daily price bars from NSE history for COALINDIA.NS."
+          },
+          "technical": {
+            "provider": "derived",
+            "status": "available",
+            "message": "Technical indicators were computed from 268 daily bars."
+          },
+          "news": {
+            "provider": "marketaux",
+            "status": "no_data",
+            "message": "MarketAux returned no recent related news for COALINDIA.NS."
+          }
+        }
+      },
+      {
+        "symbol": "CYIENT.NS",
+        "action": "WATCH",
+        "score": 50,
+        "confidence": 37,
+        "reasoning": [
+          "P/E 19.65 looks attractive for accumulation.",
+          "ROE metric was not returned by the fundamentals provider.",
+          "Debt/equity 7.22 is too aggressive for a quality screen.",
+          "RSI 49.55 reflects healthy momentum without being overheated.",
+          "Price 961.6 sits below both 50 DMA 932.21 and 200 DMA 1126.3.",
+          "News signal unavailable: MarketAux returned no recent related news for CYIENT.NS."
+        ],
+        "signals": {
+          "fundamental": {
+            "provider": "yahoo-finance2",
+            "status": "available",
+            "message": "Fundamental data loaded from Yahoo Finance for CYIENT.NS."
+          },
+          "priceHistory": {
+            "provider": "stock-nse-india",
+            "status": "available",
+            "message": "Loaded 268 daily price bars from NSE history for CYIENT.NS."
+          },
+          "technical": {
+            "provider": "derived",
+            "status": "available",
+            "message": "Technical indicators were computed from 268 daily bars."
+          },
+          "news": {
+            "provider": "marketaux",
+            "status": "no_data",
+            "message": "MarketAux returned no recent related news for CYIENT.NS."
+          }
+        }
+      },
+      {
+        "symbol": "DCXINDIA.NS",
+        "action": "WATCH",
+        "score": 45,
+        "confidence": 39,
+        "reasoning": [
+          "P/E 163.87 is expensive versus a disciplined entry framework.",
+          "ROE metric was not returned by the fundamentals provider.",
+          "Debt/equity 0.24 leaves ample balance-sheet flexibility.",
+          "RSI 61.07 is constructive but getting extended.",
+          "Price 194.75 sits below both 50 DMA 173.96 and 200 DMA 218.61.",
+          "News signal unavailable: MarketAux returned no recent related news for DCXINDIA.NS."
+        ],
+        "signals": {
+          "fundamental": {
+            "provider": "yahoo-finance2",
+            "status": "available",
+            "message": "Fundamental data loaded from Yahoo Finance for DCXINDIA.NS."
+          },
+          "priceHistory": {
+            "provider": "stock-nse-india",
+            "status": "available",
+            "message": "Loaded 268 daily price bars from NSE history for DCXINDIA.NS."
+          },
+          "technical": {
+            "provider": "derived",
+            "status": "available",
+            "message": "Technical indicators were computed from 268 daily bars."
+          },
+          "news": {
+            "provider": "marketaux",
+            "status": "no_data",
+            "message": "MarketAux returned no recent related news for DCXINDIA.NS."
+          }
+        }
+      },
+      {
+        "symbol": "FINPIPE.NS",
+        "action": "HOLD",
+        "score": 59,
+        "confidence": 40,
+        "reasoning": [
+          "P/E 21.55 is still within a reasonable range.",
+          "ROE metric was not returned by the fundamentals provider.",
+          "Debt/equity 0.36 is comfortably manageable.",
+          "RSI 40.73 suggests room for upside without crowding.",
+          "Price 174.7 sits below both 50 DMA 175.12 and 200 DMA 189.58.",
+          "News signal unavailable: MarketAux returned no recent related news for FINPIPE.NS."
+        ],
+        "signals": {
+          "fundamental": {
+            "provider": "yahoo-finance2",
+            "status": "available",
+            "message": "Fundamental data loaded from Yahoo Finance for FINPIPE.NS."
+          },
+          "priceHistory": {
+            "provider": "stock-nse-india",
+            "status": "available",
+            "message": "Loaded 268 daily price bars from NSE history for FINPIPE.NS."
+          },
+          "technical": {
+            "provider": "derived",
+            "status": "available",
+            "message": "Technical indicators were computed from 268 daily bars."
+          },
+          "news": {
+            "provider": "marketaux",
+            "status": "no_data",
+            "message": "MarketAux returned no recent related news for FINPIPE.NS."
+          }
+        }
+      },
+      {
+        "symbol": "GENUSPOWER.NS",
+        "action": "WATCH",
+        "score": 43,
+        "confidence": 39,
+        "reasoning": [
+          "P/E 15.03 looks attractive for accumulation.",
+          "ROE metric was not returned by the fundamentals provider.",
+          "Debt/equity 91.66 is too aggressive for a quality screen.",
+          "RSI 68.26 is constructive but getting extended.",
+          "Price 293.35 sits below both 50 DMA 266.39 and 200 DMA 315.38.",
+          "News signal unavailable: MarketAux returned no recent related news for GENUSPOWER.NS."
+        ],
+        "signals": {
+          "fundamental": {
+            "provider": "yahoo-finance2",
+            "status": "available",
+            "message": "Fundamental data loaded from Yahoo Finance for GENUSPOWER.NS."
+          },
+          "priceHistory": {
+            "provider": "stock-nse-india",
+            "status": "available",
+            "message": "Loaded 258 daily price bars from NSE history for GENUSPOWER.NS."
+          },
+          "technical": {
+            "provider": "derived",
+            "status": "available",
+            "message": "Technical indicators were computed from 258 daily bars."
+          },
+          "news": {
+            "provider": "marketaux",
+            "status": "no_data",
+            "message": "MarketAux returned no recent related news for GENUSPOWER.NS."
+          }
+        }
+      },
+      {
+        "symbol": "GNFC.NS",
+        "action": "HOLD",
+        "score": 70,
+        "confidence": 45,
+        "reasoning": [
+          "P/E 11.4 looks attractive for accumulation.",
+          "ROE metric was not returned by the fundamentals provider.",
+          "Debt/equity 0.15 leaves ample balance-sheet flexibility.",
+          "RSI 69.67 is constructive but getting extended.",
+          "Trend setup is mixed and does not justify aggressive buying.",
+          "News signal unavailable: MarketAux returned no recent related news for GNFC.NS."
+        ],
+        "signals": {
+          "fundamental": {
+            "provider": "yahoo-finance2",
+            "status": "available",
+            "message": "Fundamental data loaded from Yahoo Finance for GNFC.NS."
+          },
+          "priceHistory": {
+            "provider": "stock-nse-india",
+            "status": "available",
+            "message": "Loaded 268 daily price bars from NSE history for GNFC.NS."
+          },
+          "technical": {
+            "provider": "derived",
+            "status": "available",
+            "message": "Technical indicators were computed from 268 daily bars."
+          },
+          "news": {
+            "provider": "marketaux",
+            "status": "no_data",
+            "message": "MarketAux returned no recent related news for GNFC.NS."
+          }
+        }
+      },
+      {
+        "symbol": "HDFCBANK.NS",
+        "action": "HOLD",
+        "score": 62,
+        "confidence": 41,
+        "reasoning": [
+          "P/E 17.86 looks attractive for accumulation.",
+          "ROE 13.82 is acceptable but not exceptional.",
+          "Debt-to-equity metric was not returned by the fundamentals provider.",
+          "RSI 33.6 suggests room for upside without crowding.",
+          "Price 799.9 sits below both 50 DMA 860.15 and 200 DMA 1152.55.",
+          "News signal unavailable: MarketAux returned no recent related news for HDFCBANK.NS."
+        ],
+        "signals": {
+          "fundamental": {
+            "provider": "yahoo-finance2",
+            "status": "available",
+            "message": "Fundamental data loaded from Yahoo Finance for HDFCBANK.NS."
+          },
+          "priceHistory": {
+            "provider": "stock-nse-india",
+            "status": "available",
+            "message": "Loaded 268 daily price bars from NSE history for HDFCBANK.NS."
+          },
+          "technical": {
+            "provider": "derived",
+            "status": "available",
+            "message": "Technical indicators were computed from 268 daily bars."
+          },
+          "news": {
+            "provider": "marketaux",
+            "status": "no_data",
+            "message": "MarketAux returned no recent related news for HDFCBANK.NS."
+          }
+        }
+      },
+      {
+        "symbol": "HINDZINC.NS",
+        "action": "HOLD",
+        "score": 67,
+        "confidence": 43,
+        "reasoning": [
+          "P/E 21.19 is still within a reasonable range.",
+          "ROE metric was not returned by the fundamentals provider.",
+          "Debt/equity 88.17 is too aggressive for a quality screen.",
+          "RSI 51.04 reflects healthy momentum without being overheated.",
+          "Price 592.35 is above the 50 DMA 562.23 and 200 DMA 521.12.",
+          "News signal unavailable: MarketAux returned no recent related news for HINDZINC.NS."
+        ],
+        "signals": {
+          "fundamental": {
+            "provider": "yahoo-finance2",
+            "status": "available",
+            "message": "Fundamental data loaded from Yahoo Finance for HINDZINC.NS."
+          },
+          "priceHistory": {
+            "provider": "stock-nse-india",
+            "status": "available",
+            "message": "Loaded 268 daily price bars from NSE history for HINDZINC.NS."
+          },
+          "technical": {
+            "provider": "derived",
+            "status": "available",
+            "message": "Technical indicators were computed from 268 daily bars."
+          },
+          "news": {
+            "provider": "marketaux",
+            "status": "no_data",
+            "message": "MarketAux returned no recent related news for HINDZINC.NS."
+          }
+        }
+      },
+      {
+        "symbol": "IDFCFIRSTB.NS",
+        "action": "WATCH",
+        "score": 48,
+        "confidence": 37,
+        "reasoning": [
+          "P/E 36.03 is full; upside may already be priced in.",
+          "ROE metric was not returned by the fundamentals provider.",
+          "Debt-to-equity metric was not returned by the fundamentals provider.",
+          "RSI 40.12 suggests room for upside without crowding.",
+          "Price 68.52 sits below both 50 DMA 70.67 and 200 DMA 74.59.",
+          "News signal unavailable: MarketAux returned no recent related news for IDFCFIRSTB.NS."
+        ],
+        "signals": {
+          "fundamental": {
+            "provider": "yahoo-finance2",
+            "status": "available",
+            "message": "Fundamental data loaded from Yahoo Finance for IDFCFIRSTB.NS."
+          },
+          "priceHistory": {
+            "provider": "stock-nse-india",
+            "status": "available",
+            "message": "Loaded 268 daily price bars from NSE history for IDFCFIRSTB.NS."
+          },
+          "technical": {
+            "provider": "derived",
+            "status": "available",
+            "message": "Technical indicators were computed from 268 daily bars."
+          },
+          "news": {
+            "provider": "marketaux",
+            "status": "no_data",
+            "message": "MarketAux returned no recent related news for IDFCFIRSTB.NS."
+          }
+        }
+      },
+      {
+        "symbol": "IOC.NS",
+        "action": "HOLD",
+        "score": 55,
+        "confidence": 39,
+        "reasoning": [
+          "P/E 5.63 looks attractive for accumulation.",
+          "ROE metric was not returned by the fundamentals provider.",
+          "Debt/equity 72.63 is too aggressive for a quality screen.",
+          "RSI 32.21 suggests room for upside without crowding.",
+          "Trend setup is mixed and does not justify aggressive buying.",
+          "News signal unavailable: MarketAux returned no recent related news for IOC.NS."
+        ],
+        "signals": {
+          "fundamental": {
+            "provider": "yahoo-finance2",
+            "status": "available",
+            "message": "Fundamental data loaded from Yahoo Finance for IOC.NS."
+          },
+          "priceHistory": {
+            "provider": "stock-nse-india",
+            "status": "available",
+            "message": "Loaded 268 daily price bars from NSE history for IOC.NS."
+          },
+          "technical": {
+            "provider": "derived",
+            "status": "available",
+            "message": "Technical indicators were computed from 268 daily bars."
+          },
+          "news": {
+            "provider": "marketaux",
+            "status": "no_data",
+            "message": "MarketAux returned no recent related news for IOC.NS."
+          }
+        }
+      },
+      {
+        "symbol": "IOB.NS",
+        "action": "HOLD",
+        "score": 68,
+        "confidence": 44,
+        "reasoning": [
+          "P/E 14.22 looks attractive for accumulation.",
+          "ROE 15.34 supports durable business quality.",
+          "Debt-to-equity metric was not returned by the fundamentals provider.",
+          "RSI 49.14 reflects healthy momentum without being overheated.",
+          "Price 34.97 sits below both 50 DMA 34.54 and 200 DMA 37.08.",
+          "News signal unavailable: MarketAux returned no recent related news for IOB.NS."
+        ],
+        "signals": {
+          "fundamental": {
+            "provider": "yahoo-finance2",
+            "status": "available",
+            "message": "Fundamental data loaded from Yahoo Finance for IOB.NS."
+          },
+          "priceHistory": {
+            "provider": "stock-nse-india",
+            "status": "available",
+            "message": "Loaded 268 daily price bars from NSE history for IOB.NS."
+          },
+          "technical": {
+            "provider": "derived",
+            "status": "available",
+            "message": "Technical indicators were computed from 268 daily bars."
+          },
+          "news": {
+            "provider": "marketaux",
+            "status": "no_data",
+            "message": "MarketAux returned no recent related news for IOB.NS."
+          }
+        }
+      },
+      {
+        "symbol": "IRFC.NS",
+        "action": "WATCH",
+        "score": 54,
+        "confidence": 38,
+        "reasoning": [
+          "P/E 19.58 looks attractive for accumulation.",
+          "ROE 12.9 is acceptable but not exceptional.",
+          "Debt/equity 744.59 is too aggressive for a quality screen.",
+          "RSI 46.01 reflects healthy momentum without being overheated.",
+          "Price 104.85 sits below both 50 DMA 102.64 and 200 DMA 119.57.",
+          "News signal unavailable: MarketAux returned no recent related news for IRFC.NS."
+        ],
+        "signals": {
+          "fundamental": {
+            "provider": "yahoo-finance2",
+            "status": "available",
+            "message": "Fundamental data loaded from Yahoo Finance for IRFC.NS."
+          },
+          "priceHistory": {
+            "provider": "stock-nse-india",
+            "status": "available",
+            "message": "Loaded 268 daily price bars from NSE history for IRFC.NS."
+          },
+          "technical": {
+            "provider": "derived",
+            "status": "available",
+            "message": "Technical indicators were computed from 268 daily bars."
+          },
+          "news": {
+            "provider": "marketaux",
+            "status": "no_data",
+            "message": "MarketAux returned no recent related news for IRFC.NS."
+          }
+        }
+      },
+      {
+        "symbol": "IREDA.NS",
+        "action": "WATCH",
+        "score": 43,
+        "confidence": 39,
+        "reasoning": [
+          "P/E 19.45 looks attractive for accumulation.",
+          "ROE metric was not returned by the fundamentals provider.",
+          "Debt/equity 554.12 is too aggressive for a quality screen.",
+          "RSI 66.36 is constructive but getting extended.",
+          "Price 132.95 sits below both 50 DMA 122.02 and 200 DMA 141.91.",
+          "News signal unavailable: MarketAux returned no recent related news for IREDA.NS."
+        ],
+        "signals": {
+          "fundamental": {
+            "provider": "yahoo-finance2",
+            "status": "available",
+            "message": "Fundamental data loaded from Yahoo Finance for IREDA.NS."
+          },
+          "priceHistory": {
+            "provider": "stock-nse-india",
+            "status": "available",
+            "message": "Loaded 268 daily price bars from NSE history for IREDA.NS."
+          },
+          "technical": {
+            "provider": "derived",
+            "status": "available",
+            "message": "Technical indicators were computed from 268 daily bars."
+          },
+          "news": {
+            "provider": "marketaux",
+            "status": "no_data",
+            "message": "MarketAux returned no recent related news for IREDA.NS."
+          }
+        }
+      },
+      {
+        "symbol": "ITC.NS",
+        "action": "HOLD",
+        "score": 64,
+        "confidence": 42,
+        "reasoning": [
+          "P/E 18.88 looks attractive for accumulation.",
+          "ROE metric was not returned by the fundamentals provider.",
+          "Debt/equity 0.51 is comfortably manageable.",
+          "RSI 40.51 suggests room for upside without crowding.",
+          "Price 306.8 sits below both 50 DMA 319.26 and 200 DMA 376.46.",
+          "News signal unavailable: MarketAux returned no recent related news for ITC.NS."
+        ],
+        "signals": {
+          "fundamental": {
+            "provider": "yahoo-finance2",
+            "status": "available",
+            "message": "Fundamental data loaded from Yahoo Finance for ITC.NS."
+          },
+          "priceHistory": {
+            "provider": "stock-nse-india",
+            "status": "available",
+            "message": "Loaded 268 daily price bars from NSE history for ITC.NS."
+          },
+          "technical": {
+            "provider": "derived",
+            "status": "available",
+            "message": "Technical indicators were computed from 268 daily bars."
+          },
+          "news": {
+            "provider": "marketaux",
+            "status": "no_data",
+            "message": "MarketAux returned no recent related news for ITC.NS."
+          }
+        }
+      },
+      {
+        "symbol": "MAXHEALTH.NS",
+        "action": "SELL",
+        "score": 30,
+        "confidence": 45,
+        "reasoning": [
+          "P/E 69.47 is expensive versus a disciplined entry framework.",
+          "ROE metric was not returned by the fundamentals provider.",
+          "Debt/equity 32.58 is too aggressive for a quality screen.",
+          "RSI 37.55 suggests room for upside without crowding.",
+          "Price 1006.9 sits below both 50 DMA 1023.29 and 200 DMA 1107.39.",
+          "News signal unavailable: MarketAux returned no recent related news for MAXHEALTH.NS."
+        ],
+        "signals": {
+          "fundamental": {
+            "provider": "yahoo-finance2",
+            "status": "available",
+            "message": "Fundamental data loaded from Yahoo Finance for MAXHEALTH.NS."
+          },
+          "priceHistory": {
+            "provider": "stock-nse-india",
+            "status": "available",
+            "message": "Loaded 268 daily price bars from NSE history for MAXHEALTH.NS."
+          },
+          "technical": {
+            "provider": "derived",
+            "status": "available",
+            "message": "Technical indicators were computed from 268 daily bars."
+          },
+          "news": {
+            "provider": "marketaux",
+            "status": "no_data",
+            "message": "MarketAux returned no recent related news for MAXHEALTH.NS."
+          }
+        }
+      },
+      {
+        "symbol": "MAZDOCK.NS",
+        "action": "WATCH",
+        "score": 53,
+        "confidence": 38,
+        "reasoning": [
+          "P/E 43.92 is full; upside may already be priced in.",
+          "ROE metric was not returned by the fundamentals provider.",
+          "Debt/equity 0.02 leaves ample balance-sheet flexibility.",
+          "RSI 68.01 is constructive but getting extended.",
+          "Price 2618.3 sits below both 50 DMA 2365.71 and 200 DMA 2678.69.",
+          "News signal unavailable: MarketAux returned no recent related news for MAZDOCK.NS."
+        ],
+        "signals": {
+          "fundamental": {
+            "provider": "yahoo-finance2",
+            "status": "available",
+            "message": "Fundamental data loaded from Yahoo Finance for MAZDOCK.NS."
+          },
+          "priceHistory": {
+            "provider": "stock-nse-india",
+            "status": "available",
+            "message": "Loaded 268 daily price bars from NSE history for MAZDOCK.NS."
+          },
+          "technical": {
+            "provider": "derived",
+            "status": "available",
+            "message": "Technical indicators were computed from 268 daily bars."
+          },
+          "news": {
+            "provider": "marketaux",
+            "status": "no_data",
+            "message": "MarketAux returned no recent related news for MAZDOCK.NS."
+          }
+        }
+      },
+      {
+        "symbol": "MINDTECK.NS",
+        "action": "WATCH",
+        "score": 45,
+        "confidence": 39,
+        "reasoning": [
+          "P/E 24.07 is still within a reasonable range.",
+          "ROE metric was not returned by the fundamentals provider.",
+          "Debt/equity 2.04 is too aggressive for a quality screen.",
+          "RSI 55.83 reflects healthy momentum without being overheated.",
+          "Price 213.05 sits below both 50 DMA 191.3 and 200 DMA 215.04.",
+          "News signal unavailable: MarketAux returned no recent related news for MINDTECK.NS."
+        ],
+        "signals": {
+          "fundamental": {
+            "provider": "yahoo-finance2",
+            "status": "available",
+            "message": "Fundamental data loaded from Yahoo Finance for MINDTECK.NS."
+          },
+          "priceHistory": {
+            "provider": "stock-nse-india",
+            "status": "available",
+            "message": "Loaded 203 daily price bars from NSE history for MINDTECK.NS."
+          },
+          "technical": {
+            "provider": "derived",
+            "status": "available",
+            "message": "Technical indicators were computed from 203 daily bars."
+          },
+          "news": {
+            "provider": "marketaux",
+            "status": "no_data",
+            "message": "MarketAux returned no recent related news for MINDTECK.NS."
+          }
+        }
+      },
+      {
+        "symbol": "MMTC.NS",
+        "action": "WATCH",
+        "score": 36,
+        "confidence": 42,
+        "reasoning": [
+          "P/E 38.92 is full; upside may already be priced in.",
+          "ROE metric was not returned by the fundamentals provider.",
+          "Debt/equity 1.8 is elevated for fresh risk-taking.",
+          "RSI 72.67 is overheated and raises near-term pullback risk.",
+          "Trend setup is mixed and does not justify aggressive buying.",
+          "News signal unavailable: MarketAux returned no recent related news for MMTC.NS."
+        ],
+        "signals": {
+          "fundamental": {
+            "provider": "yahoo-finance2",
+            "status": "available",
+            "message": "Fundamental data loaded from Yahoo Finance for MMTC.NS."
+          },
+          "priceHistory": {
+            "provider": "stock-nse-india",
+            "status": "available",
+            "message": "Loaded 257 daily price bars from NSE history for MMTC.NS."
+          },
+          "technical": {
+            "provider": "derived",
+            "status": "available",
+            "message": "Technical indicators were computed from 257 daily bars."
+          },
+          "news": {
+            "provider": "marketaux",
+            "status": "no_data",
+            "message": "MarketAux returned no recent related news for MMTC.NS."
+          }
+        }
+      },
+      {
+        "symbol": "NATIONALUM.NS",
+        "action": "BUY_MORE",
+        "score": 76,
+        "confidence": 47,
+        "reasoning": [
+          "P/E 13.1 looks attractive for accumulation.",
+          "ROE metric was not returned by the fundamentals provider.",
+          "Debt/equity 0.28 leaves ample balance-sheet flexibility.",
+          "RSI 72.84 is overheated and raises near-term pullback risk.",
+          "Price 438.7 is above the 50 DMA 366.77 and 200 DMA 276.38.",
+          "News signal unavailable: MarketAux returned no recent related news for NATIONALUM.NS."
+        ],
+        "signals": {
+          "fundamental": {
+            "provider": "yahoo-finance2",
+            "status": "available",
+            "message": "Fundamental data loaded from Yahoo Finance for NATIONALUM.NS."
+          },
+          "priceHistory": {
+            "provider": "stock-nse-india",
+            "status": "available",
+            "message": "Loaded 268 daily price bars from NSE history for NATIONALUM.NS."
+          },
+          "technical": {
+            "provider": "derived",
+            "status": "available",
+            "message": "Technical indicators were computed from 268 daily bars."
+          },
+          "news": {
+            "provider": "marketaux",
+            "status": "no_data",
+            "message": "MarketAux returned no recent related news for NATIONALUM.NS."
+          }
+        }
+      },
+      {
+        "symbol": "NELCO.NS",
+        "action": "SELL",
+        "score": 33,
+        "confidence": 43,
+        "reasoning": [
+          "P/E metric was not returned by the fundamentals provider.",
+          "ROE metric was not returned by the fundamentals provider.",
+          "Debt/equity 55.95 is too aggressive for a quality screen.",
+          "RSI 65.03 is constructive but getting extended.",
+          "Price 685.5 sits below both 50 DMA 628.9 and 200 DMA 778.08.",
+          "News signal unavailable: MarketAux returned no recent related news for NELCO.NS."
+        ],
+        "signals": {
+          "fundamental": {
+            "provider": "yahoo-finance2",
+            "status": "available",
+            "message": "Fundamental data loaded from Yahoo Finance for NELCO.NS."
+          },
+          "priceHistory": {
+            "provider": "stock-nse-india",
+            "status": "available",
+            "message": "Loaded 268 daily price bars from NSE history for NELCO.NS."
+          },
+          "technical": {
+            "provider": "derived",
+            "status": "available",
+            "message": "Technical indicators were computed from 268 daily bars."
+          },
+          "news": {
+            "provider": "marketaux",
+            "status": "no_data",
+            "message": "MarketAux returned no recent related news for NELCO.NS."
+          }
+        }
+      },
+      {
+        "symbol": "NHPC.NS",
+        "action": "SELL",
+        "score": 23,
+        "confidence": 47,
+        "reasoning": [
+          "P/E 54.01 is expensive versus a disciplined entry framework.",
+          "ROE metric was not returned by the fundamentals provider.",
+          "Debt/equity 100.41 is too aggressive for a quality screen.",
+          "RSI 71.69 is overheated and raises near-term pullback risk.",
+          "Trend setup is mixed and does not justify aggressive buying.",
+          "News signal unavailable: MarketAux returned no recent related news for NHPC.NS."
+        ],
+        "signals": {
+          "fundamental": {
+            "provider": "yahoo-finance2",
+            "status": "available",
+            "message": "Fundamental data loaded from Yahoo Finance for NHPC.NS."
+          },
+          "priceHistory": {
+            "provider": "stock-nse-india",
+            "status": "available",
+            "message": "Loaded 268 daily price bars from NSE history for NHPC.NS."
+          },
+          "technical": {
+            "provider": "derived",
+            "status": "available",
+            "message": "Technical indicators were computed from 268 daily bars."
+          },
+          "news": {
+            "provider": "marketaux",
+            "status": "no_data",
+            "message": "MarketAux returned no recent related news for NHPC.NS."
+          }
+        }
+      },
+      {
+        "symbol": "NMDC.NS",
+        "action": "HOLD",
+        "score": 65,
+        "confidence": 43,
+        "reasoning": [
+          "P/E 11.44 looks attractive for accumulation.",
+          "ROE metric was not returned by the fundamentals provider.",
+          "Debt/equity 11.21 is too aggressive for a quality screen.",
+          "RSI 69 is constructive but getting extended.",
+          "Price 89.78 is above the 50 DMA 80.17 and 200 DMA 76.77.",
+          "News signal unavailable: MarketAux returned no recent related news for NMDC.NS."
+        ],
+        "signals": {
+          "fundamental": {
+            "provider": "yahoo-finance2",
+            "status": "available",
+            "message": "Fundamental data loaded from Yahoo Finance for NMDC.NS."
+          },
+          "priceHistory": {
+            "provider": "stock-nse-india",
+            "status": "available",
+            "message": "Loaded 268 daily price bars from NSE history for NMDC.NS."
+          },
+          "technical": {
+            "provider": "derived",
+            "status": "available",
+            "message": "Technical indicators were computed from 268 daily bars."
+          },
+          "news": {
+            "provider": "marketaux",
+            "status": "no_data",
+            "message": "MarketAux returned no recent related news for NMDC.NS."
+          }
+        }
+      },
+      {
+        "symbol": "NTPC.NS",
+        "action": "HOLD",
+        "score": 60,
+        "confidence": 41,
+        "reasoning": [
+          "P/E 21.79 is still within a reasonable range.",
+          "ROE metric was not returned by the fundamentals provider.",
+          "Debt/equity 118.13 is too aggressive for a quality screen.",
+          "RSI 63.84 is constructive but getting extended.",
+          "Price 393.65 is above the 50 DMA 369.72 and 200 DMA 344.46.",
+          "News signal unavailable: MarketAux returned no recent related news for NTPC.NS."
+        ],
+        "signals": {
+          "fundamental": {
+            "provider": "yahoo-finance2",
+            "status": "available",
+            "message": "Fundamental data loaded from Yahoo Finance for NTPC.NS."
+          },
+          "priceHistory": {
+            "provider": "stock-nse-india",
+            "status": "available",
+            "message": "Loaded 268 daily price bars from NSE history for NTPC.NS."
+          },
+          "technical": {
+            "provider": "derived",
+            "status": "available",
+            "message": "Technical indicators were computed from 268 daily bars."
+          },
+          "news": {
+            "provider": "marketaux",
+            "status": "no_data",
+            "message": "MarketAux returned no recent related news for NTPC.NS."
+          }
+        }
+      },
+      {
+        "symbol": "OIL.NS",
+        "action": "HOLD",
+        "score": 72,
+        "confidence": 45,
+        "reasoning": [
+          "P/E 13.11 looks attractive for accumulation.",
+          "ROE metric was not returned by the fundamentals provider.",
+          "Debt/equity 58.17 is too aggressive for a quality screen.",
+          "RSI 49.58 reflects healthy momentum without being overheated.",
+          "Price 470.1 is above the 50 DMA 465.02 and 200 DMA 436.52.",
+          "News signal unavailable: MarketAux returned no recent related news for OIL.NS."
+        ],
+        "signals": {
+          "fundamental": {
+            "provider": "yahoo-finance2",
+            "status": "available",
+            "message": "Fundamental data loaded from Yahoo Finance for OIL.NS."
+          },
+          "priceHistory": {
+            "provider": "stock-nse-india",
+            "status": "available",
+            "message": "Loaded 268 daily price bars from NSE history for OIL.NS."
+          },
+          "technical": {
+            "provider": "derived",
+            "status": "available",
+            "message": "Technical indicators were computed from 268 daily bars."
+          },
+          "news": {
+            "provider": "marketaux",
+            "status": "no_data",
+            "message": "MarketAux returned no recent related news for OIL.NS."
+          }
+        }
+      },
+      {
+        "symbol": "ONGC.NS",
+        "action": "HOLD",
+        "score": 72,
+        "confidence": 45,
+        "reasoning": [
+          "P/E 9.39 looks attractive for accumulation.",
+          "ROE metric was not returned by the fundamentals provider.",
+          "Debt/equity 43.81 is too aggressive for a quality screen.",
+          "RSI 59.78 reflects healthy momentum without being overheated.",
+          "Price 283.95 is above the 50 DMA 271.44 and 200 DMA 250.45.",
+          "News signal unavailable: MarketAux returned no recent related news for ONGC.NS."
+        ],
+        "signals": {
+          "fundamental": {
+            "provider": "yahoo-finance2",
+            "status": "available",
+            "message": "Fundamental data loaded from Yahoo Finance for ONGC.NS."
+          },
+          "priceHistory": {
+            "provider": "stock-nse-india",
+            "status": "available",
+            "message": "Loaded 268 daily price bars from NSE history for ONGC.NS."
+          },
+          "technical": {
+            "provider": "derived",
+            "status": "available",
+            "message": "Technical indicators were computed from 268 daily bars."
+          },
+          "news": {
+            "provider": "marketaux",
+            "status": "no_data",
+            "message": "MarketAux returned no recent related news for ONGC.NS."
+          }
+        }
+      },
+      {
+        "symbol": "POWERGRID.NS",
+        "action": "HOLD",
+        "score": 60,
+        "confidence": 41,
+        "reasoning": [
+          "P/E 20.41 is still within a reasonable range.",
+          "ROE metric was not returned by the fundamentals provider.",
+          "Debt/equity 141.19 is too aggressive for a quality screen.",
+          "RSI 65.65 is constructive but getting extended.",
+          "Price 318.05 is above the 50 DMA 294.86 and 200 DMA 283.5.",
+          "News signal unavailable: MarketAux returned no recent related news for POWERGRID.NS."
+        ],
+        "signals": {
+          "fundamental": {
+            "provider": "yahoo-finance2",
+            "status": "available",
+            "message": "Fundamental data loaded from Yahoo Finance for POWERGRID.NS."
+          },
+          "priceHistory": {
+            "provider": "stock-nse-india",
+            "status": "available",
+            "message": "Loaded 268 daily price bars from NSE history for POWERGRID.NS."
+          },
+          "technical": {
+            "provider": "derived",
+            "status": "available",
+            "message": "Technical indicators were computed from 268 daily bars."
+          },
+          "news": {
+            "provider": "marketaux",
+            "status": "no_data",
+            "message": "MarketAux returned no recent related news for POWERGRID.NS."
+          }
+        }
+      },
+      {
+        "symbol": "PNB.NS",
+        "action": "HOLD",
+        "score": 69,
+        "confidence": 44,
+        "reasoning": [
+          "P/E 7.4 looks attractive for accumulation.",
+          "ROE 12.71 is acceptable but not exceptional.",
+          "Debt-to-equity metric was not returned by the fundamentals provider.",
+          "RSI 39.97 suggests room for upside without crowding.",
+          "Trend setup is mixed and does not justify aggressive buying.",
+          "News signal unavailable: MarketAux returned no recent related news for PNB.NS."
+        ],
+        "signals": {
+          "fundamental": {
+            "provider": "yahoo-finance2",
+            "status": "available",
+            "message": "Fundamental data loaded from Yahoo Finance for PNB.NS."
+          },
+          "priceHistory": {
+            "provider": "stock-nse-india",
+            "status": "available",
+            "message": "Loaded 268 daily price bars from NSE history for PNB.NS."
+          },
+          "technical": {
+            "provider": "derived",
+            "status": "available",
+            "message": "Technical indicators were computed from 268 daily bars."
+          },
+          "news": {
+            "provider": "marketaux",
+            "status": "no_data",
+            "message": "MarketAux returned no recent related news for PNB.NS."
+          }
+        }
+      },
+      {
+        "symbol": "RECLTD.NS",
+        "action": "HOLD",
+        "score": 62,
+        "confidence": 41,
+        "reasoning": [
+          "P/E 5.71 looks attractive for accumulation.",
+          "ROE 21.47 indicates strong capital efficiency.",
+          "Debt/equity 666.09 is too aggressive for a quality screen.",
+          "RSI 64.61 is constructive but getting extended.",
+          "Trend setup is mixed and does not justify aggressive buying.",
+          "News signal unavailable: MarketAux returned no recent related news for RECLTD.NS."
+        ],
+        "signals": {
+          "fundamental": {
+            "provider": "yahoo-finance2",
+            "status": "available",
+            "message": "Fundamental data loaded from Yahoo Finance for RECLTD.NS."
+          },
+          "priceHistory": {
+            "provider": "stock-nse-india",
+            "status": "available",
+            "message": "Loaded 268 daily price bars from NSE history for RECLTD.NS."
+          },
+          "technical": {
+            "provider": "derived",
+            "status": "available",
+            "message": "Technical indicators were computed from 268 daily bars."
+          },
+          "news": {
+            "provider": "marketaux",
+            "status": "no_data",
+            "message": "MarketAux returned no recent related news for RECLTD.NS."
+          }
+        }
+      },
+      {
+        "symbol": "RELIANCE.NS",
+        "action": "WATCH",
+        "score": 43,
+        "confidence": 39,
+        "reasoning": [
+          "P/E 22.22 is still within a reasonable range.",
+          "ROE metric was not returned by the fundamentals provider.",
+          "Debt/equity 35.65 is too aggressive for a quality screen.",
+          "RSI 41.6 suggests room for upside without crowding.",
+          "Price 1365.1 sits below both 50 DMA 1407.83 and 200 DMA 1435.19.",
+          "News signal unavailable: MarketAux returned no recent related news for RELIANCE.NS."
+        ],
+        "signals": {
+          "fundamental": {
+            "provider": "yahoo-finance2",
+            "status": "available",
+            "message": "Fundamental data loaded from Yahoo Finance for RELIANCE.NS."
+          },
+          "priceHistory": {
+            "provider": "stock-nse-india",
+            "status": "available",
+            "message": "Loaded 268 daily price bars from NSE history for RELIANCE.NS."
+          },
+          "technical": {
+            "provider": "derived",
+            "status": "available",
+            "message": "Technical indicators were computed from 268 daily bars."
+          },
+          "news": {
+            "provider": "marketaux",
+            "status": "no_data",
+            "message": "MarketAux returned no recent related news for RELIANCE.NS."
+          }
+        }
+      },
+      {
+        "symbol": "SHRIRAMFIN.NS",
+        "action": "HOLD",
+        "score": 67,
+        "confidence": 43,
+        "reasoning": [
+          "P/E 21.32 is still within a reasonable range.",
+          "ROE metric was not returned by the fundamentals provider.",
+          "Debt/equity 279.08 is too aggressive for a quality screen.",
+          "RSI 49.62 reflects healthy momentum without being overheated.",
+          "Price 1036.5 is above the 50 DMA 989.97 and 200 DMA 816.66.",
+          "News signal unavailable: MarketAux returned no recent related news for SHRIRAMFIN.NS."
+        ],
+        "signals": {
+          "fundamental": {
+            "provider": "yahoo-finance2",
+            "status": "available",
+            "message": "Fundamental data loaded from Yahoo Finance for SHRIRAMFIN.NS."
+          },
+          "priceHistory": {
+            "provider": "stock-nse-india",
+            "status": "available",
+            "message": "Loaded 268 daily price bars from NSE history for SHRIRAMFIN.NS."
+          },
+          "technical": {
+            "provider": "derived",
+            "status": "available",
+            "message": "Technical indicators were computed from 268 daily bars."
+          },
+          "news": {
+            "provider": "marketaux",
+            "status": "no_data",
+            "message": "MarketAux returned no recent related news for SHRIRAMFIN.NS."
+          }
+        }
+      },
+      {
+        "symbol": "STLTECH.NS",
+        "action": "WATCH",
+        "score": 38,
+        "confidence": 41,
+        "reasoning": [
+          "P/E 3294.38 is expensive versus a disciplined entry framework.",
+          "ROE metric was not returned by the fundamentals provider.",
+          "Debt/equity 93.53 is too aggressive for a quality screen.",
+          "RSI 75.19 is overheated and raises near-term pullback risk.",
+          "Price 262.45 is above the 50 DMA 173.6 and 200 DMA 125.19.",
+          "News signal unavailable: MarketAux returned no recent related news for STLTECH.NS."
+        ],
+        "signals": {
+          "fundamental": {
+            "provider": "yahoo-finance2",
+            "status": "available",
+            "message": "Fundamental data loaded from Yahoo Finance for STLTECH.NS."
+          },
+          "priceHistory": {
+            "provider": "stock-nse-india",
+            "status": "available",
+            "message": "Loaded 258 daily price bars from NSE history for STLTECH.NS."
+          },
+          "technical": {
+            "provider": "derived",
+            "status": "available",
+            "message": "Technical indicators were computed from 258 daily bars."
+          },
+          "news": {
+            "provider": "marketaux",
+            "status": "no_data",
+            "message": "MarketAux returned no recent related news for STLTECH.NS."
+          }
+        }
+      },
+      {
+        "symbol": "TATAELXSI.NS",
+        "action": "SELL",
+        "score": 32,
+        "confidence": 44,
+        "reasoning": [
+          "P/E 49.21 is expensive versus a disciplined entry framework.",
+          "ROE metric was not returned by the fundamentals provider.",
+          "Debt/equity 6.26 is too aggressive for a quality screen.",
+          "RSI 46.84 reflects healthy momentum without being overheated.",
+          "Price 4591.55 sits below both 50 DMA 4531.66 and 200 DMA 5339.84.",
+          "News signal unavailable: MarketAux returned no recent related news for TATAELXSI.NS."
+        ],
+        "signals": {
+          "fundamental": {
+            "provider": "yahoo-finance2",
+            "status": "available",
+            "message": "Fundamental data loaded from Yahoo Finance for TATAELXSI.NS."
+          },
+          "priceHistory": {
+            "provider": "stock-nse-india",
+            "status": "available",
+            "message": "Loaded 268 daily price bars from NSE history for TATAELXSI.NS."
+          },
+          "technical": {
+            "provider": "derived",
+            "status": "available",
+            "message": "Technical indicators were computed from 268 daily bars."
+          },
+          "news": {
+            "provider": "marketaux",
+            "status": "no_data",
+            "message": "MarketAux returned no recent related news for TATAELXSI.NS."
+          }
+        }
+      },
+      {
+        "symbol": "TATAPOWER.NS",
+        "action": "WATCH",
+        "score": 40,
+        "confidence": 41,
+        "reasoning": [
+          "P/E 36.11 is full; upside may already be priced in.",
+          "ROE metric was not returned by the fundamentals provider.",
+          "Debt/equity 156.16 is too aggressive for a quality screen.",
+          "RSI 69 is constructive but getting extended.",
+          "Trend setup is mixed and does not justify aggressive buying.",
+          "News signal unavailable: MarketAux returned no recent related news for TATAPOWER.NS."
+        ],
+        "signals": {
+          "fundamental": {
+            "provider": "yahoo-finance2",
+            "status": "available",
+            "message": "Fundamental data loaded from Yahoo Finance for TATAPOWER.NS."
+          },
+          "priceHistory": {
+            "provider": "stock-nse-india",
+            "status": "available",
+            "message": "Loaded 268 daily price bars from NSE history for TATAPOWER.NS."
+          },
+          "technical": {
+            "provider": "derived",
+            "status": "available",
+            "message": "Technical indicators were computed from 268 daily bars."
+          },
+          "news": {
+            "provider": "marketaux",
+            "status": "no_data",
+            "message": "MarketAux returned no recent related news for TATAPOWER.NS."
+          }
+        }
+      },
+      {
+        "symbol": "TATASTEEL.NS",
+        "action": "HOLD",
+        "score": 67,
+        "confidence": 43,
+        "reasoning": [
+          "P/E 28.78 is still within a reasonable range.",
+          "ROE metric was not returned by the fundamentals provider.",
+          "Debt/equity 99.7 is too aggressive for a quality screen.",
+          "RSI 59.72 reflects healthy momentum without being overheated.",
+          "Price 212.05 is above the 50 DMA 196.84 and 200 DMA 177.3.",
+          "News signal unavailable: MarketAux returned no recent related news for TATASTEEL.NS."
+        ],
+        "signals": {
+          "fundamental": {
+            "provider": "yahoo-finance2",
+            "status": "available",
+            "message": "Fundamental data loaded from Yahoo Finance for TATASTEEL.NS."
+          },
+          "priceHistory": {
+            "provider": "stock-nse-india",
+            "status": "available",
+            "message": "Loaded 268 daily price bars from NSE history for TATASTEEL.NS."
+          },
+          "technical": {
+            "provider": "derived",
+            "status": "available",
+            "message": "Technical indicators were computed from 268 daily bars."
+          },
+          "news": {
+            "provider": "marketaux",
+            "status": "no_data",
+            "message": "MarketAux returned no recent related news for TATASTEEL.NS."
+          }
+        }
+      },
+      {
+        "symbol": "TATATECH.NS",
+        "action": "SELL",
+        "score": 32,
+        "confidence": 44,
+        "reasoning": [
+          "P/E 45.12 is expensive versus a disciplined entry framework.",
+          "ROE metric was not returned by the fundamentals provider.",
+          "Debt/equity 6.92 is too aggressive for a quality screen.",
+          "RSI 49.46 reflects healthy momentum without being overheated.",
+          "Price 589.15 sits below both 50 DMA 577.63 and 200 DMA 660.55.",
+          "News signal unavailable: MarketAux returned no recent related news for TATATECH.NS."
+        ],
+        "signals": {
+          "fundamental": {
+            "provider": "yahoo-finance2",
+            "status": "available",
+            "message": "Fundamental data loaded from Yahoo Finance for TATATECH.NS."
+          },
+          "priceHistory": {
+            "provider": "stock-nse-india",
+            "status": "available",
+            "message": "Loaded 268 daily price bars from NSE history for TATATECH.NS."
+          },
+          "technical": {
+            "provider": "derived",
+            "status": "available",
+            "message": "Technical indicators were computed from 268 daily bars."
+          },
+          "news": {
+            "provider": "marketaux",
+            "status": "no_data",
+            "message": "MarketAux returned no recent related news for TATATECH.NS."
+          }
+        }
+      },
+      {
+        "symbol": "VEDL.NS",
+        "action": "HOLD",
+        "score": 60,
+        "confidence": 41,
+        "reasoning": [
+          "P/E 21.83 is still within a reasonable range.",
+          "ROE metric was not returned by the fundamentals provider.",
+          "Debt/equity 190.26 is too aggressive for a quality screen.",
+          "RSI 68.96 is constructive but getting extended.",
+          "Price 787.6 is above the 50 DMA 680.76 and 200 DMA 553.61.",
+          "News signal unavailable: MarketAux returned no recent related news for VEDL.NS."
+        ],
+        "signals": {
+          "fundamental": {
+            "provider": "yahoo-finance2",
+            "status": "available",
+            "message": "Fundamental data loaded from Yahoo Finance for VEDL.NS."
+          },
+          "priceHistory": {
+            "provider": "stock-nse-india",
+            "status": "available",
+            "message": "Loaded 268 daily price bars from NSE history for VEDL.NS."
+          },
+          "technical": {
+            "provider": "derived",
+            "status": "available",
+            "message": "Technical indicators were computed from 268 daily bars."
+          },
+          "news": {
+            "provider": "marketaux",
+            "status": "no_data",
+            "message": "MarketAux returned no recent related news for VEDL.NS."
+          }
+        }
+      }
+    ]
+  }
+}

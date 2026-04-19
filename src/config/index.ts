@@ -11,4 +11,7 @@ export const env = {
   dbName: process.env.DB_NAME || 'portfolio_db',
   dbUser: process.env.DB_USER || 'postgres',
   dbPassword: process.env.DB_PASSWORD || 'postgres',
+
+  FMP_API_KEY: process.env.FMP_API_KEY || '',
+  MARKETAUX_API_KEY: process.env.MARKETAUX_API_KEY || '',
 };
