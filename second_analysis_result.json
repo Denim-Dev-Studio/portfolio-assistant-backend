@@ -1,0 +1,1673 @@
+{
+  "success": true,
+  "data": {
+    "portfolioId": "a94aa95e-8f18-4289-a6e4-1a74868924f8",
+    "portfolioName": "Harsh Rupera Upstox Holding",
+    "generatedAt": "2026-04-19T19:47:39.409Z",
+    "summary": {
+      "totalHoldings": 50,
+      "fullyAnalyzed": 0,
+      "partiallyAnalyzed": 43,
+      "failed": 7
+    },
+    "items": [
+      {
+        "symbol": "ADANIPORTS.NS",
+        "action": "HOLD",
+        "score": 62,
+        "confidence": 23,
+        "reasoning": [
+          "Fundamental signal unavailable because twelvedata authentication failed: /statistics is available exclusively with pro or ultra or venture or enterprise plans. Consider upgrading your API Key now at https://twelvedata.com/pricing",
+          "Technical signal unavailable: No price history was available, so technical indicators were not computed.",
+          "Average news sentiment 4 is strongly positive across 3 articles."
+        ],
+        "signals": {
+          "fundamental": {
+            "provider": "twelvedata",
+            "status": "auth_error",
+            "message": "/statistics is available exclusively with pro or ultra or venture or enterprise plans. Consider upgrading your API Key now at https://twelvedata.com/pricing"
+          },
+          "priceHistory": {
+            "provider": "twelvedata",
+            "status": "unsupported_symbol",
+            "message": "**symbol** or **figi** parameter is missing or invalid. Please provide a valid symbol according to API documentation: https://twelvedata.com/docs#reference-data"
+          },
+          "technical": {
+            "provider": "derived",
+            "status": "no_data",
+            "message": "No price history was available, so technical indicators were not computed."
+          },
+          "news": {
+            "provider": "marketaux",
+            "status": "available",
+            "message": "Loaded 3 related news articles for ADANIPORTS.NS."
+          }
+        }
+      },
+      {
+        "symbol": "ADANIPOWER.NS",
+        "action": "HOLD",
+        "score": 62,
+        "confidence": 23,
+        "reasoning": [
+          "Fundamental signal unavailable because twelvedata authentication failed: /statistics is available exclusively with pro or ultra or venture or enterprise plans. Consider upgrading your API Key now at https://twelvedata.com/pricing",
+          "Technical signal unavailable: No price history was available, so technical indicators were not computed.",
+          "Average news sentiment 7 is strongly positive across 3 articles."
+        ],
+        "signals": {
+          "fundamental": {
+            "provider": "twelvedata",
+            "status": "auth_error",
+            "message": "/statistics is available exclusively with pro or ultra or venture or enterprise plans. Consider upgrading your API Key now at https://twelvedata.com/pricing"
+          },
+          "priceHistory": {
+            "provider": "twelvedata",
+            "status": "unsupported_symbol",
+            "message": "**symbol** or **figi** parameter is missing or invalid. Please provide a valid symbol according to API documentation: https://twelvedata.com/docs#reference-data"
+          },
+          "technical": {
+            "provider": "derived",
+            "status": "no_data",
+            "message": "No price history was available, so technical indicators were not computed."
+          },
+          "news": {
+            "provider": "marketaux",
+            "status": "available",
+            "message": "Loaded 3 related news articles for ADANIPOWER.NS."
+          }
+        }
+      },
+      {
+        "symbol": "ABCAPITAL.NS",
+        "action": "HOLD",
+        "score": 58,
+        "confidence": 22,
+        "reasoning": [
+          "Fundamental signal unavailable because twelvedata authentication failed: /statistics is available exclusively with pro or ultra or venture or enterprise plans. Consider upgrading your API Key now at https://twelvedata.com/pricing",
+          "Technical signal unavailable: No price history was available, so technical indicators were not computed.",
+          "Average news sentiment 2.33 is supportive across 3 articles."
+        ],
+        "signals": {
+          "fundamental": {
+            "provider": "twelvedata",
+            "status": "auth_error",
+            "message": "/statistics is available exclusively with pro or ultra or venture or enterprise plans. Consider upgrading your API Key now at https://twelvedata.com/pricing"
+          },
+          "priceHistory": {
+            "provider": "twelvedata",
+            "status": "unsupported_symbol",
+            "message": "**symbol** or **figi** parameter is missing or invalid. Please provide a valid symbol according to API documentation: https://twelvedata.com/docs#reference-data"
+          },
+          "technical": {
+            "provider": "derived",
+            "status": "no_data",
+            "message": "No price history was available, so technical indicators were not computed."
+          },
+          "news": {
+            "provider": "marketaux",
+            "status": "available",
+            "message": "Loaded 3 related news articles for ABCAPITAL.NS."
+          }
+        }
+      },
+      {
+        "symbol": "AEQUS.NS",
+        "action": "WATCH",
+        "score": 50,
+        "confidence": 10,
+        "reasoning": [
+          "Insufficient usable market data was available to build a reliable multi-factor view.",
+          "Fundamental signal unavailable because twelvedata authentication failed: /statistics is available exclusively with pro or ultra or venture or enterprise plans. Consider upgrading your API Key now at https://twelvedata.com/pricing",
+          "Technical signal unavailable: No price history was available, so technical indicators were not computed.",
+          "News signal unavailable: MarketAux returned no recent related news for AEQUS.NS."
+        ],
+        "signals": {
+          "fundamental": {
+            "provider": "twelvedata",
+            "status": "auth_error",
+            "message": "/statistics is available exclusively with pro or ultra or venture or enterprise plans. Consider upgrading your API Key now at https://twelvedata.com/pricing"
+          },
+          "priceHistory": {
+            "provider": "twelvedata",
+            "status": "provider_error",
+            "message": "You have run out of API credits for the current minute. 17 API credits were used, with the current limit being 8. Wait for the next minute or consider switching to a higher tier plan at https://twelvedata.com/pricing"
+          },
+          "technical": {
+            "provider": "derived",
+            "status": "no_data",
+            "message": "No price history was available, so technical indicators were not computed."
+          },
+          "news": {
+            "provider": "marketaux",
+            "status": "no_data",
+            "message": "MarketAux returned no recent related news for AEQUS.NS."
+          }
+        }
+      },
+      {
+        "symbol": "AGI.NS",
+        "action": "WATCH",
+        "score": 50,
+        "confidence": 10,
+        "reasoning": [
+          "Insufficient usable market data was available to build a reliable multi-factor view.",
+          "Fundamental signal unavailable because twelvedata authentication failed: /statistics is available exclusively with pro or ultra or venture or enterprise plans. Consider upgrading your API Key now at https://twelvedata.com/pricing",
+          "Technical signal unavailable: No price history was available, so technical indicators were not computed.",
+          "News signal unavailable: MarketAux returned no recent related news for AGI.NS."
+        ],
+        "signals": {
+          "fundamental": {
+            "provider": "twelvedata",
+            "status": "auth_error",
+            "message": "/statistics is available exclusively with pro or ultra or venture or enterprise plans. Consider upgrading your API Key now at https://twelvedata.com/pricing"
+          },
+          "priceHistory": {
+            "provider": "twelvedata",
+            "status": "unsupported_symbol",
+            "message": "**symbol** or **figi** parameter is missing or invalid. Please provide a valid symbol according to API documentation: https://twelvedata.com/docs#reference-data"
+          },
+          "technical": {
+            "provider": "derived",
+            "status": "no_data",
+            "message": "No price history was available, so technical indicators were not computed."
+          },
+          "news": {
+            "provider": "marketaux",
+            "status": "no_data",
+            "message": "MarketAux returned no recent related news for AGI.NS."
+          }
+        }
+      },
+      {
+        "symbol": "APOLLOTYRE.NS",
+        "action": "HOLD",
+        "score": 62,
+        "confidence": 23,
+        "reasoning": [
+          "Fundamental signal unavailable because twelvedata authentication failed: /statistics is available exclusively with pro or ultra or venture or enterprise plans. Consider upgrading your API Key now at https://twelvedata.com/pricing",
+          "Technical signal unavailable: No price history was available, so technical indicators were not computed.",
+          "Average news sentiment 4.33 is strongly positive across 3 articles."
+        ],
+        "signals": {
+          "fundamental": {
+            "provider": "twelvedata",
+            "status": "auth_error",
+            "message": "/statistics is available exclusively with pro or ultra or venture or enterprise plans. Consider upgrading your API Key now at https://twelvedata.com/pricing"
+          },
+          "priceHistory": {
+            "provider": "twelvedata",
+            "status": "unsupported_symbol",
+            "message": "**symbol** or **figi** parameter is missing or invalid. Please provide a valid symbol according to API documentation: https://twelvedata.com/docs#reference-data"
+          },
+          "technical": {
+            "provider": "derived",
+            "status": "no_data",
+            "message": "No price history was available, so technical indicators were not computed."
+          },
+          "news": {
+            "provider": "marketaux",
+            "status": "available",
+            "message": "Loaded 3 related news articles for APOLLOTYRE.NS."
+          }
+        }
+      },
+      {
+        "symbol": "ASHOKLEY.NS",
+        "action": "HOLD",
+        "score": 62,
+        "confidence": 23,
+        "reasoning": [
+          "Fundamental signal unavailable because twelvedata authentication failed: /statistics is available exclusively with pro or ultra or venture or enterprise plans. Consider upgrading your API Key now at https://twelvedata.com/pricing",
+          "Technical signal unavailable: No price history was available, so technical indicators were not computed.",
+          "Average news sentiment 8 is strongly positive across 3 articles."
+        ],
+        "signals": {
+          "fundamental": {
+            "provider": "twelvedata",
+            "status": "auth_error",
+            "message": "/statistics is available exclusively with pro or ultra or venture or enterprise plans. Consider upgrading your API Key now at https://twelvedata.com/pricing"
+          },
+          "priceHistory": {
+            "provider": "twelvedata",
+            "status": "unsupported_symbol",
+            "message": "**symbol** or **figi** parameter is missing or invalid. Please provide a valid symbol according to API documentation: https://twelvedata.com/docs#reference-data"
+          },
+          "technical": {
+            "provider": "derived",
+            "status": "no_data",
+            "message": "No price history was available, so technical indicators were not computed."
+          },
+          "news": {
+            "provider": "marketaux",
+            "status": "available",
+            "message": "Loaded 3 related news articles for ASHOKLEY.NS."
+          }
+        }
+      },
+      {
+        "symbol": "ASTRAL.NS",
+        "action": "HOLD",
+        "score": 62,
+        "confidence": 23,
+        "reasoning": [
+          "Fundamental signal unavailable because twelvedata authentication failed: /statistics is available exclusively with pro or ultra or venture or enterprise plans. Consider upgrading your API Key now at https://twelvedata.com/pricing",
+          "Technical signal unavailable: No price history was available, so technical indicators were not computed.",
+          "Average news sentiment 8 is strongly positive across 3 articles."
+        ],
+        "signals": {
+          "fundamental": {
+            "provider": "twelvedata",
+            "status": "auth_error",
+            "message": "/statistics is available exclusively with pro or ultra or venture or enterprise plans. Consider upgrading your API Key now at https://twelvedata.com/pricing"
+          },
+          "priceHistory": {
+            "provider": "twelvedata",
+            "status": "provider_error",
+            "message": "You have run out of API credits for the current minute. 23 API credits were used, with the current limit being 8. Wait for the next minute or consider switching to a higher tier plan at https://twelvedata.com/pricing"
+          },
+          "technical": {
+            "provider": "derived",
+            "status": "no_data",
+            "message": "No price history was available, so technical indicators were not computed."
+          },
+          "news": {
+            "provider": "marketaux",
+            "status": "available",
+            "message": "Loaded 3 related news articles for ASTRAL.NS."
+          }
+        }
+      },
+      {
+        "symbol": "BANKINDIA.NS",
+        "action": "HOLD",
+        "score": 62,
+        "confidence": 23,
+        "reasoning": [
+          "Fundamental signal unavailable because twelvedata authentication failed: /statistics is available exclusively with pro or ultra or venture or enterprise plans. Consider upgrading your API Key now at https://twelvedata.com/pricing",
+          "Technical signal unavailable: No price history was available, so technical indicators were not computed.",
+          "Average news sentiment 6.33 is strongly positive across 3 articles."
+        ],
+        "signals": {
+          "fundamental": {
+            "provider": "twelvedata",
+            "status": "auth_error",
+            "message": "/statistics is available exclusively with pro or ultra or venture or enterprise plans. Consider upgrading your API Key now at https://twelvedata.com/pricing"
+          },
+          "priceHistory": {
+            "provider": "twelvedata",
+            "status": "unsupported_symbol",
+            "message": "**symbol** or **figi** parameter is missing or invalid. Please provide a valid symbol according to API documentation: https://twelvedata.com/docs#reference-data"
+          },
+          "technical": {
+            "provider": "derived",
+            "status": "no_data",
+            "message": "No price history was available, so technical indicators were not computed."
+          },
+          "news": {
+            "provider": "marketaux",
+            "status": "available",
+            "message": "Loaded 3 related news articles for BANKINDIA.NS."
+          }
+        }
+      },
+      {
+        "symbol": "MAHABANK.NS",
+        "action": "HOLD",
+        "score": 58,
+        "confidence": 22,
+        "reasoning": [
+          "Fundamental signal unavailable because twelvedata authentication failed: /statistics is available exclusively with pro or ultra or venture or enterprise plans. Consider upgrading your API Key now at https://twelvedata.com/pricing",
+          "Technical signal unavailable: No price history was available, so technical indicators were not computed.",
+          "Average news sentiment 1.67 is supportive across 3 articles."
+        ],
+        "signals": {
+          "fundamental": {
+            "provider": "twelvedata",
+            "status": "auth_error",
+            "message": "/statistics is available exclusively with pro or ultra or venture or enterprise plans. Consider upgrading your API Key now at https://twelvedata.com/pricing"
+          },
+          "priceHistory": {
+            "provider": "twelvedata",
+            "status": "unsupported_symbol",
+            "message": "**symbol** or **figi** parameter is missing or invalid. Please provide a valid symbol according to API documentation: https://twelvedata.com/docs#reference-data"
+          },
+          "technical": {
+            "provider": "derived",
+            "status": "no_data",
+            "message": "No price history was available, so technical indicators were not computed."
+          },
+          "news": {
+            "provider": "marketaux",
+            "status": "available",
+            "message": "Loaded 3 related news articles for MAHABANK.NS."
+          }
+        }
+      },
+      {
+        "symbol": "BEL.NS",
+        "action": "HOLD",
+        "score": 62,
+        "confidence": 23,
+        "reasoning": [
+          "Fundamental signal unavailable because twelvedata authentication failed: /statistics is available exclusively with pro or ultra or venture or enterprise plans. Consider upgrading your API Key now at https://twelvedata.com/pricing",
+          "Technical signal unavailable: No price history was available, so technical indicators were not computed.",
+          "Average news sentiment 6.33 is strongly positive across 3 articles."
+        ],
+        "signals": {
+          "fundamental": {
+            "provider": "twelvedata",
+            "status": "auth_error",
+            "message": "/statistics is available exclusively with pro or ultra or venture or enterprise plans. Consider upgrading your API Key now at https://twelvedata.com/pricing"
+          },
+          "priceHistory": {
+            "provider": "twelvedata",
+            "status": "provider_error",
+            "message": "You have run out of API credits for the current minute. 10 API credits were used, with the current limit being 8. Wait for the next minute or consider switching to a higher tier plan at https://twelvedata.com/pricing"
+          },
+          "technical": {
+            "provider": "derived",
+            "status": "no_data",
+            "message": "No price history was available, so technical indicators were not computed."
+          },
+          "news": {
+            "provider": "marketaux",
+            "status": "available",
+            "message": "Loaded 3 related news articles for BEL.NS."
+          }
+        }
+      },
+      {
+        "symbol": "BPCL.NS",
+        "action": "WATCH",
+        "score": 52,
+        "confidence": 19,
+        "reasoning": [
+          "Fundamental signal unavailable because twelvedata authentication failed: /statistics is available exclusively with pro or ultra or venture or enterprise plans. Consider upgrading your API Key now at https://twelvedata.com/pricing",
+          "Technical signal unavailable: No price history was available, so technical indicators were not computed.",
+          "Average news sentiment 0 is broadly neutral."
+        ],
+        "signals": {
+          "fundamental": {
+            "provider": "twelvedata",
+            "status": "auth_error",
+            "message": "/statistics is available exclusively with pro or ultra or venture or enterprise plans. Consider upgrading your API Key now at https://twelvedata.com/pricing"
+          },
+          "priceHistory": {
+            "provider": "twelvedata",
+            "status": "provider_error",
+            "message": "You have run out of API credits for the current minute. 9 API credits were used, with the current limit being 8. Wait for the next minute or consider switching to a higher tier plan at https://twelvedata.com/pricing"
+          },
+          "technical": {
+            "provider": "derived",
+            "status": "no_data",
+            "message": "No price history was available, so technical indicators were not computed."
+          },
+          "news": {
+            "provider": "marketaux",
+            "status": "available",
+            "message": "Loaded 3 related news articles for BPCL.NS."
+          }
+        }
+      },
+      {
+        "symbol": "CANBK.NS",
+        "action": "HOLD",
+        "score": 58,
+        "confidence": 22,
+        "reasoning": [
+          "Fundamental signal unavailable because twelvedata authentication failed: /statistics is available exclusively with pro or ultra or venture or enterprise plans. Consider upgrading your API Key now at https://twelvedata.com/pricing",
+          "Technical signal unavailable: No price history was available, so technical indicators were not computed.",
+          "Average news sentiment 1.67 is supportive across 3 articles."
+        ],
+        "signals": {
+          "fundamental": {
+            "provider": "twelvedata",
+            "status": "auth_error",
+            "message": "/statistics is available exclusively with pro or ultra or venture or enterprise plans. Consider upgrading your API Key now at https://twelvedata.com/pricing"
+          },
+          "priceHistory": {
+            "provider": "twelvedata",
+            "status": "provider_error",
+            "message": "You have run out of API credits for the current minute. 12 API credits were used, with the current limit being 8. Wait for the next minute or consider switching to a higher tier plan at https://twelvedata.com/pricing"
+          },
+          "technical": {
+            "provider": "derived",
+            "status": "no_data",
+            "message": "No price history was available, so technical indicators were not computed."
+          },
+          "news": {
+            "provider": "marketaux",
+            "status": "available",
+            "message": "Loaded 3 related news articles for CANBK.NS."
+          }
+        }
+      },
+      {
+        "symbol": "CARRARO.NS",
+        "action": "WATCH",
+        "score": 50,
+        "confidence": 10,
+        "reasoning": [
+          "Insufficient usable market data was available to build a reliable multi-factor view.",
+          "Fundamental signal unavailable because twelvedata authentication failed: /statistics is available exclusively with pro or ultra or venture or enterprise plans. Consider upgrading your API Key now at https://twelvedata.com/pricing",
+          "Technical signal unavailable: No price history was available, so technical indicators were not computed.",
+          "News signal unavailable: MarketAux returned no recent related news for CARRARO.NS."
+        ],
+        "signals": {
+          "fundamental": {
+            "provider": "twelvedata",
+            "status": "auth_error",
+            "message": "/statistics is available exclusively with pro or ultra or venture or enterprise plans. Consider upgrading your API Key now at https://twelvedata.com/pricing"
+          },
+          "priceHistory": {
+            "provider": "twelvedata",
+            "status": "provider_error",
+            "message": "You have run out of API credits for the current minute. 11 API credits were used, with the current limit being 8. Wait for the next minute or consider switching to a higher tier plan at https://twelvedata.com/pricing"
+          },
+          "technical": {
+            "provider": "derived",
+            "status": "no_data",
+            "message": "No price history was available, so technical indicators were not computed."
+          },
+          "news": {
+            "provider": "marketaux",
+            "status": "no_data",
+            "message": "MarketAux returned no recent related news for CARRARO.NS."
+          }
+        }
+      },
+      {
+        "symbol": "COALINDIA.NS",
+        "action": "HOLD",
+        "score": 58,
+        "confidence": 22,
+        "reasoning": [
+          "Fundamental signal unavailable because twelvedata authentication failed: /statistics is available exclusively with pro or ultra or venture or enterprise plans. Consider upgrading your API Key now at https://twelvedata.com/pricing",
+          "Technical signal unavailable: No price history was available, so technical indicators were not computed.",
+          "Average news sentiment 1.67 is supportive across 3 articles."
+        ],
+        "signals": {
+          "fundamental": {
+            "provider": "twelvedata",
+            "status": "auth_error",
+            "message": "/statistics is available exclusively with pro or ultra or venture or enterprise plans. Consider upgrading your API Key now at https://twelvedata.com/pricing"
+          },
+          "priceHistory": {
+            "provider": "twelvedata",
+            "status": "provider_error",
+            "message": "You have run out of API credits for the current minute. 13 API credits were used, with the current limit being 8. Wait for the next minute or consider switching to a higher tier plan at https://twelvedata.com/pricing"
+          },
+          "technical": {
+            "provider": "derived",
+            "status": "no_data",
+            "message": "No price history was available, so technical indicators were not computed."
+          },
+          "news": {
+            "provider": "marketaux",
+            "status": "available",
+            "message": "Loaded 3 related news articles for COALINDIA.NS."
+          }
+        }
+      },
+      {
+        "symbol": "CYIENT.NS",
+        "action": "HOLD",
+        "score": 62,
+        "confidence": 23,
+        "reasoning": [
+          "Fundamental signal unavailable because twelvedata authentication failed: /statistics is available exclusively with pro or ultra or venture or enterprise plans. Consider upgrading your API Key now at https://twelvedata.com/pricing",
+          "Technical signal unavailable: No price history was available, so technical indicators were not computed.",
+          "Average news sentiment 6.33 is strongly positive across 3 articles."
+        ],
+        "signals": {
+          "fundamental": {
+            "provider": "twelvedata",
+            "status": "auth_error",
+            "message": "/statistics is available exclusively with pro or ultra or venture or enterprise plans. Consider upgrading your API Key now at https://twelvedata.com/pricing"
+          },
+          "priceHistory": {
+            "provider": "twelvedata",
+            "status": "provider_error",
+            "message": "You have run out of API credits for the current minute. 15 API credits were used, with the current limit being 8. Wait for the next minute or consider switching to a higher tier plan at https://twelvedata.com/pricing"
+          },
+          "technical": {
+            "provider": "derived",
+            "status": "no_data",
+            "message": "No price history was available, so technical indicators were not computed."
+          },
+          "news": {
+            "provider": "marketaux",
+            "status": "available",
+            "message": "Loaded 3 related news articles for CYIENT.NS."
+          }
+        }
+      },
+      {
+        "symbol": "DCXINDIA.NS",
+        "action": "WATCH",
+        "score": 50,
+        "confidence": 10,
+        "reasoning": [
+          "Insufficient usable market data was available to build a reliable multi-factor view.",
+          "Fundamental signal unavailable because twelvedata authentication failed: /statistics is available exclusively with pro or ultra or venture or enterprise plans. Consider upgrading your API Key now at https://twelvedata.com/pricing",
+          "Technical signal unavailable: No price history was available, so technical indicators were not computed.",
+          "News signal unavailable: MarketAux returned no recent related news for DCXINDIA.NS."
+        ],
+        "signals": {
+          "fundamental": {
+            "provider": "twelvedata",
+            "status": "auth_error",
+            "message": "/statistics is available exclusively with pro or ultra or venture or enterprise plans. Consider upgrading your API Key now at https://twelvedata.com/pricing"
+          },
+          "priceHistory": {
+            "provider": "twelvedata",
+            "status": "provider_error",
+            "message": "You have run out of API credits for the current minute. 16 API credits were used, with the current limit being 8. Wait for the next minute or consider switching to a higher tier plan at https://twelvedata.com/pricing"
+          },
+          "technical": {
+            "provider": "derived",
+            "status": "no_data",
+            "message": "No price history was available, so technical indicators were not computed."
+          },
+          "news": {
+            "provider": "marketaux",
+            "status": "no_data",
+            "message": "MarketAux returned no recent related news for DCXINDIA.NS."
+          }
+        }
+      },
+      {
+        "symbol": "FINPIPE.NS",
+        "action": "HOLD",
+        "score": 62,
+        "confidence": 23,
+        "reasoning": [
+          "Fundamental signal unavailable because twelvedata authentication failed: /statistics is available exclusively with pro or ultra or venture or enterprise plans. Consider upgrading your API Key now at https://twelvedata.com/pricing",
+          "Technical signal unavailable: No price history was available, so technical indicators were not computed.",
+          "Average news sentiment 5.33 is strongly positive across 3 articles."
+        ],
+        "signals": {
+          "fundamental": {
+            "provider": "twelvedata",
+            "status": "auth_error",
+            "message": "/statistics is available exclusively with pro or ultra or venture or enterprise plans. Consider upgrading your API Key now at https://twelvedata.com/pricing"
+          },
+          "priceHistory": {
+            "provider": "twelvedata",
+            "status": "provider_error",
+            "message": "You have run out of API credits for the current minute. 14 API credits were used, with the current limit being 8. Wait for the next minute or consider switching to a higher tier plan at https://twelvedata.com/pricing"
+          },
+          "technical": {
+            "provider": "derived",
+            "status": "no_data",
+            "message": "No price history was available, so technical indicators were not computed."
+          },
+          "news": {
+            "provider": "marketaux",
+            "status": "available",
+            "message": "Loaded 3 related news articles for FINPIPE.NS."
+          }
+        }
+      },
+      {
+        "symbol": "GENUSPOWER.NS",
+        "action": "HOLD",
+        "score": 62,
+        "confidence": 23,
+        "reasoning": [
+          "Fundamental signal unavailable because twelvedata authentication failed: /statistics is available exclusively with pro or ultra or venture or enterprise plans. Consider upgrading your API Key now at https://twelvedata.com/pricing",
+          "Technical signal unavailable: No price history was available, so technical indicators were not computed.",
+          "Average news sentiment 4.67 is strongly positive across 3 articles."
+        ],
+        "signals": {
+          "fundamental": {
+            "provider": "twelvedata",
+            "status": "auth_error",
+            "message": "/statistics is available exclusively with pro or ultra or venture or enterprise plans. Consider upgrading your API Key now at https://twelvedata.com/pricing"
+          },
+          "priceHistory": {
+            "provider": "twelvedata",
+            "status": "provider_error",
+            "message": "You have run out of API credits for the current minute. 40 API credits were used, with the current limit being 8. Wait for the next minute or consider switching to a higher tier plan at https://twelvedata.com/pricing"
+          },
+          "technical": {
+            "provider": "derived",
+            "status": "no_data",
+            "message": "No price history was available, so technical indicators were not computed."
+          },
+          "news": {
+            "provider": "marketaux",
+            "status": "available",
+            "message": "Loaded 3 related news articles for GENUSPOWER.NS."
+          }
+        }
+      },
+      {
+        "symbol": "GNFC.NS",
+        "action": "WATCH",
+        "score": 44,
+        "confidence": 21,
+        "reasoning": [
+          "Fundamental signal unavailable because twelvedata authentication failed: /statistics is available exclusively with pro or ultra or venture or enterprise plans. Consider upgrading your API Key now at https://twelvedata.com/pricing",
+          "Technical signal unavailable: No price history was available, so technical indicators were not computed.",
+          "Average news sentiment -3.33 is turning cautious."
+        ],
+        "signals": {
+          "fundamental": {
+            "provider": "twelvedata",
+            "status": "auth_error",
+            "message": "/statistics is available exclusively with pro or ultra or venture or enterprise plans. Consider upgrading your API Key now at https://twelvedata.com/pricing"
+          },
+          "priceHistory": {
+            "provider": "twelvedata",
+            "status": "provider_error",
+            "message": "You have run out of API credits for the current minute. 19 API credits were used, with the current limit being 8. Wait for the next minute or consider switching to a higher tier plan at https://twelvedata.com/pricing"
+          },
+          "technical": {
+            "provider": "derived",
+            "status": "no_data",
+            "message": "No price history was available, so technical indicators were not computed."
+          },
+          "news": {
+            "provider": "marketaux",
+            "status": "available",
+            "message": "Loaded 3 related news articles for GNFC.NS."
+          }
+        }
+      },
+      {
+        "symbol": "HDFCBANK.NS",
+        "action": "HOLD",
+        "score": 58,
+        "confidence": 22,
+        "reasoning": [
+          "Fundamental signal unavailable because twelvedata authentication failed: /statistics is available exclusively with pro or ultra or venture or enterprise plans. Consider upgrading your API Key now at https://twelvedata.com/pricing",
+          "Technical signal unavailable: No price history was available, so technical indicators were not computed.",
+          "Average news sentiment 2.33 is supportive across 3 articles."
+        ],
+        "signals": {
+          "fundamental": {
+            "provider": "twelvedata",
+            "status": "auth_error",
+            "message": "/statistics is available exclusively with pro or ultra or venture or enterprise plans. Consider upgrading your API Key now at https://twelvedata.com/pricing"
+          },
+          "priceHistory": {
+            "provider": "twelvedata",
+            "status": "provider_error",
+            "message": "You have run out of API credits for the current minute. 18 API credits were used, with the current limit being 8. Wait for the next minute or consider switching to a higher tier plan at https://twelvedata.com/pricing"
+          },
+          "technical": {
+            "provider": "derived",
+            "status": "no_data",
+            "message": "No price history was available, so technical indicators were not computed."
+          },
+          "news": {
+            "provider": "marketaux",
+            "status": "available",
+            "message": "Loaded 3 related news articles for HDFCBANK.NS."
+          }
+        }
+      },
+      {
+        "symbol": "HINDZINC.NS",
+        "action": "WATCH",
+        "score": 52,
+        "confidence": 19,
+        "reasoning": [
+          "Fundamental signal unavailable because twelvedata authentication failed: /statistics is available exclusively with pro or ultra or venture or enterprise plans. Consider upgrading your API Key now at https://twelvedata.com/pricing",
+          "Technical signal unavailable: No price history was available, so technical indicators were not computed.",
+          "Average news sentiment 1.33 is broadly neutral."
+        ],
+        "signals": {
+          "fundamental": {
+            "provider": "twelvedata",
+            "status": "auth_error",
+            "message": "/statistics is available exclusively with pro or ultra or venture or enterprise plans. Consider upgrading your API Key now at https://twelvedata.com/pricing"
+          },
+          "priceHistory": {
+            "provider": "twelvedata",
+            "status": "provider_error",
+            "message": "You have run out of API credits for the current minute. 21 API credits were used, with the current limit being 8. Wait for the next minute or consider switching to a higher tier plan at https://twelvedata.com/pricing"
+          },
+          "technical": {
+            "provider": "derived",
+            "status": "no_data",
+            "message": "No price history was available, so technical indicators were not computed."
+          },
+          "news": {
+            "provider": "marketaux",
+            "status": "available",
+            "message": "Loaded 3 related news articles for HINDZINC.NS."
+          }
+        }
+      },
+      {
+        "symbol": "IDFCFIRSTB.NS",
+        "action": "WATCH",
+        "score": 44,
+        "confidence": 21,
+        "reasoning": [
+          "Fundamental signal unavailable because twelvedata authentication failed: /statistics is available exclusively with pro or ultra or venture or enterprise plans. Consider upgrading your API Key now at https://twelvedata.com/pricing",
+          "Technical signal unavailable: No price history was available, so technical indicators were not computed.",
+          "Average news sentiment -3.33 is turning cautious."
+        ],
+        "signals": {
+          "fundamental": {
+            "provider": "twelvedata",
+            "status": "auth_error",
+            "message": "/statistics is available exclusively with pro or ultra or venture or enterprise plans. Consider upgrading your API Key now at https://twelvedata.com/pricing"
+          },
+          "priceHistory": {
+            "provider": "twelvedata",
+            "status": "provider_error",
+            "message": "You have run out of API credits for the current minute. 22 API credits were used, with the current limit being 8. Wait for the next minute or consider switching to a higher tier plan at https://twelvedata.com/pricing"
+          },
+          "technical": {
+            "provider": "derived",
+            "status": "no_data",
+            "message": "No price history was available, so technical indicators were not computed."
+          },
+          "news": {
+            "provider": "marketaux",
+            "status": "available",
+            "message": "Loaded 3 related news articles for IDFCFIRSTB.NS."
+          }
+        }
+      },
+      {
+        "symbol": "IOC.NS",
+        "action": "WATCH",
+        "score": 52,
+        "confidence": 19,
+        "reasoning": [
+          "Fundamental signal unavailable because twelvedata authentication failed: /statistics is available exclusively with pro or ultra or venture or enterprise plans. Consider upgrading your API Key now at https://twelvedata.com/pricing",
+          "Technical signal unavailable: No price history was available, so technical indicators were not computed.",
+          "Average news sentiment 0 is broadly neutral."
+        ],
+        "signals": {
+          "fundamental": {
+            "provider": "twelvedata",
+            "status": "auth_error",
+            "message": "/statistics is available exclusively with pro or ultra or venture or enterprise plans. Consider upgrading your API Key now at https://twelvedata.com/pricing"
+          },
+          "priceHistory": {
+            "provider": "twelvedata",
+            "status": "provider_error",
+            "message": "You have run out of API credits for the current minute. 20 API credits were used, with the current limit being 8. Wait for the next minute or consider switching to a higher tier plan at https://twelvedata.com/pricing"
+          },
+          "technical": {
+            "provider": "derived",
+            "status": "no_data",
+            "message": "No price history was available, so technical indicators were not computed."
+          },
+          "news": {
+            "provider": "marketaux",
+            "status": "available",
+            "message": "Loaded 3 related news articles for IOC.NS."
+          }
+        }
+      },
+      {
+        "symbol": "IOB.NS",
+        "action": "HOLD",
+        "score": 58,
+        "confidence": 22,
+        "reasoning": [
+          "Fundamental signal unavailable because twelvedata authentication failed: /statistics is available exclusively with pro or ultra or venture or enterprise plans. Consider upgrading your API Key now at https://twelvedata.com/pricing",
+          "Technical signal unavailable: No price history was available, so technical indicators were not computed.",
+          "Average news sentiment 1.67 is supportive across 3 articles."
+        ],
+        "signals": {
+          "fundamental": {
+            "provider": "twelvedata",
+            "status": "auth_error",
+            "message": "/statistics is available exclusively with pro or ultra or venture or enterprise plans. Consider upgrading your API Key now at https://twelvedata.com/pricing"
+          },
+          "priceHistory": {
+            "provider": "twelvedata",
+            "status": "provider_error",
+            "message": "You have run out of API credits for the current minute. 42 API credits were used, with the current limit being 8. Wait for the next minute or consider switching to a higher tier plan at https://twelvedata.com/pricing"
+          },
+          "technical": {
+            "provider": "derived",
+            "status": "no_data",
+            "message": "No price history was available, so technical indicators were not computed."
+          },
+          "news": {
+            "provider": "marketaux",
+            "status": "available",
+            "message": "Loaded 3 related news articles for IOB.NS."
+          }
+        }
+      },
+      {
+        "symbol": "IRFC.NS",
+        "action": "HOLD",
+        "score": 58,
+        "confidence": 22,
+        "reasoning": [
+          "Fundamental signal unavailable because twelvedata authentication failed: /statistics is available exclusively with pro or ultra or venture or enterprise plans. Consider upgrading your API Key now at https://twelvedata.com/pricing",
+          "Technical signal unavailable: No price history was available, so technical indicators were not computed.",
+          "Average news sentiment 2 is supportive across 3 articles."
+        ],
+        "signals": {
+          "fundamental": {
+            "provider": "twelvedata",
+            "status": "auth_error",
+            "message": "/statistics is available exclusively with pro or ultra or venture or enterprise plans. Consider upgrading your API Key now at https://twelvedata.com/pricing"
+          },
+          "priceHistory": {
+            "provider": "twelvedata",
+            "status": "provider_error",
+            "message": "You have run out of API credits for the current minute. 45 API credits were used, with the current limit being 8. Wait for the next minute or consider switching to a higher tier plan at https://twelvedata.com/pricing"
+          },
+          "technical": {
+            "provider": "derived",
+            "status": "no_data",
+            "message": "No price history was available, so technical indicators were not computed."
+          },
+          "news": {
+            "provider": "marketaux",
+            "status": "available",
+            "message": "Loaded 3 related news articles for IRFC.NS."
+          }
+        }
+      },
+      {
+        "symbol": "IREDA.NS",
+        "action": "WATCH",
+        "score": 50,
+        "confidence": 10,
+        "reasoning": [
+          "Insufficient usable market data was available to build a reliable multi-factor view.",
+          "Fundamental signal unavailable because twelvedata authentication failed: /statistics is available exclusively with pro or ultra or venture or enterprise plans. Consider upgrading your API Key now at https://twelvedata.com/pricing",
+          "Technical signal unavailable: No price history was available, so technical indicators were not computed.",
+          "News signal unavailable: MarketAux returned no recent related news for IREDA.NS."
+        ],
+        "signals": {
+          "fundamental": {
+            "provider": "twelvedata",
+            "status": "auth_error",
+            "message": "/statistics is available exclusively with pro or ultra or venture or enterprise plans. Consider upgrading your API Key now at https://twelvedata.com/pricing"
+          },
+          "priceHistory": {
+            "provider": "twelvedata",
+            "status": "provider_error",
+            "message": "You have run out of API credits for the current minute. 48 API credits were used, with the current limit being 8. Wait for the next minute or consider switching to a higher tier plan at https://twelvedata.com/pricing"
+          },
+          "technical": {
+            "provider": "derived",
+            "status": "no_data",
+            "message": "No price history was available, so technical indicators were not computed."
+          },
+          "news": {
+            "provider": "marketaux",
+            "status": "no_data",
+            "message": "MarketAux returned no recent related news for IREDA.NS."
+          }
+        }
+      },
+      {
+        "symbol": "ITC.NS",
+        "action": "HOLD",
+        "score": 62,
+        "confidence": 23,
+        "reasoning": [
+          "Fundamental signal unavailable because twelvedata authentication failed: /statistics is available exclusively with pro or ultra or venture or enterprise plans. Consider upgrading your API Key now at https://twelvedata.com/pricing",
+          "Technical signal unavailable: No price history was available, so technical indicators were not computed.",
+          "Average news sentiment 4.67 is strongly positive across 3 articles."
+        ],
+        "signals": {
+          "fundamental": {
+            "provider": "twelvedata",
+            "status": "auth_error",
+            "message": "/statistics is available exclusively with pro or ultra or venture or enterprise plans. Consider upgrading your API Key now at https://twelvedata.com/pricing"
+          },
+          "priceHistory": {
+            "provider": "twelvedata",
+            "status": "provider_error",
+            "message": "You have run out of API credits for the current minute. 43 API credits were used, with the current limit being 8. Wait for the next minute or consider switching to a higher tier plan at https://twelvedata.com/pricing"
+          },
+          "technical": {
+            "provider": "derived",
+            "status": "no_data",
+            "message": "No price history was available, so technical indicators were not computed."
+          },
+          "news": {
+            "provider": "marketaux",
+            "status": "available",
+            "message": "Loaded 3 related news articles for ITC.NS."
+          }
+        }
+      },
+      {
+        "symbol": "MAXHEALTH.NS",
+        "action": "HOLD",
+        "score": 58,
+        "confidence": 22,
+        "reasoning": [
+          "Fundamental signal unavailable because twelvedata authentication failed: /statistics is available exclusively with pro or ultra or venture or enterprise plans. Consider upgrading your API Key now at https://twelvedata.com/pricing",
+          "Technical signal unavailable: No price history was available, so technical indicators were not computed.",
+          "Average news sentiment 2.33 is supportive across 3 articles."
+        ],
+        "signals": {
+          "fundamental": {
+            "provider": "twelvedata",
+            "status": "auth_error",
+            "message": "/statistics is available exclusively with pro or ultra or venture or enterprise plans. Consider upgrading your API Key now at https://twelvedata.com/pricing"
+          },
+          "priceHistory": {
+            "provider": "twelvedata",
+            "status": "provider_error",
+            "message": "You have run out of API credits for the current minute. 25 API credits were used, with the current limit being 8. Wait for the next minute or consider switching to a higher tier plan at https://twelvedata.com/pricing"
+          },
+          "technical": {
+            "provider": "derived",
+            "status": "no_data",
+            "message": "No price history was available, so technical indicators were not computed."
+          },
+          "news": {
+            "provider": "marketaux",
+            "status": "available",
+            "message": "Loaded 3 related news articles for MAXHEALTH.NS."
+          }
+        }
+      },
+      {
+        "symbol": "MAZDOCK.NS",
+        "action": "HOLD",
+        "score": 62,
+        "confidence": 23,
+        "reasoning": [
+          "Fundamental signal unavailable because twelvedata authentication failed: /statistics is available exclusively with pro or ultra or venture or enterprise plans. Consider upgrading your API Key now at https://twelvedata.com/pricing",
+          "Technical signal unavailable: No price history was available, so technical indicators were not computed.",
+          "Average news sentiment 5.67 is strongly positive across 3 articles."
+        ],
+        "signals": {
+          "fundamental": {
+            "provider": "twelvedata",
+            "status": "auth_error",
+            "message": "/statistics is available exclusively with pro or ultra or venture or enterprise plans. Consider upgrading your API Key now at https://twelvedata.com/pricing"
+          },
+          "priceHistory": {
+            "provider": "twelvedata",
+            "status": "provider_error",
+            "message": "You have run out of API credits for the current minute. 24 API credits were used, with the current limit being 8. Wait for the next minute or consider switching to a higher tier plan at https://twelvedata.com/pricing"
+          },
+          "technical": {
+            "provider": "derived",
+            "status": "no_data",
+            "message": "No price history was available, so technical indicators were not computed."
+          },
+          "news": {
+            "provider": "marketaux",
+            "status": "available",
+            "message": "Loaded 3 related news articles for MAZDOCK.NS."
+          }
+        }
+      },
+      {
+        "symbol": "MINDTECK.NS",
+        "action": "WATCH",
+        "score": 52,
+        "confidence": 19,
+        "reasoning": [
+          "Fundamental signal unavailable because twelvedata authentication failed: /statistics is available exclusively with pro or ultra or venture or enterprise plans. Consider upgrading your API Key now at https://twelvedata.com/pricing",
+          "Technical signal unavailable: No price history was available, so technical indicators were not computed.",
+          "Average news sentiment 1.33 is broadly neutral."
+        ],
+        "signals": {
+          "fundamental": {
+            "provider": "twelvedata",
+            "status": "auth_error",
+            "message": "/statistics is available exclusively with pro or ultra or venture or enterprise plans. Consider upgrading your API Key now at https://twelvedata.com/pricing"
+          },
+          "priceHistory": {
+            "provider": "twelvedata",
+            "status": "provider_error",
+            "message": "You have run out of API credits for the current minute. 46 API credits were used, with the current limit being 8. Wait for the next minute or consider switching to a higher tier plan at https://twelvedata.com/pricing"
+          },
+          "technical": {
+            "provider": "derived",
+            "status": "no_data",
+            "message": "No price history was available, so technical indicators were not computed."
+          },
+          "news": {
+            "provider": "marketaux",
+            "status": "available",
+            "message": "Loaded 3 related news articles for MINDTECK.NS."
+          }
+        }
+      },
+      {
+        "symbol": "MMTC.NS",
+        "action": "HOLD",
+        "score": 62,
+        "confidence": 23,
+        "reasoning": [
+          "Fundamental signal unavailable because twelvedata authentication failed: /statistics is available exclusively with pro or ultra or venture or enterprise plans. Consider upgrading your API Key now at https://twelvedata.com/pricing",
+          "Technical signal unavailable: No price history was available, so technical indicators were not computed.",
+          "Average news sentiment 8.33 is strongly positive across 3 articles."
+        ],
+        "signals": {
+          "fundamental": {
+            "provider": "twelvedata",
+            "status": "auth_error",
+            "message": "/statistics is available exclusively with pro or ultra or venture or enterprise plans. Consider upgrading your API Key now at https://twelvedata.com/pricing"
+          },
+          "priceHistory": {
+            "provider": "twelvedata",
+            "status": "provider_error",
+            "message": "You have run out of API credits for the current minute. 41 API credits were used, with the current limit being 8. Wait for the next minute or consider switching to a higher tier plan at https://twelvedata.com/pricing"
+          },
+          "technical": {
+            "provider": "derived",
+            "status": "no_data",
+            "message": "No price history was available, so technical indicators were not computed."
+          },
+          "news": {
+            "provider": "marketaux",
+            "status": "available",
+            "message": "Loaded 3 related news articles for MMTC.NS."
+          }
+        }
+      },
+      {
+        "symbol": "NATIONALUM.NS",
+        "action": "HOLD",
+        "score": 62,
+        "confidence": 23,
+        "reasoning": [
+          "Fundamental signal unavailable because twelvedata authentication failed: /statistics is available exclusively with pro or ultra or venture or enterprise plans. Consider upgrading your API Key now at https://twelvedata.com/pricing",
+          "Technical signal unavailable: No price history was available, so technical indicators were not computed.",
+          "Average news sentiment 9.67 is strongly positive across 3 articles."
+        ],
+        "signals": {
+          "fundamental": {
+            "provider": "twelvedata",
+            "status": "auth_error",
+            "message": "/statistics is available exclusively with pro or ultra or venture or enterprise plans. Consider upgrading your API Key now at https://twelvedata.com/pricing"
+          },
+          "priceHistory": {
+            "provider": "twelvedata",
+            "status": "provider_error",
+            "message": "You have run out of API credits for the current minute. 44 API credits were used, with the current limit being 8. Wait for the next minute or consider switching to a higher tier plan at https://twelvedata.com/pricing"
+          },
+          "technical": {
+            "provider": "derived",
+            "status": "no_data",
+            "message": "No price history was available, so technical indicators were not computed."
+          },
+          "news": {
+            "provider": "marketaux",
+            "status": "available",
+            "message": "Loaded 3 related news articles for NATIONALUM.NS."
+          }
+        }
+      },
+      {
+        "symbol": "NELCO.NS",
+        "action": "HOLD",
+        "score": 58,
+        "confidence": 22,
+        "reasoning": [
+          "Fundamental signal unavailable because twelvedata authentication failed: /statistics is available exclusively with pro or ultra or venture or enterprise plans. Consider upgrading your API Key now at https://twelvedata.com/pricing",
+          "Technical signal unavailable: No price history was available, so technical indicators were not computed.",
+          "Average news sentiment 2 is supportive across 3 articles."
+        ],
+        "signals": {
+          "fundamental": {
+            "provider": "twelvedata",
+            "status": "auth_error",
+            "message": "/statistics is available exclusively with pro or ultra or venture or enterprise plans. Consider upgrading your API Key now at https://twelvedata.com/pricing"
+          },
+          "priceHistory": {
+            "provider": "twelvedata",
+            "status": "provider_error",
+            "message": "You have run out of API credits for the current minute. 28 API credits were used, with the current limit being 8. Wait for the next minute or consider switching to a higher tier plan at https://twelvedata.com/pricing"
+          },
+          "technical": {
+            "provider": "derived",
+            "status": "no_data",
+            "message": "No price history was available, so technical indicators were not computed."
+          },
+          "news": {
+            "provider": "marketaux",
+            "status": "available",
+            "message": "Loaded 3 related news articles for NELCO.NS."
+          }
+        }
+      },
+      {
+        "symbol": "NHPC.NS",
+        "action": "HOLD",
+        "score": 62,
+        "confidence": 23,
+        "reasoning": [
+          "Fundamental signal unavailable because twelvedata authentication failed: /statistics is available exclusively with pro or ultra or venture or enterprise plans. Consider upgrading your API Key now at https://twelvedata.com/pricing",
+          "Technical signal unavailable: No price history was available, so technical indicators were not computed.",
+          "Average news sentiment 5.33 is strongly positive across 3 articles."
+        ],
+        "signals": {
+          "fundamental": {
+            "provider": "twelvedata",
+            "status": "auth_error",
+            "message": "/statistics is available exclusively with pro or ultra or venture or enterprise plans. Consider upgrading your API Key now at https://twelvedata.com/pricing"
+          },
+          "priceHistory": {
+            "provider": "twelvedata",
+            "status": "provider_error",
+            "message": "You have run out of API credits for the current minute. 26 API credits were used, with the current limit being 8. Wait for the next minute or consider switching to a higher tier plan at https://twelvedata.com/pricing"
+          },
+          "technical": {
+            "provider": "derived",
+            "status": "no_data",
+            "message": "No price history was available, so technical indicators were not computed."
+          },
+          "news": {
+            "provider": "marketaux",
+            "status": "available",
+            "message": "Loaded 3 related news articles for NHPC.NS."
+          }
+        }
+      },
+      {
+        "symbol": "NMDC.NS",
+        "action": "WATCH",
+        "score": 52,
+        "confidence": 19,
+        "reasoning": [
+          "Fundamental signal unavailable because twelvedata authentication failed: /statistics is available exclusively with pro or ultra or venture or enterprise plans. Consider upgrading your API Key now at https://twelvedata.com/pricing",
+          "Technical signal unavailable: No price history was available, so technical indicators were not computed.",
+          "Average news sentiment 1 is broadly neutral."
+        ],
+        "signals": {
+          "fundamental": {
+            "provider": "twelvedata",
+            "status": "auth_error",
+            "message": "/statistics is available exclusively with pro or ultra or venture or enterprise plans. Consider upgrading your API Key now at https://twelvedata.com/pricing"
+          },
+          "priceHistory": {
+            "provider": "twelvedata",
+            "status": "provider_error",
+            "message": "You have run out of API credits for the current minute. 47 API credits were used, with the current limit being 8. Wait for the next minute or consider switching to a higher tier plan at https://twelvedata.com/pricing"
+          },
+          "technical": {
+            "provider": "derived",
+            "status": "no_data",
+            "message": "No price history was available, so technical indicators were not computed."
+          },
+          "news": {
+            "provider": "marketaux",
+            "status": "available",
+            "message": "Loaded 3 related news articles for NMDC.NS."
+          }
+        }
+      },
+      {
+        "symbol": "NTPC.NS",
+        "action": "HOLD",
+        "score": 62,
+        "confidence": 23,
+        "reasoning": [
+          "Fundamental signal unavailable because twelvedata authentication failed: /statistics is available exclusively with pro or ultra or venture or enterprise plans. Consider upgrading your API Key now at https://twelvedata.com/pricing",
+          "Technical signal unavailable: No price history was available, so technical indicators were not computed.",
+          "Average news sentiment 4.33 is strongly positive across 3 articles."
+        ],
+        "signals": {
+          "fundamental": {
+            "provider": "twelvedata",
+            "status": "auth_error",
+            "message": "/statistics is available exclusively with pro or ultra or venture or enterprise plans. Consider upgrading your API Key now at https://twelvedata.com/pricing"
+          },
+          "priceHistory": {
+            "provider": "twelvedata",
+            "status": "provider_error",
+            "message": "You have run out of API credits for the current minute. 27 API credits were used, with the current limit being 8. Wait for the next minute or consider switching to a higher tier plan at https://twelvedata.com/pricing"
+          },
+          "technical": {
+            "provider": "derived",
+            "status": "no_data",
+            "message": "No price history was available, so technical indicators were not computed."
+          },
+          "news": {
+            "provider": "marketaux",
+            "status": "available",
+            "message": "Loaded 3 related news articles for NTPC.NS."
+          }
+        }
+      },
+      {
+        "symbol": "OIL.NS",
+        "action": "WATCH",
+        "score": 52,
+        "confidence": 19,
+        "reasoning": [
+          "Fundamental signal unavailable because twelvedata authentication failed: /statistics is available exclusively with pro or ultra or venture or enterprise plans. Consider upgrading your API Key now at https://twelvedata.com/pricing",
+          "Technical signal unavailable: No price history was available, so technical indicators were not computed.",
+          "Average news sentiment 0.67 is broadly neutral."
+        ],
+        "signals": {
+          "fundamental": {
+            "provider": "twelvedata",
+            "status": "auth_error",
+            "message": "/statistics is available exclusively with pro or ultra or venture or enterprise plans. Consider upgrading your API Key now at https://twelvedata.com/pricing"
+          },
+          "priceHistory": {
+            "provider": "twelvedata",
+            "status": "provider_error",
+            "message": "You have run out of API credits for the current minute. 30 API credits were used, with the current limit being 8. Wait for the next minute or consider switching to a higher tier plan at https://twelvedata.com/pricing"
+          },
+          "technical": {
+            "provider": "derived",
+            "status": "no_data",
+            "message": "No price history was available, so technical indicators were not computed."
+          },
+          "news": {
+            "provider": "marketaux",
+            "status": "available",
+            "message": "Loaded 3 related news articles for OIL.NS."
+          }
+        }
+      },
+      {
+        "symbol": "ONGC.NS",
+        "action": "HOLD",
+        "score": 62,
+        "confidence": 23,
+        "reasoning": [
+          "Fundamental signal unavailable because twelvedata authentication failed: /statistics is available exclusively with pro or ultra or venture or enterprise plans. Consider upgrading your API Key now at https://twelvedata.com/pricing",
+          "Technical signal unavailable: No price history was available, so technical indicators were not computed.",
+          "Average news sentiment 5.33 is strongly positive across 3 articles."
+        ],
+        "signals": {
+          "fundamental": {
+            "provider": "twelvedata",
+            "status": "auth_error",
+            "message": "/statistics is available exclusively with pro or ultra or venture or enterprise plans. Consider upgrading your API Key now at https://twelvedata.com/pricing"
+          },
+          "priceHistory": {
+            "provider": "twelvedata",
+            "status": "provider_error",
+            "message": "You have run out of API credits for the current minute. 29 API credits were used, with the current limit being 8. Wait for the next minute or consider switching to a higher tier plan at https://twelvedata.com/pricing"
+          },
+          "technical": {
+            "provider": "derived",
+            "status": "no_data",
+            "message": "No price history was available, so technical indicators were not computed."
+          },
+          "news": {
+            "provider": "marketaux",
+            "status": "available",
+            "message": "Loaded 3 related news articles for ONGC.NS."
+          }
+        }
+      },
+      {
+        "symbol": "POWERGRID.NS",
+        "action": "HOLD",
+        "score": 62,
+        "confidence": 23,
+        "reasoning": [
+          "Fundamental signal unavailable because twelvedata authentication failed: /statistics is available exclusively with pro or ultra or venture or enterprise plans. Consider upgrading your API Key now at https://twelvedata.com/pricing",
+          "Technical signal unavailable: No price history was available, so technical indicators were not computed.",
+          "Average news sentiment 9 is strongly positive across 3 articles."
+        ],
+        "signals": {
+          "fundamental": {
+            "provider": "twelvedata",
+            "status": "auth_error",
+            "message": "/statistics is available exclusively with pro or ultra or venture or enterprise plans. Consider upgrading your API Key now at https://twelvedata.com/pricing"
+          },
+          "priceHistory": {
+            "provider": "twelvedata",
+            "status": "provider_error",
+            "message": "You have run out of API credits for the current minute. 49 API credits were used, with the current limit being 8. Wait for the next minute or consider switching to a higher tier plan at https://twelvedata.com/pricing"
+          },
+          "technical": {
+            "provider": "derived",
+            "status": "no_data",
+            "message": "No price history was available, so technical indicators were not computed."
+          },
+          "news": {
+            "provider": "marketaux",
+            "status": "available",
+            "message": "Loaded 3 related news articles for POWERGRID.NS."
+          }
+        }
+      },
+      {
+        "symbol": "PNB.NS",
+        "action": "WATCH",
+        "score": 52,
+        "confidence": 19,
+        "reasoning": [
+          "Fundamental signal unavailable because twelvedata authentication failed: /statistics is available exclusively with pro or ultra or venture or enterprise plans. Consider upgrading your API Key now at https://twelvedata.com/pricing",
+          "Technical signal unavailable: No price history was available, so technical indicators were not computed.",
+          "Average news sentiment 1 is broadly neutral."
+        ],
+        "signals": {
+          "fundamental": {
+            "provider": "twelvedata",
+            "status": "auth_error",
+            "message": "/statistics is available exclusively with pro or ultra or venture or enterprise plans. Consider upgrading your API Key now at https://twelvedata.com/pricing"
+          },
+          "priceHistory": {
+            "provider": "twelvedata",
+            "status": "provider_error",
+            "message": "You have run out of API credits for the current minute. 50 API credits were used, with the current limit being 8. Wait for the next minute or consider switching to a higher tier plan at https://twelvedata.com/pricing"
+          },
+          "technical": {
+            "provider": "derived",
+            "status": "no_data",
+            "message": "No price history was available, so technical indicators were not computed."
+          },
+          "news": {
+            "provider": "marketaux",
+            "status": "available",
+            "message": "Loaded 3 related news articles for PNB.NS."
+          }
+        }
+      },
+      {
+        "symbol": "RECLTD.NS",
+        "action": "HOLD",
+        "score": 58,
+        "confidence": 22,
+        "reasoning": [
+          "Fundamental signal unavailable because twelvedata authentication failed: /statistics is available exclusively with pro or ultra or venture or enterprise plans. Consider upgrading your API Key now at https://twelvedata.com/pricing",
+          "Technical signal unavailable: No price history was available, so technical indicators were not computed.",
+          "Average news sentiment 3.33 is supportive across 3 articles."
+        ],
+        "signals": {
+          "fundamental": {
+            "provider": "twelvedata",
+            "status": "auth_error",
+            "message": "/statistics is available exclusively with pro or ultra or venture or enterprise plans. Consider upgrading your API Key now at https://twelvedata.com/pricing"
+          },
+          "priceHistory": {
+            "provider": "twelvedata",
+            "status": "provider_error",
+            "message": "You have run out of API credits for the current minute. 31 API credits were used, with the current limit being 8. Wait for the next minute or consider switching to a higher tier plan at https://twelvedata.com/pricing"
+          },
+          "technical": {
+            "provider": "derived",
+            "status": "no_data",
+            "message": "No price history was available, so technical indicators were not computed."
+          },
+          "news": {
+            "provider": "marketaux",
+            "status": "available",
+            "message": "Loaded 3 related news articles for RECLTD.NS."
+          }
+        }
+      },
+      {
+        "symbol": "RELIANCE.NS",
+        "action": "HOLD",
+        "score": 62,
+        "confidence": 23,
+        "reasoning": [
+          "Fundamental signal unavailable because twelvedata authentication failed: /statistics is available exclusively with pro or ultra or venture or enterprise plans. Consider upgrading your API Key now at https://twelvedata.com/pricing",
+          "Technical signal unavailable: No price history was available, so technical indicators were not computed.",
+          "Average news sentiment 6.33 is strongly positive across 3 articles."
+        ],
+        "signals": {
+          "fundamental": {
+            "provider": "twelvedata",
+            "status": "auth_error",
+            "message": "/statistics is available exclusively with pro or ultra or venture or enterprise plans. Consider upgrading your API Key now at https://twelvedata.com/pricing"
+          },
+          "priceHistory": {
+            "provider": "twelvedata",
+            "status": "provider_error",
+            "message": "You have run out of API credits for the current minute. 39 API credits were used, with the current limit being 8. Wait for the next minute or consider switching to a higher tier plan at https://twelvedata.com/pricing"
+          },
+          "technical": {
+            "provider": "derived",
+            "status": "no_data",
+            "message": "No price history was available, so technical indicators were not computed."
+          },
+          "news": {
+            "provider": "marketaux",
+            "status": "available",
+            "message": "Loaded 3 related news articles for RELIANCE.NS."
+          }
+        }
+      },
+      {
+        "symbol": "SHRIRAMFIN.NS",
+        "action": "WATCH",
+        "score": 50,
+        "confidence": 10,
+        "reasoning": [
+          "Insufficient usable market data was available to build a reliable multi-factor view.",
+          "Fundamental signal unavailable because twelvedata authentication failed: /statistics is available exclusively with pro or ultra or venture or enterprise plans. Consider upgrading your API Key now at https://twelvedata.com/pricing",
+          "Technical signal unavailable: No price history was available, so technical indicators were not computed.",
+          "News signal unavailable: MarketAux returned no recent related news for SHRIRAMFIN.NS."
+        ],
+        "signals": {
+          "fundamental": {
+            "provider": "twelvedata",
+            "status": "auth_error",
+            "message": "/statistics is available exclusively with pro or ultra or venture or enterprise plans. Consider upgrading your API Key now at https://twelvedata.com/pricing"
+          },
+          "priceHistory": {
+            "provider": "twelvedata",
+            "status": "provider_error",
+            "message": "You have run out of API credits for the current minute. 36 API credits were used, with the current limit being 8. Wait for the next minute or consider switching to a higher tier plan at https://twelvedata.com/pricing"
+          },
+          "technical": {
+            "provider": "derived",
+            "status": "no_data",
+            "message": "No price history was available, so technical indicators were not computed."
+          },
+          "news": {
+            "provider": "marketaux",
+            "status": "no_data",
+            "message": "MarketAux returned no recent related news for SHRIRAMFIN.NS."
+          }
+        }
+      },
+      {
+        "symbol": "STLTECH.NS",
+        "action": "WATCH",
+        "score": 52,
+        "confidence": 19,
+        "reasoning": [
+          "Fundamental signal unavailable because twelvedata authentication failed: /statistics is available exclusively with pro or ultra or venture or enterprise plans. Consider upgrading your API Key now at https://twelvedata.com/pricing",
+          "Technical signal unavailable: No price history was available, so technical indicators were not computed.",
+          "Average news sentiment -0.67 is broadly neutral."
+        ],
+        "signals": {
+          "fundamental": {
+            "provider": "twelvedata",
+            "status": "auth_error",
+            "message": "/statistics is available exclusively with pro or ultra or venture or enterprise plans. Consider upgrading your API Key now at https://twelvedata.com/pricing"
+          },
+          "priceHistory": {
+            "provider": "twelvedata",
+            "status": "provider_error",
+            "message": "You have run out of API credits for the current minute. 32 API credits were used, with the current limit being 8. Wait for the next minute or consider switching to a higher tier plan at https://twelvedata.com/pricing"
+          },
+          "technical": {
+            "provider": "derived",
+            "status": "no_data",
+            "message": "No price history was available, so technical indicators were not computed."
+          },
+          "news": {
+            "provider": "marketaux",
+            "status": "available",
+            "message": "Loaded 3 related news articles for STLTECH.NS."
+          }
+        }
+      },
+      {
+        "symbol": "TATAELXSI.NS",
+        "action": "HOLD",
+        "score": 58,
+        "confidence": 22,
+        "reasoning": [
+          "Fundamental signal unavailable because twelvedata authentication failed: /statistics is available exclusively with pro or ultra or venture or enterprise plans. Consider upgrading your API Key now at https://twelvedata.com/pricing",
+          "Technical signal unavailable: No price history was available, so technical indicators were not computed.",
+          "Average news sentiment 2.67 is supportive across 3 articles."
+        ],
+        "signals": {
+          "fundamental": {
+            "provider": "twelvedata",
+            "status": "auth_error",
+            "message": "/statistics is available exclusively with pro or ultra or venture or enterprise plans. Consider upgrading your API Key now at https://twelvedata.com/pricing"
+          },
+          "priceHistory": {
+            "provider": "twelvedata",
+            "status": "provider_error",
+            "message": "You have run out of API credits for the current minute. 34 API credits were used, with the current limit being 8. Wait for the next minute or consider switching to a higher tier plan at https://twelvedata.com/pricing"
+          },
+          "technical": {
+            "provider": "derived",
+            "status": "no_data",
+            "message": "No price history was available, so technical indicators were not computed."
+          },
+          "news": {
+            "provider": "marketaux",
+            "status": "available",
+            "message": "Loaded 3 related news articles for TATAELXSI.NS."
+          }
+        }
+      },
+      {
+        "symbol": "TATAPOWER.NS",
+        "action": "HOLD",
+        "score": 58,
+        "confidence": 22,
+        "reasoning": [
+          "Fundamental signal unavailable because twelvedata authentication failed: /statistics is available exclusively with pro or ultra or venture or enterprise plans. Consider upgrading your API Key now at https://twelvedata.com/pricing",
+          "Technical signal unavailable: No price history was available, so technical indicators were not computed.",
+          "Average news sentiment 3 is supportive across 3 articles."
+        ],
+        "signals": {
+          "fundamental": {
+            "provider": "twelvedata",
+            "status": "auth_error",
+            "message": "/statistics is available exclusively with pro or ultra or venture or enterprise plans. Consider upgrading your API Key now at https://twelvedata.com/pricing"
+          },
+          "priceHistory": {
+            "provider": "twelvedata",
+            "status": "provider_error",
+            "message": "You have run out of API credits for the current minute. 37 API credits were used, with the current limit being 8. Wait for the next minute or consider switching to a higher tier plan at https://twelvedata.com/pricing"
+          },
+          "technical": {
+            "provider": "derived",
+            "status": "no_data",
+            "message": "No price history was available, so technical indicators were not computed."
+          },
+          "news": {
+            "provider": "marketaux",
+            "status": "available",
+            "message": "Loaded 3 related news articles for TATAPOWER.NS."
+          }
+        }
+      },
+      {
+        "symbol": "TATASTEEL.NS",
+        "action": "HOLD",
+        "score": 62,
+        "confidence": 23,
+        "reasoning": [
+          "Fundamental signal unavailable because twelvedata authentication failed: /statistics is available exclusively with pro or ultra or venture or enterprise plans. Consider upgrading your API Key now at https://twelvedata.com/pricing",
+          "Technical signal unavailable: No price history was available, so technical indicators were not computed.",
+          "Average news sentiment 7 is strongly positive across 3 articles."
+        ],
+        "signals": {
+          "fundamental": {
+            "provider": "twelvedata",
+            "status": "auth_error",
+            "message": "/statistics is available exclusively with pro or ultra or venture or enterprise plans. Consider upgrading your API Key now at https://twelvedata.com/pricing"
+          },
+          "priceHistory": {
+            "provider": "twelvedata",
+            "status": "provider_error",
+            "message": "You have run out of API credits for the current minute. 35 API credits were used, with the current limit being 8. Wait for the next minute or consider switching to a higher tier plan at https://twelvedata.com/pricing"
+          },
+          "technical": {
+            "provider": "derived",
+            "status": "no_data",
+            "message": "No price history was available, so technical indicators were not computed."
+          },
+          "news": {
+            "provider": "marketaux",
+            "status": "available",
+            "message": "Loaded 3 related news articles for TATASTEEL.NS."
+          }
+        }
+      },
+      {
+        "symbol": "TATATECH.NS",
+        "action": "WATCH",
+        "score": 50,
+        "confidence": 10,
+        "reasoning": [
+          "Insufficient usable market data was available to build a reliable multi-factor view.",
+          "Fundamental signal unavailable because twelvedata authentication failed: /statistics is available exclusively with pro or ultra or venture or enterprise plans. Consider upgrading your API Key now at https://twelvedata.com/pricing",
+          "Technical signal unavailable: No price history was available, so technical indicators were not computed.",
+          "News signal unavailable: MarketAux returned no recent related news for TATATECH.NS."
+        ],
+        "signals": {
+          "fundamental": {
+            "provider": "twelvedata",
+            "status": "auth_error",
+            "message": "/statistics is available exclusively with pro or ultra or venture or enterprise plans. Consider upgrading your API Key now at https://twelvedata.com/pricing"
+          },
+          "priceHistory": {
+            "provider": "twelvedata",
+            "status": "provider_error",
+            "message": "You have run out of API credits for the current minute. 38 API credits were used, with the current limit being 8. Wait for the next minute or consider switching to a higher tier plan at https://twelvedata.com/pricing"
+          },
+          "technical": {
+            "provider": "derived",
+            "status": "no_data",
+            "message": "No price history was available, so technical indicators were not computed."
+          },
+          "news": {
+            "provider": "marketaux",
+            "status": "no_data",
+            "message": "MarketAux returned no recent related news for TATATECH.NS."
+          }
+        }
+      },
+      {
+        "symbol": "VEDL.NS",
+        "action": "WATCH",
+        "score": 52,
+        "confidence": 19,
+        "reasoning": [
+          "Fundamental signal unavailable because twelvedata authentication failed: /statistics is available exclusively with pro or ultra or venture or enterprise plans. Consider upgrading your API Key now at https://twelvedata.com/pricing",
+          "Technical signal unavailable: No price history was available, so technical indicators were not computed.",
+          "Average news sentiment 0.33 is broadly neutral."
+        ],
+        "signals": {
+          "fundamental": {
+            "provider": "twelvedata",
+            "status": "auth_error",
+            "message": "/statistics is available exclusively with pro or ultra or venture or enterprise plans. Consider upgrading your API Key now at https://twelvedata.com/pricing"
+          },
+          "priceHistory": {
+            "provider": "twelvedata",
+            "status": "provider_error",
+            "message": "You have run out of API credits for the current minute. 33 API credits were used, with the current limit being 8. Wait for the next minute or consider switching to a higher tier plan at https://twelvedata.com/pricing"
+          },
+          "technical": {
+            "provider": "derived",
+            "status": "no_data",
+            "message": "No price history was available, so technical indicators were not computed."
+          },
+          "news": {
+            "provider": "marketaux",
+            "status": "available",
+            "message": "Loaded 3 related news articles for VEDL.NS."
+          }
+        }
+      }
+    ]
+  }
+}

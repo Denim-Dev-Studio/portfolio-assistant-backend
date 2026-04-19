@@ -1,0 +1,1673 @@
+{
+  "success": true,
+  "data": {
+    "portfolioId": "a94aa95e-8f18-4289-a6e4-1a74868924f8",
+    "portfolioName": "Harsh Rupera Upstox Holding",
+    "generatedAt": "2026-04-19T20:26:51.703Z",
+    "summary": {
+      "totalHoldings": 50,
+      "fullyAnalyzed": 0,
+      "partiallyAnalyzed": 43,
+      "failed": 7
+    },
+    "items": [
+      {
+        "symbol": "ADANIPORTS.NS",
+        "action": "HOLD",
+        "score": 62,
+        "confidence": 23,
+        "reasoning": [
+          "Fundamental signal unavailable because yahoo-finance2 request failed: Call `const yahooFinance = new YahooFinance()` first.  Upgrading from v2?  See https://github.com/gadicc/yahoo-finance2/blob/dev/docs/UPGRADING.md.",
+          "Technical signal unavailable: No price history was available, so technical indicators were not computed.",
+          "Average news sentiment 4 is strongly positive across 3 articles."
+        ],
+        "signals": {
+          "fundamental": {
+            "provider": "yahoo-finance2",
+            "status": "provider_error",
+            "message": "Call `const yahooFinance = new YahooFinance()` first.  Upgrading from v2?  See https://github.com/gadicc/yahoo-finance2/blob/dev/docs/UPGRADING.md."
+          },
+          "priceHistory": {
+            "provider": "stock-nse-india",
+            "status": "no_data",
+            "message": "NSE history returned no daily price bars for ADANIPORTS.NS."
+          },
+          "technical": {
+            "provider": "derived",
+            "status": "no_data",
+            "message": "No price history was available, so technical indicators were not computed."
+          },
+          "news": {
+            "provider": "marketaux",
+            "status": "available",
+            "message": "Loaded 3 related news articles for ADANIPORTS.NS."
+          }
+        }
+      },
+      {
+        "symbol": "ADANIPOWER.NS",
+        "action": "HOLD",
+        "score": 62,
+        "confidence": 23,
+        "reasoning": [
+          "Fundamental signal unavailable because yahoo-finance2 request failed: Call `const yahooFinance = new YahooFinance()` first.  Upgrading from v2?  See https://github.com/gadicc/yahoo-finance2/blob/dev/docs/UPGRADING.md.",
+          "Technical signal unavailable: No price history was available, so technical indicators were not computed.",
+          "Average news sentiment 7 is strongly positive across 3 articles."
+        ],
+        "signals": {
+          "fundamental": {
+            "provider": "yahoo-finance2",
+            "status": "provider_error",
+            "message": "Call `const yahooFinance = new YahooFinance()` first.  Upgrading from v2?  See https://github.com/gadicc/yahoo-finance2/blob/dev/docs/UPGRADING.md."
+          },
+          "priceHistory": {
+            "provider": "stock-nse-india",
+            "status": "no_data",
+            "message": "NSE history returned no daily price bars for ADANIPOWER.NS."
+          },
+          "technical": {
+            "provider": "derived",
+            "status": "no_data",
+            "message": "No price history was available, so technical indicators were not computed."
+          },
+          "news": {
+            "provider": "marketaux",
+            "status": "available",
+            "message": "Loaded 3 related news articles for ADANIPOWER.NS."
+          }
+        }
+      },
+      {
+        "symbol": "ABCAPITAL.NS",
+        "action": "HOLD",
+        "score": 58,
+        "confidence": 22,
+        "reasoning": [
+          "Fundamental signal unavailable because yahoo-finance2 request failed: Call `const yahooFinance = new YahooFinance()` first.  Upgrading from v2?  See https://github.com/gadicc/yahoo-finance2/blob/dev/docs/UPGRADING.md.",
+          "Technical signal unavailable: No price history was available, so technical indicators were not computed.",
+          "Average news sentiment 2.33 is supportive across 3 articles."
+        ],
+        "signals": {
+          "fundamental": {
+            "provider": "yahoo-finance2",
+            "status": "provider_error",
+            "message": "Call `const yahooFinance = new YahooFinance()` first.  Upgrading from v2?  See https://github.com/gadicc/yahoo-finance2/blob/dev/docs/UPGRADING.md."
+          },
+          "priceHistory": {
+            "provider": "stock-nse-india",
+            "status": "no_data",
+            "message": "NSE history returned no daily price bars for ABCAPITAL.NS."
+          },
+          "technical": {
+            "provider": "derived",
+            "status": "no_data",
+            "message": "No price history was available, so technical indicators were not computed."
+          },
+          "news": {
+            "provider": "marketaux",
+            "status": "available",
+            "message": "Loaded 3 related news articles for ABCAPITAL.NS."
+          }
+        }
+      },
+      {
+        "symbol": "AEQUS.NS",
+        "action": "WATCH",
+        "score": 50,
+        "confidence": 10,
+        "reasoning": [
+          "Insufficient usable market data was available to build a reliable multi-factor view.",
+          "Fundamental signal unavailable because yahoo-finance2 request failed: Call `const yahooFinance = new YahooFinance()` first.  Upgrading from v2?  See https://github.com/gadicc/yahoo-finance2/blob/dev/docs/UPGRADING.md.",
+          "Technical signal unavailable: No price history was available, so technical indicators were not computed.",
+          "News signal unavailable: MarketAux returned no recent related news for AEQUS.NS."
+        ],
+        "signals": {
+          "fundamental": {
+            "provider": "yahoo-finance2",
+            "status": "provider_error",
+            "message": "Call `const yahooFinance = new YahooFinance()` first.  Upgrading from v2?  See https://github.com/gadicc/yahoo-finance2/blob/dev/docs/UPGRADING.md."
+          },
+          "priceHistory": {
+            "provider": "stock-nse-india",
+            "status": "no_data",
+            "message": "NSE history returned no daily price bars for AEQUS.NS."
+          },
+          "technical": {
+            "provider": "derived",
+            "status": "no_data",
+            "message": "No price history was available, so technical indicators were not computed."
+          },
+          "news": {
+            "provider": "marketaux",
+            "status": "no_data",
+            "message": "MarketAux returned no recent related news for AEQUS.NS."
+          }
+        }
+      },
+      {
+        "symbol": "AGI.NS",
+        "action": "WATCH",
+        "score": 50,
+        "confidence": 10,
+        "reasoning": [
+          "Insufficient usable market data was available to build a reliable multi-factor view.",
+          "Fundamental signal unavailable because yahoo-finance2 request failed: Call `const yahooFinance = new YahooFinance()` first.  Upgrading from v2?  See https://github.com/gadicc/yahoo-finance2/blob/dev/docs/UPGRADING.md.",
+          "Technical signal unavailable: No price history was available, so technical indicators were not computed.",
+          "News signal unavailable: MarketAux returned no recent related news for AGI.NS."
+        ],
+        "signals": {
+          "fundamental": {
+            "provider": "yahoo-finance2",
+            "status": "provider_error",
+            "message": "Call `const yahooFinance = new YahooFinance()` first.  Upgrading from v2?  See https://github.com/gadicc/yahoo-finance2/blob/dev/docs/UPGRADING.md."
+          },
+          "priceHistory": {
+            "provider": "stock-nse-india",
+            "status": "no_data",
+            "message": "NSE history returned no daily price bars for AGI.NS."
+          },
+          "technical": {
+            "provider": "derived",
+            "status": "no_data",
+            "message": "No price history was available, so technical indicators were not computed."
+          },
+          "news": {
+            "provider": "marketaux",
+            "status": "no_data",
+            "message": "MarketAux returned no recent related news for AGI.NS."
+          }
+        }
+      },
+      {
+        "symbol": "APOLLOTYRE.NS",
+        "action": "HOLD",
+        "score": 62,
+        "confidence": 23,
+        "reasoning": [
+          "Fundamental signal unavailable because yahoo-finance2 request failed: Call `const yahooFinance = new YahooFinance()` first.  Upgrading from v2?  See https://github.com/gadicc/yahoo-finance2/blob/dev/docs/UPGRADING.md.",
+          "Technical signal unavailable: No price history was available, so technical indicators were not computed.",
+          "Average news sentiment 4.33 is strongly positive across 3 articles."
+        ],
+        "signals": {
+          "fundamental": {
+            "provider": "yahoo-finance2",
+            "status": "provider_error",
+            "message": "Call `const yahooFinance = new YahooFinance()` first.  Upgrading from v2?  See https://github.com/gadicc/yahoo-finance2/blob/dev/docs/UPGRADING.md."
+          },
+          "priceHistory": {
+            "provider": "stock-nse-india",
+            "status": "no_data",
+            "message": "NSE history returned no daily price bars for APOLLOTYRE.NS."
+          },
+          "technical": {
+            "provider": "derived",
+            "status": "no_data",
+            "message": "No price history was available, so technical indicators were not computed."
+          },
+          "news": {
+            "provider": "marketaux",
+            "status": "available",
+            "message": "Loaded 3 related news articles for APOLLOTYRE.NS."
+          }
+        }
+      },
+      {
+        "symbol": "ASHOKLEY.NS",
+        "action": "HOLD",
+        "score": 62,
+        "confidence": 23,
+        "reasoning": [
+          "Fundamental signal unavailable because yahoo-finance2 request failed: Call `const yahooFinance = new YahooFinance()` first.  Upgrading from v2?  See https://github.com/gadicc/yahoo-finance2/blob/dev/docs/UPGRADING.md.",
+          "Technical signal unavailable: No price history was available, so technical indicators were not computed.",
+          "Average news sentiment 8 is strongly positive across 3 articles."
+        ],
+        "signals": {
+          "fundamental": {
+            "provider": "yahoo-finance2",
+            "status": "provider_error",
+            "message": "Call `const yahooFinance = new YahooFinance()` first.  Upgrading from v2?  See https://github.com/gadicc/yahoo-finance2/blob/dev/docs/UPGRADING.md."
+          },
+          "priceHistory": {
+            "provider": "stock-nse-india",
+            "status": "no_data",
+            "message": "NSE history returned no daily price bars for ASHOKLEY.NS."
+          },
+          "technical": {
+            "provider": "derived",
+            "status": "no_data",
+            "message": "No price history was available, so technical indicators were not computed."
+          },
+          "news": {
+            "provider": "marketaux",
+            "status": "available",
+            "message": "Loaded 3 related news articles for ASHOKLEY.NS."
+          }
+        }
+      },
+      {
+        "symbol": "ASTRAL.NS",
+        "action": "HOLD",
+        "score": 62,
+        "confidence": 23,
+        "reasoning": [
+          "Fundamental signal unavailable because yahoo-finance2 request failed: Call `const yahooFinance = new YahooFinance()` first.  Upgrading from v2?  See https://github.com/gadicc/yahoo-finance2/blob/dev/docs/UPGRADING.md.",
+          "Technical signal unavailable: No price history was available, so technical indicators were not computed.",
+          "Average news sentiment 8 is strongly positive across 3 articles."
+        ],
+        "signals": {
+          "fundamental": {
+            "provider": "yahoo-finance2",
+            "status": "provider_error",
+            "message": "Call `const yahooFinance = new YahooFinance()` first.  Upgrading from v2?  See https://github.com/gadicc/yahoo-finance2/blob/dev/docs/UPGRADING.md."
+          },
+          "priceHistory": {
+            "provider": "stock-nse-india",
+            "status": "no_data",
+            "message": "NSE history returned no daily price bars for ASTRAL.NS."
+          },
+          "technical": {
+            "provider": "derived",
+            "status": "no_data",
+            "message": "No price history was available, so technical indicators were not computed."
+          },
+          "news": {
+            "provider": "marketaux",
+            "status": "available",
+            "message": "Loaded 3 related news articles for ASTRAL.NS."
+          }
+        }
+      },
+      {
+        "symbol": "BANKINDIA.NS",
+        "action": "HOLD",
+        "score": 62,
+        "confidence": 23,
+        "reasoning": [
+          "Fundamental signal unavailable because yahoo-finance2 request failed: Call `const yahooFinance = new YahooFinance()` first.  Upgrading from v2?  See https://github.com/gadicc/yahoo-finance2/blob/dev/docs/UPGRADING.md.",
+          "Technical signal unavailable: No price history was available, so technical indicators were not computed.",
+          "Average news sentiment 6.33 is strongly positive across 3 articles."
+        ],
+        "signals": {
+          "fundamental": {
+            "provider": "yahoo-finance2",
+            "status": "provider_error",
+            "message": "Call `const yahooFinance = new YahooFinance()` first.  Upgrading from v2?  See https://github.com/gadicc/yahoo-finance2/blob/dev/docs/UPGRADING.md."
+          },
+          "priceHistory": {
+            "provider": "stock-nse-india",
+            "status": "no_data",
+            "message": "NSE history returned no daily price bars for BANKINDIA.NS."
+          },
+          "technical": {
+            "provider": "derived",
+            "status": "no_data",
+            "message": "No price history was available, so technical indicators were not computed."
+          },
+          "news": {
+            "provider": "marketaux",
+            "status": "available",
+            "message": "Loaded 3 related news articles for BANKINDIA.NS."
+          }
+        }
+      },
+      {
+        "symbol": "MAHABANK.NS",
+        "action": "HOLD",
+        "score": 58,
+        "confidence": 22,
+        "reasoning": [
+          "Fundamental signal unavailable because yahoo-finance2 request failed: Call `const yahooFinance = new YahooFinance()` first.  Upgrading from v2?  See https://github.com/gadicc/yahoo-finance2/blob/dev/docs/UPGRADING.md.",
+          "Technical signal unavailable: No price history was available, so technical indicators were not computed.",
+          "Average news sentiment 1.67 is supportive across 3 articles."
+        ],
+        "signals": {
+          "fundamental": {
+            "provider": "yahoo-finance2",
+            "status": "provider_error",
+            "message": "Call `const yahooFinance = new YahooFinance()` first.  Upgrading from v2?  See https://github.com/gadicc/yahoo-finance2/blob/dev/docs/UPGRADING.md."
+          },
+          "priceHistory": {
+            "provider": "stock-nse-india",
+            "status": "no_data",
+            "message": "NSE history returned no daily price bars for MAHABANK.NS."
+          },
+          "technical": {
+            "provider": "derived",
+            "status": "no_data",
+            "message": "No price history was available, so technical indicators were not computed."
+          },
+          "news": {
+            "provider": "marketaux",
+            "status": "available",
+            "message": "Loaded 3 related news articles for MAHABANK.NS."
+          }
+        }
+      },
+      {
+        "symbol": "BEL.NS",
+        "action": "HOLD",
+        "score": 62,
+        "confidence": 23,
+        "reasoning": [
+          "Fundamental signal unavailable because yahoo-finance2 request failed: Call `const yahooFinance = new YahooFinance()` first.  Upgrading from v2?  See https://github.com/gadicc/yahoo-finance2/blob/dev/docs/UPGRADING.md.",
+          "Technical signal unavailable: No price history was available, so technical indicators were not computed.",
+          "Average news sentiment 6.33 is strongly positive across 3 articles."
+        ],
+        "signals": {
+          "fundamental": {
+            "provider": "yahoo-finance2",
+            "status": "provider_error",
+            "message": "Call `const yahooFinance = new YahooFinance()` first.  Upgrading from v2?  See https://github.com/gadicc/yahoo-finance2/blob/dev/docs/UPGRADING.md."
+          },
+          "priceHistory": {
+            "provider": "stock-nse-india",
+            "status": "no_data",
+            "message": "NSE history returned no daily price bars for BEL.NS."
+          },
+          "technical": {
+            "provider": "derived",
+            "status": "no_data",
+            "message": "No price history was available, so technical indicators were not computed."
+          },
+          "news": {
+            "provider": "marketaux",
+            "status": "available",
+            "message": "Loaded 3 related news articles for BEL.NS."
+          }
+        }
+      },
+      {
+        "symbol": "BPCL.NS",
+        "action": "WATCH",
+        "score": 52,
+        "confidence": 19,
+        "reasoning": [
+          "Fundamental signal unavailable because yahoo-finance2 request failed: Call `const yahooFinance = new YahooFinance()` first.  Upgrading from v2?  See https://github.com/gadicc/yahoo-finance2/blob/dev/docs/UPGRADING.md.",
+          "Technical signal unavailable: No price history was available, so technical indicators were not computed.",
+          "Average news sentiment 0 is broadly neutral."
+        ],
+        "signals": {
+          "fundamental": {
+            "provider": "yahoo-finance2",
+            "status": "provider_error",
+            "message": "Call `const yahooFinance = new YahooFinance()` first.  Upgrading from v2?  See https://github.com/gadicc/yahoo-finance2/blob/dev/docs/UPGRADING.md."
+          },
+          "priceHistory": {
+            "provider": "stock-nse-india",
+            "status": "no_data",
+            "message": "NSE history returned no daily price bars for BPCL.NS."
+          },
+          "technical": {
+            "provider": "derived",
+            "status": "no_data",
+            "message": "No price history was available, so technical indicators were not computed."
+          },
+          "news": {
+            "provider": "marketaux",
+            "status": "available",
+            "message": "Loaded 3 related news articles for BPCL.NS."
+          }
+        }
+      },
+      {
+        "symbol": "CANBK.NS",
+        "action": "HOLD",
+        "score": 58,
+        "confidence": 22,
+        "reasoning": [
+          "Fundamental signal unavailable because yahoo-finance2 request failed: Call `const yahooFinance = new YahooFinance()` first.  Upgrading from v2?  See https://github.com/gadicc/yahoo-finance2/blob/dev/docs/UPGRADING.md.",
+          "Technical signal unavailable: No price history was available, so technical indicators were not computed.",
+          "Average news sentiment 1.67 is supportive across 3 articles."
+        ],
+        "signals": {
+          "fundamental": {
+            "provider": "yahoo-finance2",
+            "status": "provider_error",
+            "message": "Call `const yahooFinance = new YahooFinance()` first.  Upgrading from v2?  See https://github.com/gadicc/yahoo-finance2/blob/dev/docs/UPGRADING.md."
+          },
+          "priceHistory": {
+            "provider": "stock-nse-india",
+            "status": "no_data",
+            "message": "NSE history returned no daily price bars for CANBK.NS."
+          },
+          "technical": {
+            "provider": "derived",
+            "status": "no_data",
+            "message": "No price history was available, so technical indicators were not computed."
+          },
+          "news": {
+            "provider": "marketaux",
+            "status": "available",
+            "message": "Loaded 3 related news articles for CANBK.NS."
+          }
+        }
+      },
+      {
+        "symbol": "CARRARO.NS",
+        "action": "WATCH",
+        "score": 50,
+        "confidence": 10,
+        "reasoning": [
+          "Insufficient usable market data was available to build a reliable multi-factor view.",
+          "Fundamental signal unavailable because yahoo-finance2 request failed: Call `const yahooFinance = new YahooFinance()` first.  Upgrading from v2?  See https://github.com/gadicc/yahoo-finance2/blob/dev/docs/UPGRADING.md.",
+          "Technical signal unavailable: No price history was available, so technical indicators were not computed.",
+          "News signal unavailable: MarketAux returned no recent related news for CARRARO.NS."
+        ],
+        "signals": {
+          "fundamental": {
+            "provider": "yahoo-finance2",
+            "status": "provider_error",
+            "message": "Call `const yahooFinance = new YahooFinance()` first.  Upgrading from v2?  See https://github.com/gadicc/yahoo-finance2/blob/dev/docs/UPGRADING.md."
+          },
+          "priceHistory": {
+            "provider": "stock-nse-india",
+            "status": "no_data",
+            "message": "NSE history returned no daily price bars for CARRARO.NS."
+          },
+          "technical": {
+            "provider": "derived",
+            "status": "no_data",
+            "message": "No price history was available, so technical indicators were not computed."
+          },
+          "news": {
+            "provider": "marketaux",
+            "status": "no_data",
+            "message": "MarketAux returned no recent related news for CARRARO.NS."
+          }
+        }
+      },
+      {
+        "symbol": "COALINDIA.NS",
+        "action": "HOLD",
+        "score": 58,
+        "confidence": 22,
+        "reasoning": [
+          "Fundamental signal unavailable because yahoo-finance2 request failed: Call `const yahooFinance = new YahooFinance()` first.  Upgrading from v2?  See https://github.com/gadicc/yahoo-finance2/blob/dev/docs/UPGRADING.md.",
+          "Technical signal unavailable: No price history was available, so technical indicators were not computed.",
+          "Average news sentiment 1.67 is supportive across 3 articles."
+        ],
+        "signals": {
+          "fundamental": {
+            "provider": "yahoo-finance2",
+            "status": "provider_error",
+            "message": "Call `const yahooFinance = new YahooFinance()` first.  Upgrading from v2?  See https://github.com/gadicc/yahoo-finance2/blob/dev/docs/UPGRADING.md."
+          },
+          "priceHistory": {
+            "provider": "stock-nse-india",
+            "status": "no_data",
+            "message": "NSE history returned no daily price bars for COALINDIA.NS."
+          },
+          "technical": {
+            "provider": "derived",
+            "status": "no_data",
+            "message": "No price history was available, so technical indicators were not computed."
+          },
+          "news": {
+            "provider": "marketaux",
+            "status": "available",
+            "message": "Loaded 3 related news articles for COALINDIA.NS."
+          }
+        }
+      },
+      {
+        "symbol": "CYIENT.NS",
+        "action": "HOLD",
+        "score": 62,
+        "confidence": 23,
+        "reasoning": [
+          "Fundamental signal unavailable because yahoo-finance2 request failed: Call `const yahooFinance = new YahooFinance()` first.  Upgrading from v2?  See https://github.com/gadicc/yahoo-finance2/blob/dev/docs/UPGRADING.md.",
+          "Technical signal unavailable: No price history was available, so technical indicators were not computed.",
+          "Average news sentiment 6.33 is strongly positive across 3 articles."
+        ],
+        "signals": {
+          "fundamental": {
+            "provider": "yahoo-finance2",
+            "status": "provider_error",
+            "message": "Call `const yahooFinance = new YahooFinance()` first.  Upgrading from v2?  See https://github.com/gadicc/yahoo-finance2/blob/dev/docs/UPGRADING.md."
+          },
+          "priceHistory": {
+            "provider": "stock-nse-india",
+            "status": "no_data",
+            "message": "NSE history returned no daily price bars for CYIENT.NS."
+          },
+          "technical": {
+            "provider": "derived",
+            "status": "no_data",
+            "message": "No price history was available, so technical indicators were not computed."
+          },
+          "news": {
+            "provider": "marketaux",
+            "status": "available",
+            "message": "Loaded 3 related news articles for CYIENT.NS."
+          }
+        }
+      },
+      {
+        "symbol": "DCXINDIA.NS",
+        "action": "WATCH",
+        "score": 50,
+        "confidence": 10,
+        "reasoning": [
+          "Insufficient usable market data was available to build a reliable multi-factor view.",
+          "Fundamental signal unavailable because yahoo-finance2 request failed: Call `const yahooFinance = new YahooFinance()` first.  Upgrading from v2?  See https://github.com/gadicc/yahoo-finance2/blob/dev/docs/UPGRADING.md.",
+          "Technical signal unavailable: No price history was available, so technical indicators were not computed.",
+          "News signal unavailable: MarketAux returned no recent related news for DCXINDIA.NS."
+        ],
+        "signals": {
+          "fundamental": {
+            "provider": "yahoo-finance2",
+            "status": "provider_error",
+            "message": "Call `const yahooFinance = new YahooFinance()` first.  Upgrading from v2?  See https://github.com/gadicc/yahoo-finance2/blob/dev/docs/UPGRADING.md."
+          },
+          "priceHistory": {
+            "provider": "stock-nse-india",
+            "status": "no_data",
+            "message": "NSE history returned no daily price bars for DCXINDIA.NS."
+          },
+          "technical": {
+            "provider": "derived",
+            "status": "no_data",
+            "message": "No price history was available, so technical indicators were not computed."
+          },
+          "news": {
+            "provider": "marketaux",
+            "status": "no_data",
+            "message": "MarketAux returned no recent related news for DCXINDIA.NS."
+          }
+        }
+      },
+      {
+        "symbol": "FINPIPE.NS",
+        "action": "HOLD",
+        "score": 62,
+        "confidence": 23,
+        "reasoning": [
+          "Fundamental signal unavailable because yahoo-finance2 request failed: Call `const yahooFinance = new YahooFinance()` first.  Upgrading from v2?  See https://github.com/gadicc/yahoo-finance2/blob/dev/docs/UPGRADING.md.",
+          "Technical signal unavailable: No price history was available, so technical indicators were not computed.",
+          "Average news sentiment 5.33 is strongly positive across 3 articles."
+        ],
+        "signals": {
+          "fundamental": {
+            "provider": "yahoo-finance2",
+            "status": "provider_error",
+            "message": "Call `const yahooFinance = new YahooFinance()` first.  Upgrading from v2?  See https://github.com/gadicc/yahoo-finance2/blob/dev/docs/UPGRADING.md."
+          },
+          "priceHistory": {
+            "provider": "stock-nse-india",
+            "status": "no_data",
+            "message": "NSE history returned no daily price bars for FINPIPE.NS."
+          },
+          "technical": {
+            "provider": "derived",
+            "status": "no_data",
+            "message": "No price history was available, so technical indicators were not computed."
+          },
+          "news": {
+            "provider": "marketaux",
+            "status": "available",
+            "message": "Loaded 3 related news articles for FINPIPE.NS."
+          }
+        }
+      },
+      {
+        "symbol": "GENUSPOWER.NS",
+        "action": "HOLD",
+        "score": 62,
+        "confidence": 23,
+        "reasoning": [
+          "Fundamental signal unavailable because yahoo-finance2 request failed: Call `const yahooFinance = new YahooFinance()` first.  Upgrading from v2?  See https://github.com/gadicc/yahoo-finance2/blob/dev/docs/UPGRADING.md.",
+          "Technical signal unavailable: No price history was available, so technical indicators were not computed.",
+          "Average news sentiment 4.67 is strongly positive across 3 articles."
+        ],
+        "signals": {
+          "fundamental": {
+            "provider": "yahoo-finance2",
+            "status": "provider_error",
+            "message": "Call `const yahooFinance = new YahooFinance()` first.  Upgrading from v2?  See https://github.com/gadicc/yahoo-finance2/blob/dev/docs/UPGRADING.md."
+          },
+          "priceHistory": {
+            "provider": "stock-nse-india",
+            "status": "no_data",
+            "message": "NSE history returned no daily price bars for GENUSPOWER.NS."
+          },
+          "technical": {
+            "provider": "derived",
+            "status": "no_data",
+            "message": "No price history was available, so technical indicators were not computed."
+          },
+          "news": {
+            "provider": "marketaux",
+            "status": "available",
+            "message": "Loaded 3 related news articles for GENUSPOWER.NS."
+          }
+        }
+      },
+      {
+        "symbol": "GNFC.NS",
+        "action": "WATCH",
+        "score": 44,
+        "confidence": 21,
+        "reasoning": [
+          "Fundamental signal unavailable because yahoo-finance2 request failed: Call `const yahooFinance = new YahooFinance()` first.  Upgrading from v2?  See https://github.com/gadicc/yahoo-finance2/blob/dev/docs/UPGRADING.md.",
+          "Technical signal unavailable: No price history was available, so technical indicators were not computed.",
+          "Average news sentiment -3.33 is turning cautious."
+        ],
+        "signals": {
+          "fundamental": {
+            "provider": "yahoo-finance2",
+            "status": "provider_error",
+            "message": "Call `const yahooFinance = new YahooFinance()` first.  Upgrading from v2?  See https://github.com/gadicc/yahoo-finance2/blob/dev/docs/UPGRADING.md."
+          },
+          "priceHistory": {
+            "provider": "stock-nse-india",
+            "status": "no_data",
+            "message": "NSE history returned no daily price bars for GNFC.NS."
+          },
+          "technical": {
+            "provider": "derived",
+            "status": "no_data",
+            "message": "No price history was available, so technical indicators were not computed."
+          },
+          "news": {
+            "provider": "marketaux",
+            "status": "available",
+            "message": "Loaded 3 related news articles for GNFC.NS."
+          }
+        }
+      },
+      {
+        "symbol": "HDFCBANK.NS",
+        "action": "HOLD",
+        "score": 58,
+        "confidence": 22,
+        "reasoning": [
+          "Fundamental signal unavailable because yahoo-finance2 request failed: Call `const yahooFinance = new YahooFinance()` first.  Upgrading from v2?  See https://github.com/gadicc/yahoo-finance2/blob/dev/docs/UPGRADING.md.",
+          "Technical signal unavailable: No price history was available, so technical indicators were not computed.",
+          "Average news sentiment 2.33 is supportive across 3 articles."
+        ],
+        "signals": {
+          "fundamental": {
+            "provider": "yahoo-finance2",
+            "status": "provider_error",
+            "message": "Call `const yahooFinance = new YahooFinance()` first.  Upgrading from v2?  See https://github.com/gadicc/yahoo-finance2/blob/dev/docs/UPGRADING.md."
+          },
+          "priceHistory": {
+            "provider": "stock-nse-india",
+            "status": "no_data",
+            "message": "NSE history returned no daily price bars for HDFCBANK.NS."
+          },
+          "technical": {
+            "provider": "derived",
+            "status": "no_data",
+            "message": "No price history was available, so technical indicators were not computed."
+          },
+          "news": {
+            "provider": "marketaux",
+            "status": "available",
+            "message": "Loaded 3 related news articles for HDFCBANK.NS."
+          }
+        }
+      },
+      {
+        "symbol": "HINDZINC.NS",
+        "action": "WATCH",
+        "score": 52,
+        "confidence": 19,
+        "reasoning": [
+          "Fundamental signal unavailable because yahoo-finance2 request failed: Call `const yahooFinance = new YahooFinance()` first.  Upgrading from v2?  See https://github.com/gadicc/yahoo-finance2/blob/dev/docs/UPGRADING.md.",
+          "Technical signal unavailable: No price history was available, so technical indicators were not computed.",
+          "Average news sentiment 1.33 is broadly neutral."
+        ],
+        "signals": {
+          "fundamental": {
+            "provider": "yahoo-finance2",
+            "status": "provider_error",
+            "message": "Call `const yahooFinance = new YahooFinance()` first.  Upgrading from v2?  See https://github.com/gadicc/yahoo-finance2/blob/dev/docs/UPGRADING.md."
+          },
+          "priceHistory": {
+            "provider": "stock-nse-india",
+            "status": "no_data",
+            "message": "NSE history returned no daily price bars for HINDZINC.NS."
+          },
+          "technical": {
+            "provider": "derived",
+            "status": "no_data",
+            "message": "No price history was available, so technical indicators were not computed."
+          },
+          "news": {
+            "provider": "marketaux",
+            "status": "available",
+            "message": "Loaded 3 related news articles for HINDZINC.NS."
+          }
+        }
+      },
+      {
+        "symbol": "IDFCFIRSTB.NS",
+        "action": "WATCH",
+        "score": 44,
+        "confidence": 21,
+        "reasoning": [
+          "Fundamental signal unavailable because yahoo-finance2 request failed: Call `const yahooFinance = new YahooFinance()` first.  Upgrading from v2?  See https://github.com/gadicc/yahoo-finance2/blob/dev/docs/UPGRADING.md.",
+          "Technical signal unavailable: No price history was available, so technical indicators were not computed.",
+          "Average news sentiment -3.33 is turning cautious."
+        ],
+        "signals": {
+          "fundamental": {
+            "provider": "yahoo-finance2",
+            "status": "provider_error",
+            "message": "Call `const yahooFinance = new YahooFinance()` first.  Upgrading from v2?  See https://github.com/gadicc/yahoo-finance2/blob/dev/docs/UPGRADING.md."
+          },
+          "priceHistory": {
+            "provider": "stock-nse-india",
+            "status": "no_data",
+            "message": "NSE history returned no daily price bars for IDFCFIRSTB.NS."
+          },
+          "technical": {
+            "provider": "derived",
+            "status": "no_data",
+            "message": "No price history was available, so technical indicators were not computed."
+          },
+          "news": {
+            "provider": "marketaux",
+            "status": "available",
+            "message": "Loaded 3 related news articles for IDFCFIRSTB.NS."
+          }
+        }
+      },
+      {
+        "symbol": "IOC.NS",
+        "action": "WATCH",
+        "score": 52,
+        "confidence": 19,
+        "reasoning": [
+          "Fundamental signal unavailable because yahoo-finance2 request failed: Call `const yahooFinance = new YahooFinance()` first.  Upgrading from v2?  See https://github.com/gadicc/yahoo-finance2/blob/dev/docs/UPGRADING.md.",
+          "Technical signal unavailable: No price history was available, so technical indicators were not computed.",
+          "Average news sentiment 0 is broadly neutral."
+        ],
+        "signals": {
+          "fundamental": {
+            "provider": "yahoo-finance2",
+            "status": "provider_error",
+            "message": "Call `const yahooFinance = new YahooFinance()` first.  Upgrading from v2?  See https://github.com/gadicc/yahoo-finance2/blob/dev/docs/UPGRADING.md."
+          },
+          "priceHistory": {
+            "provider": "stock-nse-india",
+            "status": "no_data",
+            "message": "NSE history returned no daily price bars for IOC.NS."
+          },
+          "technical": {
+            "provider": "derived",
+            "status": "no_data",
+            "message": "No price history was available, so technical indicators were not computed."
+          },
+          "news": {
+            "provider": "marketaux",
+            "status": "available",
+            "message": "Loaded 3 related news articles for IOC.NS."
+          }
+        }
+      },
+      {
+        "symbol": "IOB.NS",
+        "action": "HOLD",
+        "score": 58,
+        "confidence": 22,
+        "reasoning": [
+          "Fundamental signal unavailable because yahoo-finance2 request failed: Call `const yahooFinance = new YahooFinance()` first.  Upgrading from v2?  See https://github.com/gadicc/yahoo-finance2/blob/dev/docs/UPGRADING.md.",
+          "Technical signal unavailable: No price history was available, so technical indicators were not computed.",
+          "Average news sentiment 1.67 is supportive across 3 articles."
+        ],
+        "signals": {
+          "fundamental": {
+            "provider": "yahoo-finance2",
+            "status": "provider_error",
+            "message": "Call `const yahooFinance = new YahooFinance()` first.  Upgrading from v2?  See https://github.com/gadicc/yahoo-finance2/blob/dev/docs/UPGRADING.md."
+          },
+          "priceHistory": {
+            "provider": "stock-nse-india",
+            "status": "no_data",
+            "message": "NSE history returned no daily price bars for IOB.NS."
+          },
+          "technical": {
+            "provider": "derived",
+            "status": "no_data",
+            "message": "No price history was available, so technical indicators were not computed."
+          },
+          "news": {
+            "provider": "marketaux",
+            "status": "available",
+            "message": "Loaded 3 related news articles for IOB.NS."
+          }
+        }
+      },
+      {
+        "symbol": "IRFC.NS",
+        "action": "HOLD",
+        "score": 58,
+        "confidence": 22,
+        "reasoning": [
+          "Fundamental signal unavailable because yahoo-finance2 request failed: Call `const yahooFinance = new YahooFinance()` first.  Upgrading from v2?  See https://github.com/gadicc/yahoo-finance2/blob/dev/docs/UPGRADING.md.",
+          "Technical signal unavailable: No price history was available, so technical indicators were not computed.",
+          "Average news sentiment 2 is supportive across 3 articles."
+        ],
+        "signals": {
+          "fundamental": {
+            "provider": "yahoo-finance2",
+            "status": "provider_error",
+            "message": "Call `const yahooFinance = new YahooFinance()` first.  Upgrading from v2?  See https://github.com/gadicc/yahoo-finance2/blob/dev/docs/UPGRADING.md."
+          },
+          "priceHistory": {
+            "provider": "stock-nse-india",
+            "status": "no_data",
+            "message": "NSE history returned no daily price bars for IRFC.NS."
+          },
+          "technical": {
+            "provider": "derived",
+            "status": "no_data",
+            "message": "No price history was available, so technical indicators were not computed."
+          },
+          "news": {
+            "provider": "marketaux",
+            "status": "available",
+            "message": "Loaded 3 related news articles for IRFC.NS."
+          }
+        }
+      },
+      {
+        "symbol": "IREDA.NS",
+        "action": "WATCH",
+        "score": 50,
+        "confidence": 10,
+        "reasoning": [
+          "Insufficient usable market data was available to build a reliable multi-factor view.",
+          "Fundamental signal unavailable because yahoo-finance2 request failed: Call `const yahooFinance = new YahooFinance()` first.  Upgrading from v2?  See https://github.com/gadicc/yahoo-finance2/blob/dev/docs/UPGRADING.md.",
+          "Technical signal unavailable: No price history was available, so technical indicators were not computed.",
+          "News signal unavailable: MarketAux returned no recent related news for IREDA.NS."
+        ],
+        "signals": {
+          "fundamental": {
+            "provider": "yahoo-finance2",
+            "status": "provider_error",
+            "message": "Call `const yahooFinance = new YahooFinance()` first.  Upgrading from v2?  See https://github.com/gadicc/yahoo-finance2/blob/dev/docs/UPGRADING.md."
+          },
+          "priceHistory": {
+            "provider": "stock-nse-india",
+            "status": "no_data",
+            "message": "NSE history returned no daily price bars for IREDA.NS."
+          },
+          "technical": {
+            "provider": "derived",
+            "status": "no_data",
+            "message": "No price history was available, so technical indicators were not computed."
+          },
+          "news": {
+            "provider": "marketaux",
+            "status": "no_data",
+            "message": "MarketAux returned no recent related news for IREDA.NS."
+          }
+        }
+      },
+      {
+        "symbol": "ITC.NS",
+        "action": "HOLD",
+        "score": 62,
+        "confidence": 23,
+        "reasoning": [
+          "Fundamental signal unavailable because yahoo-finance2 request failed: Call `const yahooFinance = new YahooFinance()` first.  Upgrading from v2?  See https://github.com/gadicc/yahoo-finance2/blob/dev/docs/UPGRADING.md.",
+          "Technical signal unavailable: No price history was available, so technical indicators were not computed.",
+          "Average news sentiment 4.67 is strongly positive across 3 articles."
+        ],
+        "signals": {
+          "fundamental": {
+            "provider": "yahoo-finance2",
+            "status": "provider_error",
+            "message": "Call `const yahooFinance = new YahooFinance()` first.  Upgrading from v2?  See https://github.com/gadicc/yahoo-finance2/blob/dev/docs/UPGRADING.md."
+          },
+          "priceHistory": {
+            "provider": "stock-nse-india",
+            "status": "no_data",
+            "message": "NSE history returned no daily price bars for ITC.NS."
+          },
+          "technical": {
+            "provider": "derived",
+            "status": "no_data",
+            "message": "No price history was available, so technical indicators were not computed."
+          },
+          "news": {
+            "provider": "marketaux",
+            "status": "available",
+            "message": "Loaded 3 related news articles for ITC.NS."
+          }
+        }
+      },
+      {
+        "symbol": "MAXHEALTH.NS",
+        "action": "HOLD",
+        "score": 58,
+        "confidence": 22,
+        "reasoning": [
+          "Fundamental signal unavailable because yahoo-finance2 request failed: Call `const yahooFinance = new YahooFinance()` first.  Upgrading from v2?  See https://github.com/gadicc/yahoo-finance2/blob/dev/docs/UPGRADING.md.",
+          "Technical signal unavailable: No price history was available, so technical indicators were not computed.",
+          "Average news sentiment 2.33 is supportive across 3 articles."
+        ],
+        "signals": {
+          "fundamental": {
+            "provider": "yahoo-finance2",
+            "status": "provider_error",
+            "message": "Call `const yahooFinance = new YahooFinance()` first.  Upgrading from v2?  See https://github.com/gadicc/yahoo-finance2/blob/dev/docs/UPGRADING.md."
+          },
+          "priceHistory": {
+            "provider": "stock-nse-india",
+            "status": "no_data",
+            "message": "NSE history returned no daily price bars for MAXHEALTH.NS."
+          },
+          "technical": {
+            "provider": "derived",
+            "status": "no_data",
+            "message": "No price history was available, so technical indicators were not computed."
+          },
+          "news": {
+            "provider": "marketaux",
+            "status": "available",
+            "message": "Loaded 3 related news articles for MAXHEALTH.NS."
+          }
+        }
+      },
+      {
+        "symbol": "MAZDOCK.NS",
+        "action": "HOLD",
+        "score": 62,
+        "confidence": 23,
+        "reasoning": [
+          "Fundamental signal unavailable because yahoo-finance2 request failed: Call `const yahooFinance = new YahooFinance()` first.  Upgrading from v2?  See https://github.com/gadicc/yahoo-finance2/blob/dev/docs/UPGRADING.md.",
+          "Technical signal unavailable: No price history was available, so technical indicators were not computed.",
+          "Average news sentiment 5.67 is strongly positive across 3 articles."
+        ],
+        "signals": {
+          "fundamental": {
+            "provider": "yahoo-finance2",
+            "status": "provider_error",
+            "message": "Call `const yahooFinance = new YahooFinance()` first.  Upgrading from v2?  See https://github.com/gadicc/yahoo-finance2/blob/dev/docs/UPGRADING.md."
+          },
+          "priceHistory": {
+            "provider": "stock-nse-india",
+            "status": "no_data",
+            "message": "NSE history returned no daily price bars for MAZDOCK.NS."
+          },
+          "technical": {
+            "provider": "derived",
+            "status": "no_data",
+            "message": "No price history was available, so technical indicators were not computed."
+          },
+          "news": {
+            "provider": "marketaux",
+            "status": "available",
+            "message": "Loaded 3 related news articles for MAZDOCK.NS."
+          }
+        }
+      },
+      {
+        "symbol": "MINDTECK.NS",
+        "action": "WATCH",
+        "score": 52,
+        "confidence": 19,
+        "reasoning": [
+          "Fundamental signal unavailable because yahoo-finance2 request failed: Call `const yahooFinance = new YahooFinance()` first.  Upgrading from v2?  See https://github.com/gadicc/yahoo-finance2/blob/dev/docs/UPGRADING.md.",
+          "Technical signal unavailable: No price history was available, so technical indicators were not computed.",
+          "Average news sentiment 1.33 is broadly neutral."
+        ],
+        "signals": {
+          "fundamental": {
+            "provider": "yahoo-finance2",
+            "status": "provider_error",
+            "message": "Call `const yahooFinance = new YahooFinance()` first.  Upgrading from v2?  See https://github.com/gadicc/yahoo-finance2/blob/dev/docs/UPGRADING.md."
+          },
+          "priceHistory": {
+            "provider": "stock-nse-india",
+            "status": "no_data",
+            "message": "NSE history returned no daily price bars for MINDTECK.NS."
+          },
+          "technical": {
+            "provider": "derived",
+            "status": "no_data",
+            "message": "No price history was available, so technical indicators were not computed."
+          },
+          "news": {
+            "provider": "marketaux",
+            "status": "available",
+            "message": "Loaded 3 related news articles for MINDTECK.NS."
+          }
+        }
+      },
+      {
+        "symbol": "MMTC.NS",
+        "action": "HOLD",
+        "score": 62,
+        "confidence": 23,
+        "reasoning": [
+          "Fundamental signal unavailable because yahoo-finance2 request failed: Call `const yahooFinance = new YahooFinance()` first.  Upgrading from v2?  See https://github.com/gadicc/yahoo-finance2/blob/dev/docs/UPGRADING.md.",
+          "Technical signal unavailable: No price history was available, so technical indicators were not computed.",
+          "Average news sentiment 8.33 is strongly positive across 3 articles."
+        ],
+        "signals": {
+          "fundamental": {
+            "provider": "yahoo-finance2",
+            "status": "provider_error",
+            "message": "Call `const yahooFinance = new YahooFinance()` first.  Upgrading from v2?  See https://github.com/gadicc/yahoo-finance2/blob/dev/docs/UPGRADING.md."
+          },
+          "priceHistory": {
+            "provider": "stock-nse-india",
+            "status": "no_data",
+            "message": "NSE history returned no daily price bars for MMTC.NS."
+          },
+          "technical": {
+            "provider": "derived",
+            "status": "no_data",
+            "message": "No price history was available, so technical indicators were not computed."
+          },
+          "news": {
+            "provider": "marketaux",
+            "status": "available",
+            "message": "Loaded 3 related news articles for MMTC.NS."
+          }
+        }
+      },
+      {
+        "symbol": "NATIONALUM.NS",
+        "action": "HOLD",
+        "score": 62,
+        "confidence": 23,
+        "reasoning": [
+          "Fundamental signal unavailable because yahoo-finance2 request failed: Call `const yahooFinance = new YahooFinance()` first.  Upgrading from v2?  See https://github.com/gadicc/yahoo-finance2/blob/dev/docs/UPGRADING.md.",
+          "Technical signal unavailable: No price history was available, so technical indicators were not computed.",
+          "Average news sentiment 9.67 is strongly positive across 3 articles."
+        ],
+        "signals": {
+          "fundamental": {
+            "provider": "yahoo-finance2",
+            "status": "provider_error",
+            "message": "Call `const yahooFinance = new YahooFinance()` first.  Upgrading from v2?  See https://github.com/gadicc/yahoo-finance2/blob/dev/docs/UPGRADING.md."
+          },
+          "priceHistory": {
+            "provider": "stock-nse-india",
+            "status": "no_data",
+            "message": "NSE history returned no daily price bars for NATIONALUM.NS."
+          },
+          "technical": {
+            "provider": "derived",
+            "status": "no_data",
+            "message": "No price history was available, so technical indicators were not computed."
+          },
+          "news": {
+            "provider": "marketaux",
+            "status": "available",
+            "message": "Loaded 3 related news articles for NATIONALUM.NS."
+          }
+        }
+      },
+      {
+        "symbol": "NELCO.NS",
+        "action": "HOLD",
+        "score": 58,
+        "confidence": 22,
+        "reasoning": [
+          "Fundamental signal unavailable because yahoo-finance2 request failed: Call `const yahooFinance = new YahooFinance()` first.  Upgrading from v2?  See https://github.com/gadicc/yahoo-finance2/blob/dev/docs/UPGRADING.md.",
+          "Technical signal unavailable: No price history was available, so technical indicators were not computed.",
+          "Average news sentiment 2 is supportive across 3 articles."
+        ],
+        "signals": {
+          "fundamental": {
+            "provider": "yahoo-finance2",
+            "status": "provider_error",
+            "message": "Call `const yahooFinance = new YahooFinance()` first.  Upgrading from v2?  See https://github.com/gadicc/yahoo-finance2/blob/dev/docs/UPGRADING.md."
+          },
+          "priceHistory": {
+            "provider": "stock-nse-india",
+            "status": "no_data",
+            "message": "NSE history returned no daily price bars for NELCO.NS."
+          },
+          "technical": {
+            "provider": "derived",
+            "status": "no_data",
+            "message": "No price history was available, so technical indicators were not computed."
+          },
+          "news": {
+            "provider": "marketaux",
+            "status": "available",
+            "message": "Loaded 3 related news articles for NELCO.NS."
+          }
+        }
+      },
+      {
+        "symbol": "NHPC.NS",
+        "action": "HOLD",
+        "score": 62,
+        "confidence": 23,
+        "reasoning": [
+          "Fundamental signal unavailable because yahoo-finance2 request failed: Call `const yahooFinance = new YahooFinance()` first.  Upgrading from v2?  See https://github.com/gadicc/yahoo-finance2/blob/dev/docs/UPGRADING.md.",
+          "Technical signal unavailable: No price history was available, so technical indicators were not computed.",
+          "Average news sentiment 5.33 is strongly positive across 3 articles."
+        ],
+        "signals": {
+          "fundamental": {
+            "provider": "yahoo-finance2",
+            "status": "provider_error",
+            "message": "Call `const yahooFinance = new YahooFinance()` first.  Upgrading from v2?  See https://github.com/gadicc/yahoo-finance2/blob/dev/docs/UPGRADING.md."
+          },
+          "priceHistory": {
+            "provider": "stock-nse-india",
+            "status": "no_data",
+            "message": "NSE history returned no daily price bars for NHPC.NS."
+          },
+          "technical": {
+            "provider": "derived",
+            "status": "no_data",
+            "message": "No price history was available, so technical indicators were not computed."
+          },
+          "news": {
+            "provider": "marketaux",
+            "status": "available",
+            "message": "Loaded 3 related news articles for NHPC.NS."
+          }
+        }
+      },
+      {
+        "symbol": "NMDC.NS",
+        "action": "WATCH",
+        "score": 52,
+        "confidence": 19,
+        "reasoning": [
+          "Fundamental signal unavailable because yahoo-finance2 request failed: Call `const yahooFinance = new YahooFinance()` first.  Upgrading from v2?  See https://github.com/gadicc/yahoo-finance2/blob/dev/docs/UPGRADING.md.",
+          "Technical signal unavailable: No price history was available, so technical indicators were not computed.",
+          "Average news sentiment 1 is broadly neutral."
+        ],
+        "signals": {
+          "fundamental": {
+            "provider": "yahoo-finance2",
+            "status": "provider_error",
+            "message": "Call `const yahooFinance = new YahooFinance()` first.  Upgrading from v2?  See https://github.com/gadicc/yahoo-finance2/blob/dev/docs/UPGRADING.md."
+          },
+          "priceHistory": {
+            "provider": "stock-nse-india",
+            "status": "no_data",
+            "message": "NSE history returned no daily price bars for NMDC.NS."
+          },
+          "technical": {
+            "provider": "derived",
+            "status": "no_data",
+            "message": "No price history was available, so technical indicators were not computed."
+          },
+          "news": {
+            "provider": "marketaux",
+            "status": "available",
+            "message": "Loaded 3 related news articles for NMDC.NS."
+          }
+        }
+      },
+      {
+        "symbol": "NTPC.NS",
+        "action": "HOLD",
+        "score": 62,
+        "confidence": 23,
+        "reasoning": [
+          "Fundamental signal unavailable because yahoo-finance2 request failed: Call `const yahooFinance = new YahooFinance()` first.  Upgrading from v2?  See https://github.com/gadicc/yahoo-finance2/blob/dev/docs/UPGRADING.md.",
+          "Technical signal unavailable: No price history was available, so technical indicators were not computed.",
+          "Average news sentiment 4.33 is strongly positive across 3 articles."
+        ],
+        "signals": {
+          "fundamental": {
+            "provider": "yahoo-finance2",
+            "status": "provider_error",
+            "message": "Call `const yahooFinance = new YahooFinance()` first.  Upgrading from v2?  See https://github.com/gadicc/yahoo-finance2/blob/dev/docs/UPGRADING.md."
+          },
+          "priceHistory": {
+            "provider": "stock-nse-india",
+            "status": "no_data",
+            "message": "NSE history returned no daily price bars for NTPC.NS."
+          },
+          "technical": {
+            "provider": "derived",
+            "status": "no_data",
+            "message": "No price history was available, so technical indicators were not computed."
+          },
+          "news": {
+            "provider": "marketaux",
+            "status": "available",
+            "message": "Loaded 3 related news articles for NTPC.NS."
+          }
+        }
+      },
+      {
+        "symbol": "OIL.NS",
+        "action": "WATCH",
+        "score": 52,
+        "confidence": 19,
+        "reasoning": [
+          "Fundamental signal unavailable because yahoo-finance2 request failed: Call `const yahooFinance = new YahooFinance()` first.  Upgrading from v2?  See https://github.com/gadicc/yahoo-finance2/blob/dev/docs/UPGRADING.md.",
+          "Technical signal unavailable: No price history was available, so technical indicators were not computed.",
+          "Average news sentiment 0.67 is broadly neutral."
+        ],
+        "signals": {
+          "fundamental": {
+            "provider": "yahoo-finance2",
+            "status": "provider_error",
+            "message": "Call `const yahooFinance = new YahooFinance()` first.  Upgrading from v2?  See https://github.com/gadicc/yahoo-finance2/blob/dev/docs/UPGRADING.md."
+          },
+          "priceHistory": {
+            "provider": "stock-nse-india",
+            "status": "no_data",
+            "message": "NSE history returned no daily price bars for OIL.NS."
+          },
+          "technical": {
+            "provider": "derived",
+            "status": "no_data",
+            "message": "No price history was available, so technical indicators were not computed."
+          },
+          "news": {
+            "provider": "marketaux",
+            "status": "available",
+            "message": "Loaded 3 related news articles for OIL.NS."
+          }
+        }
+      },
+      {
+        "symbol": "ONGC.NS",
+        "action": "HOLD",
+        "score": 62,
+        "confidence": 23,
+        "reasoning": [
+          "Fundamental signal unavailable because yahoo-finance2 request failed: Call `const yahooFinance = new YahooFinance()` first.  Upgrading from v2?  See https://github.com/gadicc/yahoo-finance2/blob/dev/docs/UPGRADING.md.",
+          "Technical signal unavailable: No price history was available, so technical indicators were not computed.",
+          "Average news sentiment 5.33 is strongly positive across 3 articles."
+        ],
+        "signals": {
+          "fundamental": {
+            "provider": "yahoo-finance2",
+            "status": "provider_error",
+            "message": "Call `const yahooFinance = new YahooFinance()` first.  Upgrading from v2?  See https://github.com/gadicc/yahoo-finance2/blob/dev/docs/UPGRADING.md."
+          },
+          "priceHistory": {
+            "provider": "stock-nse-india",
+            "status": "no_data",
+            "message": "NSE history returned no daily price bars for ONGC.NS."
+          },
+          "technical": {
+            "provider": "derived",
+            "status": "no_data",
+            "message": "No price history was available, so technical indicators were not computed."
+          },
+          "news": {
+            "provider": "marketaux",
+            "status": "available",
+            "message": "Loaded 3 related news articles for ONGC.NS."
+          }
+        }
+      },
+      {
+        "symbol": "POWERGRID.NS",
+        "action": "HOLD",
+        "score": 62,
+        "confidence": 23,
+        "reasoning": [
+          "Fundamental signal unavailable because yahoo-finance2 request failed: Call `const yahooFinance = new YahooFinance()` first.  Upgrading from v2?  See https://github.com/gadicc/yahoo-finance2/blob/dev/docs/UPGRADING.md.",
+          "Technical signal unavailable: No price history was available, so technical indicators were not computed.",
+          "Average news sentiment 9 is strongly positive across 3 articles."
+        ],
+        "signals": {
+          "fundamental": {
+            "provider": "yahoo-finance2",
+            "status": "provider_error",
+            "message": "Call `const yahooFinance = new YahooFinance()` first.  Upgrading from v2?  See https://github.com/gadicc/yahoo-finance2/blob/dev/docs/UPGRADING.md."
+          },
+          "priceHistory": {
+            "provider": "stock-nse-india",
+            "status": "no_data",
+            "message": "NSE history returned no daily price bars for POWERGRID.NS."
+          },
+          "technical": {
+            "provider": "derived",
+            "status": "no_data",
+            "message": "No price history was available, so technical indicators were not computed."
+          },
+          "news": {
+            "provider": "marketaux",
+            "status": "available",
+            "message": "Loaded 3 related news articles for POWERGRID.NS."
+          }
+        }
+      },
+      {
+        "symbol": "PNB.NS",
+        "action": "WATCH",
+        "score": 52,
+        "confidence": 19,
+        "reasoning": [
+          "Fundamental signal unavailable because yahoo-finance2 request failed: Call `const yahooFinance = new YahooFinance()` first.  Upgrading from v2?  See https://github.com/gadicc/yahoo-finance2/blob/dev/docs/UPGRADING.md.",
+          "Technical signal unavailable: No price history was available, so technical indicators were not computed.",
+          "Average news sentiment -1 is broadly neutral."
+        ],
+        "signals": {
+          "fundamental": {
+            "provider": "yahoo-finance2",
+            "status": "provider_error",
+            "message": "Call `const yahooFinance = new YahooFinance()` first.  Upgrading from v2?  See https://github.com/gadicc/yahoo-finance2/blob/dev/docs/UPGRADING.md."
+          },
+          "priceHistory": {
+            "provider": "stock-nse-india",
+            "status": "no_data",
+            "message": "NSE history returned no daily price bars for PNB.NS."
+          },
+          "technical": {
+            "provider": "derived",
+            "status": "no_data",
+            "message": "No price history was available, so technical indicators were not computed."
+          },
+          "news": {
+            "provider": "marketaux",
+            "status": "available",
+            "message": "Loaded 3 related news articles for PNB.NS."
+          }
+        }
+      },
+      {
+        "symbol": "RECLTD.NS",
+        "action": "HOLD",
+        "score": 58,
+        "confidence": 22,
+        "reasoning": [
+          "Fundamental signal unavailable because yahoo-finance2 request failed: Call `const yahooFinance = new YahooFinance()` first.  Upgrading from v2?  See https://github.com/gadicc/yahoo-finance2/blob/dev/docs/UPGRADING.md.",
+          "Technical signal unavailable: No price history was available, so technical indicators were not computed.",
+          "Average news sentiment 3.33 is supportive across 3 articles."
+        ],
+        "signals": {
+          "fundamental": {
+            "provider": "yahoo-finance2",
+            "status": "provider_error",
+            "message": "Call `const yahooFinance = new YahooFinance()` first.  Upgrading from v2?  See https://github.com/gadicc/yahoo-finance2/blob/dev/docs/UPGRADING.md."
+          },
+          "priceHistory": {
+            "provider": "stock-nse-india",
+            "status": "no_data",
+            "message": "NSE history returned no daily price bars for RECLTD.NS."
+          },
+          "technical": {
+            "provider": "derived",
+            "status": "no_data",
+            "message": "No price history was available, so technical indicators were not computed."
+          },
+          "news": {
+            "provider": "marketaux",
+            "status": "available",
+            "message": "Loaded 3 related news articles for RECLTD.NS."
+          }
+        }
+      },
+      {
+        "symbol": "RELIANCE.NS",
+        "action": "HOLD",
+        "score": 62,
+        "confidence": 23,
+        "reasoning": [
+          "Fundamental signal unavailable because yahoo-finance2 request failed: Call `const yahooFinance = new YahooFinance()` first.  Upgrading from v2?  See https://github.com/gadicc/yahoo-finance2/blob/dev/docs/UPGRADING.md.",
+          "Technical signal unavailable: No price history was available, so technical indicators were not computed.",
+          "Average news sentiment 6.33 is strongly positive across 3 articles."
+        ],
+        "signals": {
+          "fundamental": {
+            "provider": "yahoo-finance2",
+            "status": "provider_error",
+            "message": "Call `const yahooFinance = new YahooFinance()` first.  Upgrading from v2?  See https://github.com/gadicc/yahoo-finance2/blob/dev/docs/UPGRADING.md."
+          },
+          "priceHistory": {
+            "provider": "stock-nse-india",
+            "status": "no_data",
+            "message": "NSE history returned no daily price bars for RELIANCE.NS."
+          },
+          "technical": {
+            "provider": "derived",
+            "status": "no_data",
+            "message": "No price history was available, so technical indicators were not computed."
+          },
+          "news": {
+            "provider": "marketaux",
+            "status": "available",
+            "message": "Loaded 3 related news articles for RELIANCE.NS."
+          }
+        }
+      },
+      {
+        "symbol": "SHRIRAMFIN.NS",
+        "action": "WATCH",
+        "score": 50,
+        "confidence": 10,
+        "reasoning": [
+          "Insufficient usable market data was available to build a reliable multi-factor view.",
+          "Fundamental signal unavailable because yahoo-finance2 request failed: Call `const yahooFinance = new YahooFinance()` first.  Upgrading from v2?  See https://github.com/gadicc/yahoo-finance2/blob/dev/docs/UPGRADING.md.",
+          "Technical signal unavailable: No price history was available, so technical indicators were not computed.",
+          "News signal unavailable: MarketAux returned no recent related news for SHRIRAMFIN.NS."
+        ],
+        "signals": {
+          "fundamental": {
+            "provider": "yahoo-finance2",
+            "status": "provider_error",
+            "message": "Call `const yahooFinance = new YahooFinance()` first.  Upgrading from v2?  See https://github.com/gadicc/yahoo-finance2/blob/dev/docs/UPGRADING.md."
+          },
+          "priceHistory": {
+            "provider": "stock-nse-india",
+            "status": "no_data",
+            "message": "NSE history returned no daily price bars for SHRIRAMFIN.NS."
+          },
+          "technical": {
+            "provider": "derived",
+            "status": "no_data",
+            "message": "No price history was available, so technical indicators were not computed."
+          },
+          "news": {
+            "provider": "marketaux",
+            "status": "no_data",
+            "message": "MarketAux returned no recent related news for SHRIRAMFIN.NS."
+          }
+        }
+      },
+      {
+        "symbol": "STLTECH.NS",
+        "action": "WATCH",
+        "score": 52,
+        "confidence": 19,
+        "reasoning": [
+          "Fundamental signal unavailable because yahoo-finance2 request failed: Call `const yahooFinance = new YahooFinance()` first.  Upgrading from v2?  See https://github.com/gadicc/yahoo-finance2/blob/dev/docs/UPGRADING.md.",
+          "Technical signal unavailable: No price history was available, so technical indicators were not computed.",
+          "Average news sentiment -0.67 is broadly neutral."
+        ],
+        "signals": {
+          "fundamental": {
+            "provider": "yahoo-finance2",
+            "status": "provider_error",
+            "message": "Call `const yahooFinance = new YahooFinance()` first.  Upgrading from v2?  See https://github.com/gadicc/yahoo-finance2/blob/dev/docs/UPGRADING.md."
+          },
+          "priceHistory": {
+            "provider": "stock-nse-india",
+            "status": "no_data",
+            "message": "NSE history returned no daily price bars for STLTECH.NS."
+          },
+          "technical": {
+            "provider": "derived",
+            "status": "no_data",
+            "message": "No price history was available, so technical indicators were not computed."
+          },
+          "news": {
+            "provider": "marketaux",
+            "status": "available",
+            "message": "Loaded 3 related news articles for STLTECH.NS."
+          }
+        }
+      },
+      {
+        "symbol": "TATAELXSI.NS",
+        "action": "HOLD",
+        "score": 58,
+        "confidence": 22,
+        "reasoning": [
+          "Fundamental signal unavailable because yahoo-finance2 request failed: Call `const yahooFinance = new YahooFinance()` first.  Upgrading from v2?  See https://github.com/gadicc/yahoo-finance2/blob/dev/docs/UPGRADING.md.",
+          "Technical signal unavailable: No price history was available, so technical indicators were not computed.",
+          "Average news sentiment 2.67 is supportive across 3 articles."
+        ],
+        "signals": {
+          "fundamental": {
+            "provider": "yahoo-finance2",
+            "status": "provider_error",
+            "message": "Call `const yahooFinance = new YahooFinance()` first.  Upgrading from v2?  See https://github.com/gadicc/yahoo-finance2/blob/dev/docs/UPGRADING.md."
+          },
+          "priceHistory": {
+            "provider": "stock-nse-india",
+            "status": "no_data",
+            "message": "NSE history returned no daily price bars for TATAELXSI.NS."
+          },
+          "technical": {
+            "provider": "derived",
+            "status": "no_data",
+            "message": "No price history was available, so technical indicators were not computed."
+          },
+          "news": {
+            "provider": "marketaux",
+            "status": "available",
+            "message": "Loaded 3 related news articles for TATAELXSI.NS."
+          }
+        }
+      },
+      {
+        "symbol": "TATAPOWER.NS",
+        "action": "HOLD",
+        "score": 58,
+        "confidence": 22,
+        "reasoning": [
+          "Fundamental signal unavailable because yahoo-finance2 request failed: Call `const yahooFinance = new YahooFinance()` first.  Upgrading from v2?  See https://github.com/gadicc/yahoo-finance2/blob/dev/docs/UPGRADING.md.",
+          "Technical signal unavailable: No price history was available, so technical indicators were not computed.",
+          "Average news sentiment 3 is supportive across 3 articles."
+        ],
+        "signals": {
+          "fundamental": {
+            "provider": "yahoo-finance2",
+            "status": "provider_error",
+            "message": "Call `const yahooFinance = new YahooFinance()` first.  Upgrading from v2?  See https://github.com/gadicc/yahoo-finance2/blob/dev/docs/UPGRADING.md."
+          },
+          "priceHistory": {
+            "provider": "stock-nse-india",
+            "status": "no_data",
+            "message": "NSE history returned no daily price bars for TATAPOWER.NS."
+          },
+          "technical": {
+            "provider": "derived",
+            "status": "no_data",
+            "message": "No price history was available, so technical indicators were not computed."
+          },
+          "news": {
+            "provider": "marketaux",
+            "status": "available",
+            "message": "Loaded 3 related news articles for TATAPOWER.NS."
+          }
+        }
+      },
+      {
+        "symbol": "TATASTEEL.NS",
+        "action": "HOLD",
+        "score": 62,
+        "confidence": 23,
+        "reasoning": [
+          "Fundamental signal unavailable because yahoo-finance2 request failed: Call `const yahooFinance = new YahooFinance()` first.  Upgrading from v2?  See https://github.com/gadicc/yahoo-finance2/blob/dev/docs/UPGRADING.md.",
+          "Technical signal unavailable: No price history was available, so technical indicators were not computed.",
+          "Average news sentiment 7 is strongly positive across 3 articles."
+        ],
+        "signals": {
+          "fundamental": {
+            "provider": "yahoo-finance2",
+            "status": "provider_error",
+            "message": "Call `const yahooFinance = new YahooFinance()` first.  Upgrading from v2?  See https://github.com/gadicc/yahoo-finance2/blob/dev/docs/UPGRADING.md."
+          },
+          "priceHistory": {
+            "provider": "stock-nse-india",
+            "status": "no_data",
+            "message": "NSE history returned no daily price bars for TATASTEEL.NS."
+          },
+          "technical": {
+            "provider": "derived",
+            "status": "no_data",
+            "message": "No price history was available, so technical indicators were not computed."
+          },
+          "news": {
+            "provider": "marketaux",
+            "status": "available",
+            "message": "Loaded 3 related news articles for TATASTEEL.NS."
+          }
+        }
+      },
+      {
+        "symbol": "TATATECH.NS",
+        "action": "WATCH",
+        "score": 50,
+        "confidence": 10,
+        "reasoning": [
+          "Insufficient usable market data was available to build a reliable multi-factor view.",
+          "Fundamental signal unavailable because yahoo-finance2 request failed: Call `const yahooFinance = new YahooFinance()` first.  Upgrading from v2?  See https://github.com/gadicc/yahoo-finance2/blob/dev/docs/UPGRADING.md.",
+          "Technical signal unavailable: No price history was available, so technical indicators were not computed.",
+          "News signal unavailable: MarketAux returned no recent related news for TATATECH.NS."
+        ],
+        "signals": {
+          "fundamental": {
+            "provider": "yahoo-finance2",
+            "status": "provider_error",
+            "message": "Call `const yahooFinance = new YahooFinance()` first.  Upgrading from v2?  See https://github.com/gadicc/yahoo-finance2/blob/dev/docs/UPGRADING.md."
+          },
+          "priceHistory": {
+            "provider": "stock-nse-india",
+            "status": "no_data",
+            "message": "NSE history returned no daily price bars for TATATECH.NS."
+          },
+          "technical": {
+            "provider": "derived",
+            "status": "no_data",
+            "message": "No price history was available, so technical indicators were not computed."
+          },
+          "news": {
+            "provider": "marketaux",
+            "status": "no_data",
+            "message": "MarketAux returned no recent related news for TATATECH.NS."
+          }
+        }
+      },
+      {
+        "symbol": "VEDL.NS",
+        "action": "WATCH",
+        "score": 52,
+        "confidence": 19,
+        "reasoning": [
+          "Fundamental signal unavailable because yahoo-finance2 request failed: Call `const yahooFinance = new YahooFinance()` first.  Upgrading from v2?  See https://github.com/gadicc/yahoo-finance2/blob/dev/docs/UPGRADING.md.",
+          "Technical signal unavailable: No price history was available, so technical indicators were not computed.",
+          "Average news sentiment 0.33 is broadly neutral."
+        ],
+        "signals": {
+          "fundamental": {
+            "provider": "yahoo-finance2",
+            "status": "provider_error",
+            "message": "Call `const yahooFinance = new YahooFinance()` first.  Upgrading from v2?  See https://github.com/gadicc/yahoo-finance2/blob/dev/docs/UPGRADING.md."
+          },
+          "priceHistory": {
+            "provider": "stock-nse-india",
+            "status": "no_data",
+            "message": "NSE history returned no daily price bars for VEDL.NS."
+          },
+          "technical": {
+            "provider": "derived",
+            "status": "no_data",
+            "message": "No price history was available, so technical indicators were not computed."
+          },
+          "news": {
+            "provider": "marketaux",
+            "status": "available",
+            "message": "Loaded 3 related news articles for VEDL.NS."
+          }
+        }
+      }
+    ]
+  }
+}

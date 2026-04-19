@@ -1,0 +1,546 @@
+{
+  "success": true,
+  "data": {
+    "portfolioId": "a94aa95e-8f18-4289-a6e4-1a74868924f8",
+    "portfolioName": "Harsh Rupera Upstox Holding",
+    "generatedAt": "2026-04-19T19:17:24.700Z",
+    "items": [
+      {
+        "symbol": "ADANIPORTS.NS",
+        "action": "HOLD",
+        "score": 62,
+        "confidence": 30,
+        "reasoning": [
+          "Fundamental data unavailable; valuation and balance-sheet checks skipped.",
+          "Technical data unavailable; momentum and trend checks skipped.",
+          "Average news sentiment 4 is strongly positive across 3 articles."
+        ]
+      },
+      {
+        "symbol": "ADANIPOWER.NS",
+        "action": "HOLD",
+        "score": 62,
+        "confidence": 30,
+        "reasoning": [
+          "Fundamental data unavailable; valuation and balance-sheet checks skipped.",
+          "Technical data unavailable; momentum and trend checks skipped.",
+          "Average news sentiment 7 is strongly positive across 3 articles."
+        ]
+      },
+      {
+        "symbol": "ABCAPITAL.NS",
+        "action": "HOLD",
+        "score": 58,
+        "confidence": 27,
+        "reasoning": [
+          "Fundamental data unavailable; valuation and balance-sheet checks skipped.",
+          "Technical data unavailable; momentum and trend checks skipped.",
+          "Average news sentiment 2.33 is supportive across 3 articles."
+        ]
+      },
+      {
+        "symbol": "AEQUS.NS",
+        "action": "WATCH",
+        "score": 50,
+        "confidence": 20,
+        "reasoning": [
+          "Insufficient market data available to build a reliable view."
+        ]
+      },
+      {
+        "symbol": "AGI.NS",
+        "action": "WATCH",
+        "score": 50,
+        "confidence": 20,
+        "reasoning": [
+          "Insufficient market data available to build a reliable view."
+        ]
+      },
+      {
+        "symbol": "APOLLOTYRE.NS",
+        "action": "HOLD",
+        "score": 62,
+        "confidence": 30,
+        "reasoning": [
+          "Fundamental data unavailable; valuation and balance-sheet checks skipped.",
+          "Technical data unavailable; momentum and trend checks skipped.",
+          "Average news sentiment 4.33 is strongly positive across 3 articles."
+        ]
+      },
+      {
+        "symbol": "ASHOKLEY.NS",
+        "action": "HOLD",
+        "score": 62,
+        "confidence": 30,
+        "reasoning": [
+          "Fundamental data unavailable; valuation and balance-sheet checks skipped.",
+          "Technical data unavailable; momentum and trend checks skipped.",
+          "Average news sentiment 8 is strongly positive across 3 articles."
+        ]
+      },
+      {
+        "symbol": "ASTRAL.NS",
+        "action": "HOLD",
+        "score": 62,
+        "confidence": 30,
+        "reasoning": [
+          "Fundamental data unavailable; valuation and balance-sheet checks skipped.",
+          "Technical data unavailable; momentum and trend checks skipped.",
+          "Average news sentiment 8 is strongly positive across 3 articles."
+        ]
+      },
+      {
+        "symbol": "BANKINDIA.NS",
+        "action": "HOLD",
+        "score": 62,
+        "confidence": 30,
+        "reasoning": [
+          "Fundamental data unavailable; valuation and balance-sheet checks skipped.",
+          "Technical data unavailable; momentum and trend checks skipped.",
+          "Average news sentiment 6.33 is strongly positive across 3 articles."
+        ]
+      },
+      {
+        "symbol": "MAHABANK.NS",
+        "action": "HOLD",
+        "score": 58,
+        "confidence": 27,
+        "reasoning": [
+          "Fundamental data unavailable; valuation and balance-sheet checks skipped.",
+          "Technical data unavailable; momentum and trend checks skipped.",
+          "Average news sentiment 1.67 is supportive across 3 articles."
+        ]
+      },
+      {
+        "symbol": "BEL.NS",
+        "action": "HOLD",
+        "score": 62,
+        "confidence": 30,
+        "reasoning": [
+          "Fundamental data unavailable; valuation and balance-sheet checks skipped.",
+          "Technical data unavailable; momentum and trend checks skipped.",
+          "Average news sentiment 6.33 is strongly positive across 3 articles."
+        ]
+      },
+      {
+        "symbol": "BPCL.NS",
+        "action": "WATCH",
+        "score": 52,
+        "confidence": 23,
+        "reasoning": [
+          "Fundamental data unavailable; valuation and balance-sheet checks skipped.",
+          "Technical data unavailable; momentum and trend checks skipped.",
+          "Average news sentiment 0 is broadly neutral."
+        ]
+      },
+      {
+        "symbol": "CANBK.NS",
+        "action": "HOLD",
+        "score": 58,
+        "confidence": 27,
+        "reasoning": [
+          "Fundamental data unavailable; valuation and balance-sheet checks skipped.",
+          "Technical data unavailable; momentum and trend checks skipped.",
+          "Average news sentiment 1.67 is supportive across 3 articles."
+        ]
+      },
+      {
+        "symbol": "CARRARO.NS",
+        "action": "WATCH",
+        "score": 50,
+        "confidence": 20,
+        "reasoning": [
+          "Insufficient market data available to build a reliable view."
+        ]
+      },
+      {
+        "symbol": "COALINDIA.NS",
+        "action": "HOLD",
+        "score": 58,
+        "confidence": 27,
+        "reasoning": [
+          "Fundamental data unavailable; valuation and balance-sheet checks skipped.",
+          "Technical data unavailable; momentum and trend checks skipped.",
+          "Average news sentiment 1.67 is supportive across 3 articles."
+        ]
+      },
+      {
+        "symbol": "CYIENT.NS",
+        "action": "HOLD",
+        "score": 62,
+        "confidence": 30,
+        "reasoning": [
+          "Fundamental data unavailable; valuation and balance-sheet checks skipped.",
+          "Technical data unavailable; momentum and trend checks skipped.",
+          "Average news sentiment 6.33 is strongly positive across 3 articles."
+        ]
+      },
+      {
+        "symbol": "DCXINDIA.NS",
+        "action": "WATCH",
+        "score": 50,
+        "confidence": 20,
+        "reasoning": [
+          "Insufficient market data available to build a reliable view."
+        ]
+      },
+      {
+        "symbol": "FINPIPE.NS",
+        "action": "HOLD",
+        "score": 62,
+        "confidence": 30,
+        "reasoning": [
+          "Fundamental data unavailable; valuation and balance-sheet checks skipped.",
+          "Technical data unavailable; momentum and trend checks skipped.",
+          "Average news sentiment 5.33 is strongly positive across 3 articles."
+        ]
+      },
+      {
+        "symbol": "GENUSPOWER.NS",
+        "action": "HOLD",
+        "score": 62,
+        "confidence": 30,
+        "reasoning": [
+          "Fundamental data unavailable; valuation and balance-sheet checks skipped.",
+          "Technical data unavailable; momentum and trend checks skipped.",
+          "Average news sentiment 4.67 is strongly positive across 3 articles."
+        ]
+      },
+      {
+        "symbol": "GNFC.NS",
+        "action": "WATCH",
+        "score": 44,
+        "confidence": 26,
+        "reasoning": [
+          "Fundamental data unavailable; valuation and balance-sheet checks skipped.",
+          "Technical data unavailable; momentum and trend checks skipped.",
+          "Average news sentiment -3.33 is turning cautious."
+        ]
+      },
+      {
+        "symbol": "HDFCBANK.NS",
+        "action": "HOLD",
+        "score": 58,
+        "confidence": 27,
+        "reasoning": [
+          "Fundamental data unavailable; valuation and balance-sheet checks skipped.",
+          "Technical data unavailable; momentum and trend checks skipped.",
+          "Average news sentiment 2.33 is supportive across 3 articles."
+        ]
+      },
+      {
+        "symbol": "HINDZINC.NS",
+        "action": "WATCH",
+        "score": 52,
+        "confidence": 23,
+        "reasoning": [
+          "Fundamental data unavailable; valuation and balance-sheet checks skipped.",
+          "Technical data unavailable; momentum and trend checks skipped.",
+          "Average news sentiment 1.33 is broadly neutral."
+        ]
+      },
+      {
+        "symbol": "IDFCFIRSTB.NS",
+        "action": "WATCH",
+        "score": 44,
+        "confidence": 26,
+        "reasoning": [
+          "Fundamental data unavailable; valuation and balance-sheet checks skipped.",
+          "Technical data unavailable; momentum and trend checks skipped.",
+          "Average news sentiment -3.33 is turning cautious."
+        ]
+      },
+      {
+        "symbol": "IOC.NS",
+        "action": "WATCH",
+        "score": 52,
+        "confidence": 23,
+        "reasoning": [
+          "Fundamental data unavailable; valuation and balance-sheet checks skipped.",
+          "Technical data unavailable; momentum and trend checks skipped.",
+          "Average news sentiment 0 is broadly neutral."
+        ]
+      },
+      {
+        "symbol": "IOB.NS",
+        "action": "HOLD",
+        "score": 58,
+        "confidence": 27,
+        "reasoning": [
+          "Fundamental data unavailable; valuation and balance-sheet checks skipped.",
+          "Technical data unavailable; momentum and trend checks skipped.",
+          "Average news sentiment 1.67 is supportive across 3 articles."
+        ]
+      },
+      {
+        "symbol": "IRFC.NS",
+        "action": "HOLD",
+        "score": 58,
+        "confidence": 27,
+        "reasoning": [
+          "Fundamental data unavailable; valuation and balance-sheet checks skipped.",
+          "Technical data unavailable; momentum and trend checks skipped.",
+          "Average news sentiment 2 is supportive across 3 articles."
+        ]
+      },
+      {
+        "symbol": "IREDA.NS",
+        "action": "WATCH",
+        "score": 50,
+        "confidence": 20,
+        "reasoning": [
+          "Insufficient market data available to build a reliable view."
+        ]
+      },
+      {
+        "symbol": "ITC.NS",
+        "action": "HOLD",
+        "score": 62,
+        "confidence": 30,
+        "reasoning": [
+          "Fundamental data unavailable; valuation and balance-sheet checks skipped.",
+          "Technical data unavailable; momentum and trend checks skipped.",
+          "Average news sentiment 4.67 is strongly positive across 3 articles."
+        ]
+      },
+      {
+        "symbol": "MAXHEALTH.NS",
+        "action": "HOLD",
+        "score": 58,
+        "confidence": 27,
+        "reasoning": [
+          "Fundamental data unavailable; valuation and balance-sheet checks skipped.",
+          "Technical data unavailable; momentum and trend checks skipped.",
+          "Average news sentiment 2.33 is supportive across 3 articles."
+        ]
+      },
+      {
+        "symbol": "MAZDOCK.NS",
+        "action": "HOLD",
+        "score": 62,
+        "confidence": 30,
+        "reasoning": [
+          "Fundamental data unavailable; valuation and balance-sheet checks skipped.",
+          "Technical data unavailable; momentum and trend checks skipped.",
+          "Average news sentiment 5.67 is strongly positive across 3 articles."
+        ]
+      },
+      {
+        "symbol": "MINDTECK.NS",
+        "action": "WATCH",
+        "score": 52,
+        "confidence": 23,
+        "reasoning": [
+          "Fundamental data unavailable; valuation and balance-sheet checks skipped.",
+          "Technical data unavailable; momentum and trend checks skipped.",
+          "Average news sentiment 1.33 is broadly neutral."
+        ]
+      },
+      {
+        "symbol": "MMTC.NS",
+        "action": "HOLD",
+        "score": 62,
+        "confidence": 30,
+        "reasoning": [
+          "Fundamental data unavailable; valuation and balance-sheet checks skipped.",
+          "Technical data unavailable; momentum and trend checks skipped.",
+          "Average news sentiment 8.33 is strongly positive across 3 articles."
+        ]
+      },
+      {
+        "symbol": "NATIONALUM.NS",
+        "action": "HOLD",
+        "score": 62,
+        "confidence": 30,
+        "reasoning": [
+          "Fundamental data unavailable; valuation and balance-sheet checks skipped.",
+          "Technical data unavailable; momentum and trend checks skipped.",
+          "Average news sentiment 9.67 is strongly positive across 3 articles."
+        ]
+      },
+      {
+        "symbol": "NELCO.NS",
+        "action": "HOLD",
+        "score": 58,
+        "confidence": 27,
+        "reasoning": [
+          "Fundamental data unavailable; valuation and balance-sheet checks skipped.",
+          "Technical data unavailable; momentum and trend checks skipped.",
+          "Average news sentiment 2 is supportive across 3 articles."
+        ]
+      },
+      {
+        "symbol": "NHPC.NS",
+        "action": "HOLD",
+        "score": 62,
+        "confidence": 30,
+        "reasoning": [
+          "Fundamental data unavailable; valuation and balance-sheet checks skipped.",
+          "Technical data unavailable; momentum and trend checks skipped.",
+          "Average news sentiment 5.33 is strongly positive across 3 articles."
+        ]
+      },
+      {
+        "symbol": "NMDC.NS",
+        "action": "WATCH",
+        "score": 52,
+        "confidence": 23,
+        "reasoning": [
+          "Fundamental data unavailable; valuation and balance-sheet checks skipped.",
+          "Technical data unavailable; momentum and trend checks skipped.",
+          "Average news sentiment 1 is broadly neutral."
+        ]
+      },
+      {
+        "symbol": "NTPC.NS",
+        "action": "HOLD",
+        "score": 62,
+        "confidence": 30,
+        "reasoning": [
+          "Fundamental data unavailable; valuation and balance-sheet checks skipped.",
+          "Technical data unavailable; momentum and trend checks skipped.",
+          "Average news sentiment 4.33 is strongly positive across 3 articles."
+        ]
+      },
+      {
+        "symbol": "OIL.NS",
+        "action": "WATCH",
+        "score": 52,
+        "confidence": 23,
+        "reasoning": [
+          "Fundamental data unavailable; valuation and balance-sheet checks skipped.",
+          "Technical data unavailable; momentum and trend checks skipped.",
+          "Average news sentiment 0.67 is broadly neutral."
+        ]
+      },
+      {
+        "symbol": "ONGC.NS",
+        "action": "HOLD",
+        "score": 62,
+        "confidence": 30,
+        "reasoning": [
+          "Fundamental data unavailable; valuation and balance-sheet checks skipped.",
+          "Technical data unavailable; momentum and trend checks skipped.",
+          "Average news sentiment 5.33 is strongly positive across 3 articles."
+        ]
+      },
+      {
+        "symbol": "POWERGRID.NS",
+        "action": "HOLD",
+        "score": 62,
+        "confidence": 30,
+        "reasoning": [
+          "Fundamental data unavailable; valuation and balance-sheet checks skipped.",
+          "Technical data unavailable; momentum and trend checks skipped.",
+          "Average news sentiment 9 is strongly positive across 3 articles."
+        ]
+      },
+      {
+        "symbol": "PNB.NS",
+        "action": "WATCH",
+        "score": 52,
+        "confidence": 23,
+        "reasoning": [
+          "Fundamental data unavailable; valuation and balance-sheet checks skipped.",
+          "Technical data unavailable; momentum and trend checks skipped.",
+          "Average news sentiment 1 is broadly neutral."
+        ]
+      },
+      {
+        "symbol": "RECLTD.NS",
+        "action": "HOLD",
+        "score": 58,
+        "confidence": 27,
+        "reasoning": [
+          "Fundamental data unavailable; valuation and balance-sheet checks skipped.",
+          "Technical data unavailable; momentum and trend checks skipped.",
+          "Average news sentiment 3.33 is supportive across 3 articles."
+        ]
+      },
+      {
+        "symbol": "RELIANCE.NS",
+        "action": "HOLD",
+        "score": 62,
+        "confidence": 30,
+        "reasoning": [
+          "Fundamental data unavailable; valuation and balance-sheet checks skipped.",
+          "Technical data unavailable; momentum and trend checks skipped.",
+          "Average news sentiment 6.33 is strongly positive across 3 articles."
+        ]
+      },
+      {
+        "symbol": "SHRIRAMFIN.NS",
+        "action": "WATCH",
+        "score": 50,
+        "confidence": 20,
+        "reasoning": [
+          "Insufficient market data available to build a reliable view."
+        ]
+      },
+      {
+        "symbol": "STLTECH.NS",
+        "action": "WATCH",
+        "score": 52,
+        "confidence": 23,
+        "reasoning": [
+          "Fundamental data unavailable; valuation and balance-sheet checks skipped.",
+          "Technical data unavailable; momentum and trend checks skipped.",
+          "Average news sentiment -0.67 is broadly neutral."
+        ]
+      },
+      {
+        "symbol": "TATAELXSI.NS",
+        "action": "HOLD",
+        "score": 58,
+        "confidence": 27,
+        "reasoning": [
+          "Fundamental data unavailable; valuation and balance-sheet checks skipped.",
+          "Technical data unavailable; momentum and trend checks skipped.",
+          "Average news sentiment 2.67 is supportive across 3 articles."
+        ]
+      },
+      {
+        "symbol": "TATAPOWER.NS",
+        "action": "HOLD",
+        "score": 58,
+        "confidence": 27,
+        "reasoning": [
+          "Fundamental data unavailable; valuation and balance-sheet checks skipped.",
+          "Technical data unavailable; momentum and trend checks skipped.",
+          "Average news sentiment 3 is supportive across 3 articles."
+        ]
+      },
+      {
+        "symbol": "TATASTEEL.NS",
+        "action": "HOLD",
+        "score": 62,
+        "confidence": 30,
+        "reasoning": [
+          "Fundamental data unavailable; valuation and balance-sheet checks skipped.",
+          "Technical data unavailable; momentum and trend checks skipped.",
+          "Average news sentiment 7 is strongly positive across 3 articles."
+        ]
+      },
+      {
+        "symbol": "TATATECH.NS",
+        "action": "WATCH",
+        "score": 50,
+        "confidence": 20,
+        "reasoning": [
+          "Insufficient market data available to build a reliable view."
+        ]
+      },
+      {
+        "symbol": "VEDL.NS",
+        "action": "WATCH",
+        "score": 52,
+        "confidence": 23,
+        "reasoning": [
+          "Fundamental data unavailable; valuation and balance-sheet checks skipped.",
+          "Technical data unavailable; momentum and trend checks skipped.",
+          "Average news sentiment 0.33 is broadly neutral."
+        ]
+      }
+    ]
+  }
+}
