@@ -50,6 +50,37 @@ The score is driven by:
 
 If one source is unavailable, the app still analyzes the holding with the remaining signals and explains what was missing in the `reasoning` and `signals` fields.
 
+## Scoring Logic
+
+The scoring engine starts every holding at a neutral base score of `50`.
+
+It then adjusts the score using:
+
+- fundamentals
+  - lower `P/E` is generally better
+  - higher `ROE` is better
+  - lower `debtToEquity` is better
+- technicals
+  - `RSI` rewards healthy momentum and penalizes overheated conditions
+  - trend uses `currentPrice`, `SMA50`, and `SMA200`
+- news sentiment
+  - positive average sentiment adds points
+  - negative sentiment subtracts points
+
+The final score is clamped to `0-100` and mapped to an action:
+
+- `75+` → `BUY_MORE`
+- `55-74` → `HOLD`
+- `35-54` → `WATCH`
+- `<35` → `SELL`
+
+Confidence depends on:
+
+- how many signal groups were actually available
+- how far the final score is from the neutral midpoint
+
+If fundamentals or technicals are missing, the app still returns a result, but confidence is reduced and the reason is explained in the response.
+
 ## API Base Paths
 
 - API: `/api/v1`
