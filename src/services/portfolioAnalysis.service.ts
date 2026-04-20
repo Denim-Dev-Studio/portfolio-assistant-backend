@@ -3,15 +3,20 @@ import { PortfolioItem } from "../models/portfolioItem.model";
 import { AnalysisResult } from "../types/analysis.types";
 import { getFullData } from "./dataAggregator.service";
 import { analyzeHolding, summarizeSignalAvailability } from "./analysisEngine.service";
+import { AppError } from "../errors/appError";
 
 export class PortfolioAnalysisService {
   private repo = new PortfolioRepository();
 
   async analyzePortfolio(portfolioId: string) {
+    if (!portfolioId?.trim()) {
+      throw AppError.badRequest("Portfolio id is required.");
+    }
+
     const portfolio = await this.repo.findById(portfolioId);
 
     if (!portfolio) {
-      throw new Error("Portfolio not found");
+      throw AppError.notFound("Portfolio not found.");
     }
 
     const items = (portfolio.get("items") as PortfolioItem[] | undefined) ?? [];

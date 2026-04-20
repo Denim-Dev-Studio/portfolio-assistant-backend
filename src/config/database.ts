@@ -1,5 +1,6 @@
 import { Sequelize } from 'sequelize';
 import { env } from './index';
+import { AppError } from '../errors/appError';
 
 export const sequelize = new Sequelize(env.dbName, env.dbUser, env.dbPassword, {
   host: env.dbHost,
@@ -13,7 +14,6 @@ export const connectDB = async () => {
     await sequelize.authenticate();
     console.log('Database connected successfully');
   } catch (error) {
-    console.error('Database connection failed:', error);
-    process.exit(1);
+    throw AppError.database('Database connection failed.', undefined, error);
   }
 };

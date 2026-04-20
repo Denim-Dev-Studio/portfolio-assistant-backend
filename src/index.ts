@@ -6,11 +6,26 @@ import swaggerUi from 'swagger-ui-express';
 import { swaggerSpec } from './config/swagger';
 import './models';
 import { loadNseSymbols } from './providers/nseSymbol.provider';
+import { errorHandler, notFoundHandler } from './middlewares/error.middleware';
+import { requestContext } from './middlewares/requestContext.middleware';
 const app = express();
 
-app.use(express.json());
+app.use(requestContext);
+app.use(express.json({ limit: '1mb' }));
 app.use('/api/v1', routes);
 app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerSpec));
+app.use(notFoundHandler);
+app.use(errorHandler);
+
+const shutdown = (signal: string, error?: unknown) => {
+  if (error) {
+    console.error(`[startup] ${signal}`, error);
+  } else {
+    console.error(`[startup] ${signal}`);
+  }
+
+  process.exit(1);
+};
 
 async function startServer() {
   try {
@@ -22,8 +37,16 @@ async function startServer() {
       );
     });
   } catch (error) {
-    console.error('Failed to start server:', error);
+    shutdown('Failed to start server', error);
   }
 }
+
+process.on('uncaughtException', (error) => {
+  shutdown('uncaughtException', error);
+});
+
+process.on('unhandledRejection', (reason) => {
+  shutdown('unhandledRejection', reason);
+});
 
 startServer();

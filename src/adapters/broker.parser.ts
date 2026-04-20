@@ -1,5 +1,6 @@
 import * as XLSX from "xlsx";
 import { ParsedPortfolioItemInput } from "../models/types";
+import { AppError } from "../errors/appError";
 
 // Entry point (used by service)
 export const parsePortfolioFile = (
@@ -19,7 +20,7 @@ export const parsePortfolioFile = (
     return parseXLSX(file.buffer);
   }
 
-  throw new Error("Unsupported file format. Only CSV and XLSX are allowed.");
+  throw AppError.unsupportedMediaType("Unsupported file format. Only CSV and XLSX are allowed.");
 };
 
 // ================= CSV =================
@@ -33,7 +34,7 @@ const parseCSV = (buffer: Buffer): ParsedPortfolioItemInput[] => {
     .filter(Boolean);
 
   if (lines.length < 2) {
-    throw new Error("Invalid CSV format");
+    throw AppError.validation("Invalid CSV format.");
   }
 
   const headers = lines[0].split(",").map((h) => h.trim().toLowerCase());
@@ -75,7 +76,7 @@ const parseXLSX = (buffer: Buffer): ParsedPortfolioItemInput[] => {
   });
 
   if (headerIndex === -1) {
-    throw new Error("Could not find valid header row in XLSX");
+    throw AppError.validation("Could not find valid header row in XLSX.");
   }
 
   const headers = rows[headerIndex].map((h: string) =>
@@ -149,8 +150,9 @@ const normalizeRow = (row: Record<string, any>): ParsedPortfolioItemInput => {
 
   // ===== VALIDATION =====
   if (!displayName || !isin || !quantity) {
-    throw new Error(
-      `Invalid row: missing displayName/isin/quantity → ${JSON.stringify(row)}`
+    throw AppError.validation(
+      "Invalid row: missing displayName/isin/quantity.",
+      row,
     );
   }
 

@@ -2,51 +2,57 @@ import { PortfolioRepository } from "../repositories/portfolio.repository";
 import { CreatePortfolioInput } from "../models/types";
 import { parsePortfolioFile } from "../adapters/broker.parser";
 import { resolveSymbolFromISIN } from "../providers/nseSymbol.provider";
+import { AppError } from "../errors/appError";
 
 export class PortfolioService {
   private repo = new PortfolioRepository();
 
   async createPortfolio(data: CreatePortfolioInput) {
-    // minimal validation logic (can expand later)
-    if (!data.name || !data.items?.length) {
-      throw new Error("Invalid portfolio data");
+    if (!data?.name?.trim()) {
+      throw AppError.validation("Portfolio name is required.");
+    }
+
+    if (!data.items?.length) {
+      throw AppError.validation("Portfolio must contain at least one item.");
     }
 
     return this.repo.create(data);
   }
 
   async getPortfolio(id: string) {
+    if (!id?.trim()) {
+      throw AppError.badRequest("Portfolio id is required.");
+    }
+
     const portfolio = await this.repo.findById(id);
 
     if (!portfolio) {
-      throw new Error("Portfolio not found");
+      throw AppError.notFound("Portfolio not found.");
     }
 
     return portfolio;
   }
-  async createPortfolioFromFile(file: Express.Multer.File, name?: string) {
+  async createPortfolioFromFile(file?: Express.Multer.File, name?: string) {
     if (!file) {
-      throw new Error("File is required");
+      throw AppError.validation("File is required.");
     }
 
     if (!name || !name.trim()) {
-      throw new Error("Portfolio name is required");
+      throw AppError.validation("Portfolio name is required.");
     }
 
-    console.log('File info:', {
+    console.log("File info:", {
       originalname: file.originalname,
       mimetype: file.mimetype,
-      size: file.size
+      size: file.size,
     });
 
-    // Step 1: Parse file (returns normalized rows WITHOUT symbol)
     const parsedItems = parsePortfolioFile(file);
 
     if (!parsedItems.length) {
-      throw new Error("No valid data found in file");
+      throw AppError.validation("No valid data found in file.");
     }
 
-    // Step 2: Resolve symbol using ISIN
     const enrichedItems = parsedItems.map((item) => {
       const symbol = resolveSymbolFromISIN(item.isin);
 
@@ -65,20 +71,18 @@ export class PortfolioService {
       };
     });
 
-    // Step 3: Filter invalid rows
     const validItems = enrichedItems.filter(
       (item): item is NonNullable<typeof item> => item !== null,
     );
 
     if (!validItems.length) {
-      throw new Error("No valid instruments found after symbol resolution");
+      throw AppError.validation("No valid instruments found after symbol resolution.");
     }
 
     console.log(
       `Parsed: ${parsedItems.length}, Valid after symbol resolution: ${validItems.length}`,
     );
 
-    // Step 4: Persist
     return this.repo.create({
       name: name.trim(),
       fileName: file.originalname || "Uploaded Portfolio",
