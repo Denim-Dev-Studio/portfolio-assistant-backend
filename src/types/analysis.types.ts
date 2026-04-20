@@ -83,3 +83,11 @@ export type PersistedAnalysisRun = {
   };
   items: PersistedAnalysisItem[];
 };
+
+export type LatestAnalysisSnapshot = {
+  runId: string;
+  status: AnalysisRunStatus;
+  generatedAt: string;
+  summary: PersistedAnalysisRun["summary"];
+  items: PersistedAnalysisItem[];
+};

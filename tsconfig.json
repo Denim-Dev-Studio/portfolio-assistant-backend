@@ -6,7 +6,7 @@
 
     "rootDir": "./src",
     "outDir": "./dist",
-    "types": ["node"],
+    "types": ["node", "multer"],
 
     "esModuleInterop": true,
     "resolveJsonModule": true,

@@ -31,4 +31,15 @@ export class PortfolioRepository {
       throw AppError.database("Failed to fetch portfolio.", undefined, error);
     }
   }
+
+  async findAll() {
+    try {
+      return await Portfolio.findAll({
+        include: [{ model: PortfolioItem, as: "items" }],
+        order: [["createdAt", "DESC"]],
+      });
+    } catch (error) {
+      throw AppError.database("Failed to fetch portfolios.", undefined, error);
+    }
+  }
 }

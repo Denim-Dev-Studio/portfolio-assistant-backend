@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "ts-node-dev --respawn --transpile-only src/index.ts",
-    "test": "node --test -r ts-node/register tests/analysisEngine.test.ts tests/technicalProvider.test.ts"
+    "test": "node --test -r ts-node/register tests/analysisEngine.test.ts tests/technicalProvider.test.ts tests/frontendReadApis.test.ts"
   },
   "keywords": [],
   "author": "",

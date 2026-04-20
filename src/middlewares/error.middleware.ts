@@ -1,3 +1,4 @@
+import type {} from "../types/express";
 import { NextFunction, Request, Response } from "express";
 import multer from "multer";
 import {
