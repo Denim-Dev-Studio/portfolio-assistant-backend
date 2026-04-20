@@ -18,3 +18,17 @@ export const analyzePortfolio = asyncHandler(async (req: Request, res: Response)
     data: analysis,
   });
 });
+
+export const getLatestAnalysis = asyncHandler(async (req: Request, res: Response) => {
+  const id = Array.isArray(req.params.id) ? req.params.id[0] : req.params.id;
+  if (!id) {
+    throw AppError.badRequest("Portfolio id is required.");
+  }
+
+  const analysis = await service.getLatestAnalysis(id);
+
+  res.status(200).json({
+    success: true,
+    data: analysis,
+  });
+});

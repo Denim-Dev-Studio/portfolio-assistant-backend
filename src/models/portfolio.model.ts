@@ -10,6 +10,11 @@ export class Portfolio extends Model {
       foreignKey: "portfolioId",
       as: "items",
     });
+
+    Portfolio.hasMany(models.AnalysisRun, {
+      foreignKey: "portfolioId",
+      as: "analysisRuns",
+    });
   }
 }
 

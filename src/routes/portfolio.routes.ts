@@ -4,6 +4,7 @@ import {
   getPortfolio,
   uploadPortfolio,
 } from '../controllers/portfolio.controller';
+import { getLatestAnalysis } from '../controllers/portfolioAnalysis.controller';
 import { upload } from '../middlewares/upload.middleware';
 import portfolioAnalysisRoutes from './portfolioAnalysis.routes';
 
@@ -92,6 +93,54 @@ router.post('/', createPortfolio);
  */
 router.post('/upload', upload.single('file'), uploadPortfolio);
 router.use('/:id/analyze', portfolioAnalysisRoutes);
+
+/**
+ * @swagger
+ * /portfolio/{id}/analysis/latest:
+ *   get:
+ *     summary: Get the latest persisted analysis for a portfolio
+ *     tags: [Portfolio]
+ *     parameters:
+ *       - in: path
+ *         name: id
+ *         required: true
+ *         schema:
+ *           type: string
+ *     responses:
+ *       200:
+ *         description: Latest persisted analysis fetched successfully
+ *         content:
+ *           application/json:
+ *             schema:
+ *               type: object
+ *               properties:
+ *                 success:
+ *                   type: boolean
+ *                 data:
+ *                   type: object
+ *                   properties:
+ *                     portfolioId:
+ *                       type: string
+ *                     portfolioName:
+ *                       type: string
+ *                     analysisRunId:
+ *                       type: string
+ *                     status:
+ *                       type: string
+ *                       enum: [completed, partial, failed]
+ *                     generatedAt:
+ *                       type: string
+ *                       format: date-time
+ *                     summary:
+ *                       type: object
+ *                     items:
+ *                       type: array
+ *                       items:
+ *                         type: object
+ *       404:
+ *         description: Portfolio or persisted analysis not found
+ */
+router.get('/:id/analysis/latest', getLatestAnalysis);
 
 /**
  * @swagger

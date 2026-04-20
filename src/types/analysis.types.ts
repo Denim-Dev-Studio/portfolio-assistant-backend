@@ -56,3 +56,30 @@ export type AnalysisResult = {
   reasoning: string[];
   signals: AnalysisSignals;
 };
+
+export type AnalysisRunStatus = "completed" | "partial" | "failed";
+
+export type PersistedAnalysisItem = {
+  portfolioItemId: string;
+  symbol: string;
+  displayName?: string;
+  action: AnalysisAction;
+  score: number;
+  confidence: number;
+  reasoning: string[];
+  signals: AnalysisSignals;
+};
+
+export type PersistedAnalysisRun = {
+  id: string;
+  portfolioId: string;
+  status: AnalysisRunStatus;
+  generatedAt: string;
+  summary: {
+    totalHoldings: number;
+    fullyAnalyzed: number;
+    partiallyAnalyzed: number;
+    failed: number;
+  };
+  items: PersistedAnalysisItem[];
+};

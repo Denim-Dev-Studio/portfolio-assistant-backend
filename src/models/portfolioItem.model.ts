@@ -13,6 +13,11 @@ export class PortfolioItem extends Model {
     PortfolioItem.belongsTo(models.Portfolio, {
       foreignKey: "portfolioId",
     });
+
+    PortfolioItem.hasMany(models.HoldingAnalysis, {
+      foreignKey: "portfolioItemId",
+      as: "analyses",
+    });
   }
 }
 

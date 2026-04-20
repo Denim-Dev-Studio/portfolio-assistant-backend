@@ -1,6 +1,7 @@
 import { PortfolioRepository } from "../repositories/portfolio.repository";
+import { AnalysisRepository } from "../repositories/analysis.repository";
 import { PortfolioItem } from "../models/portfolioItem.model";
-import { AnalysisResult } from "../types/analysis.types";
+import { AnalysisResult, AnalysisRunStatus } from "../types/analysis.types";
 import { getFullData } from "./dataAggregator.service";
 import { analyzeHolding, summarizeSignalAvailability } from "./analysisEngine.service";
 import { AppError } from "../errors/appError";
@@ -9,6 +10,28 @@ const ANALYSIS_CONCURRENCY = 4;
 
 export class PortfolioAnalysisService {
   private repo = new PortfolioRepository();
+  private analysisRepo = new AnalysisRepository();
+
+  private deriveRunStatus(items: AnalysisResult[]): AnalysisRunStatus {
+    if (!items.length) {
+      return "failed";
+    }
+
+    const summaries = items.map((item) => summarizeSignalAvailability(item.signals));
+    const allFailed = summaries.every(
+      (summary) => summary.available === 0 && summary.partial === 0,
+    );
+
+    if (allFailed) {
+      return "failed";
+    }
+
+    const hasAnyDegraded = summaries.some(
+      (summary) => summary.failed > 0 || summary.partial > 0,
+    );
+
+    return hasAnyDegraded ? "partial" : "completed";
+  }
 
   async analyzePortfolio(portfolioId: string) {
     if (!portfolioId?.trim()) {
@@ -102,12 +125,50 @@ export class PortfolioAnalysisService {
       },
     );
 
+    const generatedAt = new Date().toISOString();
+    const response = {
+      portfolioId: portfolio.get("id"),
+      portfolioName: portfolio.get("name"),
+      generatedAt,
+      summary,
+      items: analyses,
+    };
+
+    await this.analysisRepo.createRun({
+      portfolioId: portfolio.get("id") as string,
+      status: this.deriveRunStatus(analyses),
+      generatedAt,
+      summary,
+      items: items.map((item, index) => ({
+        portfolioItemId: item.get("id") as string,
+        result: analyses[index],
+      })),
+    });
+
+    return response;
+  }
+
+  async getLatestAnalysis(portfolioId: string) {
+    const portfolio = await this.repo.findById(portfolioId);
+
+    if (!portfolio) {
+      throw AppError.notFound("Portfolio not found.");
+    }
+
+    const latest = await this.analysisRepo.findLatestByPortfolioId(portfolioId);
+
+    if (!latest) {
+      throw AppError.notFound("No persisted analysis found for this portfolio.");
+    }
+
     return {
       portfolioId: portfolio.get("id"),
       portfolioName: portfolio.get("name"),
-      generatedAt: new Date().toISOString(),
-      summary,
-      items: analyses,
+      analysisRunId: latest.id,
+      status: latest.status,
+      generatedAt: latest.generatedAt,
+      summary: latest.summary,
+      items: latest.items,
     };
   }
 }
