@@ -10,6 +10,28 @@ export type PortfolioCardDto = {
   latestSummary: LatestAnalysisSnapshot["summary"] | null;
 };
 
+export type PortfolioTotalsDto = {
+  totalInvestedValue: number;
+  totalCurrentValue: number;
+  totalUnrealizedPl: number;
+  totalUnrealizedPlPct: number | null;
+  actionDistribution: Record<AnalysisAction, number>;
+  confidenceDistribution: {
+    high: number;
+    medium: number;
+    low: number;
+  };
+  missingDataCount: number;
+};
+
+export type HoldingValuationDto = {
+  investedValue: number;
+  currentValue: number | null;
+  unrealizedPl: number | null;
+  unrealizedPlPct: number | null;
+  portfolioWeight: number | null;
+};
+
 export type PortfolioSummaryDto = {
   id: string;
   name: string;
@@ -17,6 +39,7 @@ export type PortfolioSummaryDto = {
   createdAt: string;
   updatedAt: string;
   latestAnalysis: LatestAnalysisSnapshot | null;
+  totals: PortfolioTotalsDto | null;
 };
 
 export type HoldingsFilter = {
@@ -25,7 +48,7 @@ export type HoldingsFilter = {
   hasMissingData?: boolean;
 };
 
-export type HoldingRowDto = {
+export type HoldingRowDto = HoldingValuationDto & {
   symbol: string;
   displayName: string;
   quantity: number;
@@ -41,7 +64,7 @@ export type HoldingRowDto = {
 export type HoldingDetailDto = {
   portfolioId: string;
   symbol: string;
-  portfolioItem: {
+  portfolioItem: HoldingValuationDto & {
     id: string;
     displayName: string;
     isin: string;
@@ -60,4 +83,34 @@ export type HoldingDetailDto = {
     signals: AnalysisSignals;
     hasMissingData: boolean;
   };
+};
+
+export type PortfolioInsightHoldingDto = {
+  symbol: string;
+  displayName: string;
+  action: AnalysisAction;
+  score: number;
+  confidence: number;
+  currentValue: number | null;
+  portfolioWeight: number | null;
+  hasMissingData: boolean;
+};
+
+export type PortfolioInsightsDto = {
+  portfolioId: string;
+  generatedAt: string;
+  overview: PortfolioTotalsDto;
+  concentrationFlags: Array<{
+    type: "single_holding" | "top_3_holdings";
+    message: string;
+    weight: number;
+    symbol?: string;
+  }>;
+  highestConvictionHoldings: PortfolioInsightHoldingDto[];
+  lowestScoringHoldings: PortfolioInsightHoldingDto[];
+  dataQualityFlags: Array<{
+    type: "missing_analysis_data" | "missing_market_price";
+    message: string;
+    count: number;
+  }>;
 };

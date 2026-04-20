@@ -4,6 +4,7 @@ import {
   getHoldingDetail,
   getPortfolio,
   getPortfolioHoldings,
+  getPortfolioInsights,
   getPortfolioSummary,
   listPortfolios,
   uploadPortfolio,
@@ -373,10 +374,190 @@ router.get('/:id/analysis/latest', getLatestAnalysis);
  *                           type: array
  *                           items:
  *                             type: object
+ *                     totals:
+ *                       type: object
+ *                       nullable: true
+ *                       properties:
+ *                         totalInvestedValue:
+ *                           type: number
+ *                         totalCurrentValue:
+ *                           type: number
+ *                         totalUnrealizedPl:
+ *                           type: number
+ *                         totalUnrealizedPlPct:
+ *                           type: number
+ *                           nullable: true
+ *                         actionDistribution:
+ *                           type: object
+ *                           properties:
+ *                             BUY_MORE:
+ *                               type: integer
+ *                             HOLD:
+ *                               type: integer
+ *                             WATCH:
+ *                               type: integer
+ *                             SELL:
+ *                               type: integer
+ *                         confidenceDistribution:
+ *                           type: object
+ *                           properties:
+ *                             high:
+ *                               type: integer
+ *                             medium:
+ *                               type: integer
+ *                             low:
+ *                               type: integer
+ *                         missingDataCount:
+ *                           type: integer
  *       404:
  *         description: Portfolio not found
  */
 router.get('/:id/summary', getPortfolioSummary);
+
+/**
+ * @swagger
+ * /portfolio/{id}/insights:
+ *   get:
+ *     summary: Get portfolio-level insights derived from the latest persisted analysis
+ *     tags: [Portfolio]
+ *     parameters:
+ *       - in: path
+ *         name: id
+ *         required: true
+ *         schema:
+ *           type: string
+ *           format: uuid
+ *     responses:
+ *       200:
+ *         description: Portfolio insights fetched successfully
+ *         content:
+ *           application/json:
+ *             schema:
+ *               type: object
+ *               properties:
+ *                 success:
+ *                   type: boolean
+ *                 data:
+ *                   type: object
+ *                   properties:
+ *                     portfolioId:
+ *                       type: string
+ *                       format: uuid
+ *                     generatedAt:
+ *                       type: string
+ *                       format: date-time
+ *                     overview:
+ *                       type: object
+ *                       properties:
+ *                         totalInvestedValue:
+ *                           type: number
+ *                         totalCurrentValue:
+ *                           type: number
+ *                         totalUnrealizedPl:
+ *                           type: number
+ *                         totalUnrealizedPlPct:
+ *                           type: number
+ *                           nullable: true
+ *                         actionDistribution:
+ *                           type: object
+ *                           properties:
+ *                             BUY_MORE:
+ *                               type: integer
+ *                             HOLD:
+ *                               type: integer
+ *                             WATCH:
+ *                               type: integer
+ *                             SELL:
+ *                               type: integer
+ *                         confidenceDistribution:
+ *                           type: object
+ *                           properties:
+ *                             high:
+ *                               type: integer
+ *                             medium:
+ *                               type: integer
+ *                             low:
+ *                               type: integer
+ *                         missingDataCount:
+ *                           type: integer
+ *                     concentrationFlags:
+ *                       type: array
+ *                       items:
+ *                         type: object
+ *                         properties:
+ *                           type:
+ *                             type: string
+ *                             enum: [single_holding, top_3_holdings]
+ *                           message:
+ *                             type: string
+ *                           weight:
+ *                             type: number
+ *                           symbol:
+ *                             type: string
+ *                     highestConvictionHoldings:
+ *                       type: array
+ *                       items:
+ *                         type: object
+ *                         properties:
+ *                           symbol:
+ *                             type: string
+ *                           displayName:
+ *                             type: string
+ *                           action:
+ *                             type: string
+ *                             enum: [BUY_MORE, HOLD, WATCH, SELL]
+ *                           score:
+ *                             type: integer
+ *                           confidence:
+ *                             type: integer
+ *                           currentValue:
+ *                             type: number
+ *                             nullable: true
+ *                           portfolioWeight:
+ *                             type: number
+ *                             nullable: true
+ *                           hasMissingData:
+ *                             type: boolean
+ *                     lowestScoringHoldings:
+ *                       type: array
+ *                       items:
+ *                         type: object
+ *                         properties:
+ *                           symbol:
+ *                             type: string
+ *                           displayName:
+ *                             type: string
+ *                           action:
+ *                             type: string
+ *                             enum: [BUY_MORE, HOLD, WATCH, SELL]
+ *                           score:
+ *                             type: integer
+ *                           confidence:
+ *                             type: integer
+ *                           currentValue:
+ *                             type: number
+ *                             nullable: true
+ *                           portfolioWeight:
+ *                             type: number
+ *                             nullable: true
+ *                           hasMissingData:
+ *                             type: boolean
+ *                     dataQualityFlags:
+ *                       type: array
+ *                       items:
+ *                         type: object
+ *                         properties:
+ *                           type:
+ *                             type: string
+ *                             enum: [missing_analysis_data, missing_market_price]
+ *                           message:
+ *                             type: string
+ *                           count:
+ *                             type: integer
+ *       404:
+ *         description: Portfolio or persisted analysis not found
+ */
+router.get('/:id/insights', getPortfolioInsights);
 
 /**
  * @swagger
@@ -429,6 +610,20 @@ router.get('/:id/summary', getPortfolioSummary);
  *                         avgPrice:
  *                           type: number
  *                         currentPrice:
+ *                           type: number
+ *                           nullable: true
+ *                         investedValue:
+ *                           type: number
+ *                         currentValue:
+ *                           type: number
+ *                           nullable: true
+ *                         unrealizedPl:
+ *                           type: number
+ *                           nullable: true
+ *                         unrealizedPlPct:
+ *                           type: number
+ *                           nullable: true
+ *                         portfolioWeight:
  *                           type: number
  *                           nullable: true
  *                     latestAnalysis:
@@ -515,6 +710,20 @@ router.get('/:id/holdings/:symbol', getHoldingDetail);
  *                       currentPrice:
  *                         type: number
  *                         nullable: true
+ *                       investedValue:
+ *                         type: number
+ *                       currentValue:
+ *                         type: number
+ *                         nullable: true
+ *                       unrealizedPl:
+ *                         type: number
+ *                         nullable: true
+ *                       unrealizedPlPct:
+ *                         type: number
+ *                         nullable: true
+ *                       portfolioWeight:
+ *                         type: number
+ *                         nullable: true
  *                       action:
  *                         type: string
  *                         enum: [BUY_MORE, HOLD, WATCH, SELL]
@@ -581,6 +790,5 @@ router.get('/:id/holdings', getPortfolioHoldings);
  *         description: Portfolio not found
  */
 router.get('/:id', getPortfolio);
-
 
 export default router;

@@ -51,6 +51,20 @@ export const getPortfolioSummary = asyncHandler(async (req: Request, res: Respon
   });
 });
 
+export const getPortfolioInsights = asyncHandler(async (req: Request, res: Response) => {
+  const id = Array.isArray(req.params.id) ? req.params.id[0] : req.params.id;
+  if (!id) {
+    throw AppError.badRequest("Portfolio id is required.");
+  }
+
+  const insights = await service.getPortfolioInsights(id);
+
+  res.json({
+    success: true,
+    data: insights,
+  });
+});
+
 export const getPortfolioHoldings = asyncHandler(async (req: Request, res: Response) => {
   const id = Array.isArray(req.params.id) ? req.params.id[0] : req.params.id;
   if (!id) {
