@@ -3,9 +3,15 @@ import { sequelize } from "../config/database";
 
 export class Portfolio extends Model {
   public id!: string;
+  public userId!: string | null;
   public name!: string;
 
   static associate(models: any) {
+    Portfolio.belongsTo(models.User, {
+      foreignKey: "userId",
+      as: "user",
+    });
+
     Portfolio.hasMany(models.PortfolioItem, {
       foreignKey: "portfolioId",
       as: "items",
@@ -24,6 +30,11 @@ Portfolio.init(
       type: DataTypes.UUID,
       defaultValue: DataTypes.UUIDV4,
       primaryKey: true,
+    },
+    userId: {
+      type: DataTypes.UUID,
+      allowNull: true,
+      field: "user_id",
     },
     name: {
       type: DataTypes.STRING,

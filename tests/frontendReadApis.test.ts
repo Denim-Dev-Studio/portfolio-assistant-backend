@@ -78,6 +78,7 @@ const createPortfolioRecord = () => {
     get(key: string) {
       const values: Record<string, unknown> = {
         id: "portfolio-1",
+        userId: "user-1",
         name: "Core Portfolio",
         fileName: "core.xlsx",
         createdAt: new Date("2026-04-19T08:00:00.000Z"),
@@ -142,7 +143,9 @@ test("listPortfolios returns stable card shape", async () => {
     ];
   };
 
-  const response = await invokeHandler(listPortfolios, {});
+  const response = await invokeHandler(listPortfolios, {
+    user: { id: "user-1", email: "owner@example.com" },
+  });
   const body = response.body as { success: boolean; data: unknown[] };
 
   assert.equal(response.statusCode, 200);
@@ -206,6 +209,7 @@ test("getPortfolioSummary returns latest persisted run", async () => {
 
   const response = await invokeHandler(getPortfolioSummary, {
     params: { id: "portfolio-1" },
+    user: { id: "user-1", email: "owner@example.com" },
   });
   const body = response.body as {
     success: boolean;
@@ -274,7 +278,7 @@ test("PortfolioService holdings endpoint filtering works", async () => {
     }),
   };
 
-  const rows = await service.getPortfolioHoldings("portfolio-1", {
+  const rows = await service.getPortfolioHoldings("portfolio-1", "user-1", {
     action: "WATCH",
     minConfidence: 40,
     hasMissingData: true,
@@ -346,7 +350,7 @@ test("PortfolioService summary includes portfolio-level totals", async () => {
     }),
   };
 
-  const summary = await service.getPortfolioSummary("portfolio-1");
+  const summary = await service.getPortfolioSummary("portfolio-1", "user-1");
 
   assert.deepEqual(summary.totals, {
     totalInvestedValue: 32400,
@@ -435,6 +439,7 @@ test("PortfolioService insights ranks top and weak holdings deterministically", 
 
       const values: Record<string, unknown> = {
         id: "portfolio-2",
+        userId: "user-1",
         name: "Insights Portfolio",
         fileName: "insights.xlsx",
         createdAt: new Date("2026-04-19T08:00:00.000Z"),
@@ -518,7 +523,7 @@ test("PortfolioService insights ranks top and weak holdings deterministically", 
     }),
   };
 
-  const insights = await service.getPortfolioInsights("portfolio-2");
+  const insights = await service.getPortfolioInsights("portfolio-2", "user-1");
 
   assert.deepEqual(
     insights.highestConvictionHoldings.map((holding) => holding.symbol),
@@ -587,6 +592,7 @@ test("getPortfolioInsights returns service response", async () => {
 
   const response = await invokeHandler(getPortfolioInsights, {
     params: { id: "portfolio-2" },
+    user: { id: "user-1", email: "owner@example.com" },
   });
   const body = response.body as {
     success: boolean;
@@ -628,7 +634,7 @@ test("PortfolioService holding detail returns 404 for unknown symbol in portfoli
   };
 
   await assert.rejects(
-    () => service.getHoldingDetail("portfolio-1", "TCS.NS"),
+    () => service.getHoldingDetail("portfolio-1", "TCS.NS", "user-1"),
     (error: unknown) => {
       assert.ok(error instanceof AppError);
       assert.equal(error.statusCode, 404);

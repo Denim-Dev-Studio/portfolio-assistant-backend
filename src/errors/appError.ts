@@ -1,5 +1,7 @@
 export type ErrorCode =
   | "BAD_REQUEST"
+  | "UNAUTHORIZED"
+  | "FORBIDDEN"
   | "NOT_FOUND"
   | "UNSUPPORTED_MEDIA_TYPE"
   | "PAYLOAD_TOO_LARGE"
@@ -37,6 +39,14 @@ export class AppError extends Error {
 
   static badRequest(message: string, details?: unknown) {
     return new AppError(400, "BAD_REQUEST", message, { details });
+  }
+
+  static unauthorized(message: string, details?: unknown) {
+    return new AppError(401, "UNAUTHORIZED", message, { details });
+  }
+
+  static forbidden(message: string, details?: unknown) {
+    return new AppError(403, "FORBIDDEN", message, { details });
   }
 
   static notFound(message: string, details?: unknown) {

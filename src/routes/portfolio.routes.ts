@@ -10,6 +10,7 @@ import {
   uploadPortfolio,
 } from '../controllers/portfolio.controller';
 import { getLatestAnalysis } from '../controllers/portfolioAnalysis.controller';
+import { authenticateRequest } from '../middlewares/auth.middleware';
 import { upload } from '../middlewares/upload.middleware';
 import portfolioAnalysisRoutes from './portfolioAnalysis.routes';
 
@@ -22,12 +23,16 @@ const router = Router();
  *   description: Portfolio management APIs
  */
 
+router.use(authenticateRequest);
+
 /**
  * @swagger
  * /portfolio:
  *   get:
  *     summary: List frontend-ready portfolio cards
  *     tags: [Portfolio]
+ *     security:
+ *       - bearerAuth: []
  *     responses:
  *       200:
  *         description: Portfolio cards fetched successfully
@@ -75,6 +80,8 @@ const router = Router();
  *   post:
  *     summary: Create a new portfolio
  *     tags: [Portfolio]
+ *     security:
+ *       - bearerAuth: []
  *     requestBody:
  *       required: true
  *       content:
@@ -156,6 +163,8 @@ router.get('/', listPortfolios);
  *   post:
  *     summary: Upload portfolio file and create portfolio
  *     tags: [Portfolio]
+ *     security:
+ *       - bearerAuth: []
  *     requestBody:
  *       required: true
  *       content:
@@ -234,6 +243,8 @@ router.use('/:id/analyze', portfolioAnalysisRoutes);
  *   get:
  *     summary: Get the latest persisted analysis for a portfolio
  *     tags: [Portfolio]
+ *     security:
+ *       - bearerAuth: []
  *     parameters:
  *       - in: path
  *         name: id
@@ -312,6 +323,8 @@ router.get('/:id/analysis/latest', getLatestAnalysis);
  *   get:
  *     summary: Get frontend-ready portfolio summary and latest analysis metadata
  *     tags: [Portfolio]
+ *     security:
+ *       - bearerAuth: []
  *     parameters:
  *       - in: path
  *         name: id
@@ -420,6 +433,8 @@ router.get('/:id/summary', getPortfolioSummary);
  *   get:
  *     summary: Get portfolio-level insights derived from the latest persisted analysis
  *     tags: [Portfolio]
+ *     security:
+ *       - bearerAuth: []
  *     parameters:
  *       - in: path
  *         name: id
@@ -565,6 +580,8 @@ router.get('/:id/insights', getPortfolioInsights);
  *   get:
  *     summary: Get one holding detail from the latest persisted portfolio analysis
  *     tags: [Portfolio]
+ *     security:
+ *       - bearerAuth: []
  *     parameters:
  *       - in: path
  *         name: id
@@ -664,6 +681,8 @@ router.get('/:id/holdings/:symbol', getHoldingDetail);
  *   get:
  *     summary: List holding rows from the latest persisted portfolio analysis
  *     tags: [Portfolio]
+ *     security:
+ *       - bearerAuth: []
  *     parameters:
  *       - in: path
  *         name: id
@@ -748,6 +767,8 @@ router.get('/:id/holdings', getPortfolioHoldings);
  *   get:
  *     summary: Get portfolio by ID
  *     tags: [Portfolio]
+ *     security:
+ *       - bearerAuth: []
  *     parameters:
  *       - in: path
  *         name: id

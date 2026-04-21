@@ -4,12 +4,14 @@ import routes from "./routes";
 import { swaggerSpec } from "./config/swagger";
 import { errorHandler, notFoundHandler } from "./middlewares/error.middleware";
 import { requestContext } from "./middlewares/requestContext.middleware";
+import { authGuard } from "./middlewares/auth-guard";
 
 export const createApp = () => {
   const app = express();
 
   app.use(requestContext);
   app.use(express.json({ limit: "1mb" }));
+  app.use(authGuard);
   app.use("/api/v1", routes);
   app.use("/api-docs", swaggerUi.serve, swaggerUi.setup(swaggerSpec));
   app.use(notFoundHandler);

@@ -8,6 +8,7 @@ export class PortfolioRepository {
     try {
       const portfolio = await Portfolio.create(
         {
+          userId: data.userId,
           name: data.name,
           items: data.items,
         },
@@ -40,6 +41,18 @@ export class PortfolioRepository {
       });
     } catch (error) {
       throw AppError.database("Failed to fetch portfolios.", undefined, error);
+    }
+  }
+
+  async findAllByUserId(userId: string) {
+    try {
+      return await Portfolio.findAll({
+        where: { userId },
+        include: [{ model: PortfolioItem, as: "items" }],
+        order: [["createdAt", "DESC"]],
+      });
+    } catch (error) {
+      throw AppError.database("Failed to fetch user portfolios.", undefined, error);
     }
   }
 }

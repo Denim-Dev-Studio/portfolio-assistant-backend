@@ -8,6 +8,15 @@ const options: swaggerJsdoc.Options = {
       version: '1.0.0',
       description: 'API documentation for Portfolio Monitoring Chat App',
     },
+    components: {
+      securitySchemes: {
+        bearerAuth: {
+          type: 'http',
+          scheme: 'bearer',
+          bearerFormat: 'JWT',
+        },
+      },
+    },
     servers: [
       {
         url: 'http://localhost:5050/api/v1',

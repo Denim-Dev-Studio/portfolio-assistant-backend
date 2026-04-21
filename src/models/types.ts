@@ -10,6 +10,7 @@ export type CreatePortfolioItemInput = {
 export type ParsedPortfolioItemInput = Omit<CreatePortfolioItemInput, "symbol">;
 
 export type CreatePortfolioInput = {
+  userId: string;
   fileName?: string;
   name: string;
   items: CreatePortfolioItemInput[];

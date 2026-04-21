@@ -5,6 +5,8 @@ dotenv.config();
 export const env = {
   port: Number(process.env.PORT) || 5000,
   nodeEnv: process.env.NODE_ENV || 'development',
+  jwtSecret: process.env.JWT_SECRET || 'dev-portfolio-secret',
+  jwtExpiresIn: process.env.JWT_EXPIRES_IN || '1h',
 
   dbHost: process.env.DB_HOST || 'localhost',
   dbPort: Number(process.env.DB_PORT) || 5432,

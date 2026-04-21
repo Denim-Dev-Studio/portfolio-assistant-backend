@@ -12,6 +12,30 @@ export class PortfolioAnalysisService {
   private repo = new PortfolioRepository();
   private analysisRepo = new AnalysisRepository();
 
+  private requireUserId(userId?: string) {
+    if (!userId?.trim()) {
+      throw AppError.unauthorized("Authentication is required.");
+    }
+
+    return userId;
+  }
+
+  private async getOwnedPortfolio(portfolioId: string, userId?: string) {
+    const authenticatedUserId = this.requireUserId(userId);
+
+    const portfolio = await this.repo.findById(portfolioId);
+
+    if (!portfolio) {
+      throw AppError.notFound("Portfolio not found.");
+    }
+
+    if ((portfolio.get("userId") as string | null) !== authenticatedUserId) {
+      throw AppError.forbidden("You do not have access to this portfolio.");
+    }
+
+    return portfolio;
+  }
+
   private deriveRunStatus(items: AnalysisResult[]): AnalysisRunStatus {
     if (!items.length) {
       return "failed";
@@ -33,16 +57,12 @@ export class PortfolioAnalysisService {
     return hasAnyDegraded ? "partial" : "completed";
   }
 
-  async analyzePortfolio(portfolioId: string) {
+  async analyzePortfolio(portfolioId: string, userId?: string) {
     if (!portfolioId?.trim()) {
       throw AppError.badRequest("Portfolio id is required.");
     }
 
-    const portfolio = await this.repo.findById(portfolioId);
-
-    if (!portfolio) {
-      throw AppError.notFound("Portfolio not found.");
-    }
+    const portfolio = await this.getOwnedPortfolio(portfolioId, userId);
 
     const items = (portfolio.get("items") as PortfolioItem[] | undefined) ?? [];
 
@@ -148,12 +168,8 @@ export class PortfolioAnalysisService {
     return response;
   }
 
-  async getLatestAnalysis(portfolioId: string) {
-    const portfolio = await this.repo.findById(portfolioId);
-
-    if (!portfolio) {
-      throw AppError.notFound("Portfolio not found.");
-    }
+  async getLatestAnalysis(portfolioId: string, userId?: string) {
+    const portfolio = await this.getOwnedPortfolio(portfolioId, userId);
 
     const latest = await this.analysisRepo.findLatestByPortfolioId(portfolioId);
 

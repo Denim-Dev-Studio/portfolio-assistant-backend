@@ -11,6 +11,8 @@ const router = Router({ mergeParams: true });
  *   get:
  *     summary: Analyze an existing portfolio, persist the run, and return deterministic actions per holding
  *     tags: [Portfolio]
+ *     security:
+ *       - bearerAuth: []
  *     parameters:
  *       - in: path
  *         name: id

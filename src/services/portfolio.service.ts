@@ -44,6 +44,14 @@ export class PortfolioService {
   private repo = new PortfolioRepository();
   private analysisRepo = new AnalysisRepository();
 
+  private requireUserId(userId?: string) {
+    if (!userId?.trim()) {
+      throw AppError.unauthorized("Authentication is required.");
+    }
+
+    return userId;
+  }
+
   private normalizePortfolio(portfolio: Portfolio): NormalizedPortfolio {
     return {
       id: portfolio.get("id") as string,
@@ -310,7 +318,9 @@ export class PortfolioService {
     return flags;
   }
 
-  private async getPortfolioWithLatestAnalysis(id: string) {
+  private async getOwnedPortfolioOrThrow(id: string, userId?: string) {
+    const authenticatedUserId = this.requireUserId(userId);
+
     if (!id?.trim()) {
       throw AppError.badRequest("Portfolio id is required.");
     }
@@ -320,6 +330,16 @@ export class PortfolioService {
     if (!portfolio) {
       throw AppError.notFound("Portfolio not found.");
     }
+
+    if ((portfolio.get("userId") as string | null) !== authenticatedUserId) {
+      throw AppError.forbidden("You do not have access to this portfolio.");
+    }
+
+    return portfolio;
+  }
+
+  private async getPortfolioWithLatestAnalysis(id: string, userId?: string) {
+    const portfolio = await this.getOwnedPortfolioOrThrow(id, userId);
 
     const latestAnalysis = await this.analysisRepo.findLatestSnapshotByPortfolioId(id);
 
@@ -329,7 +349,9 @@ export class PortfolioService {
     };
   }
 
-  async createPortfolio(data: CreatePortfolioInput) {
+  async createPortfolio(data: Omit<CreatePortfolioInput, "userId">, userId?: string) {
+    const authenticatedUserId = this.requireUserId(userId);
+
     if (!data?.name?.trim()) {
       throw AppError.validation("Portfolio name is required.");
     }
@@ -338,25 +360,19 @@ export class PortfolioService {
       throw AppError.validation("Portfolio must contain at least one item.");
     }
 
-    return this.repo.create(data);
+    return this.repo.create({
+      ...data,
+      userId: authenticatedUserId,
+    });
   }
 
-  async getPortfolio(id: string) {
-    if (!id?.trim()) {
-      throw AppError.badRequest("Portfolio id is required.");
-    }
-
-    const portfolio = await this.repo.findById(id);
-
-    if (!portfolio) {
-      throw AppError.notFound("Portfolio not found.");
-    }
-
-    return portfolio;
+  async getPortfolio(id: string, userId?: string) {
+    return this.getOwnedPortfolioOrThrow(id, userId);
   }
 
-  async listPortfolioCards(): Promise<PortfolioCardDto[]> {
-    const portfolios = await this.repo.findAll();
+  async listPortfolioCards(userId?: string): Promise<PortfolioCardDto[]> {
+    const authenticatedUserId = this.requireUserId(userId);
+    const portfolios = await this.repo.findAllByUserId(authenticatedUserId);
     const normalized = portfolios.map((portfolio) => this.normalizePortfolio(portfolio));
     const latestSnapshots = await this.analysisRepo.findLatestSnapshotsByPortfolioIds(
       normalized.map((portfolio) => portfolio.id),
@@ -377,8 +393,8 @@ export class PortfolioService {
     });
   }
 
-  async getPortfolioSummary(id: string): Promise<PortfolioSummaryDto> {
-    const { normalized, latestAnalysis } = await this.getPortfolioWithLatestAnalysis(id);
+  async getPortfolioSummary(id: string, userId?: string): Promise<PortfolioSummaryDto> {
+    const { normalized, latestAnalysis } = await this.getPortfolioWithLatestAnalysis(id, userId);
     const rows = latestAnalysis ? this.buildHoldingRows(normalized, latestAnalysis) : [];
 
     return {
@@ -392,8 +408,12 @@ export class PortfolioService {
     };
   }
 
-  async getPortfolioHoldings(id: string, filters: HoldingsFilter = {}): Promise<HoldingRowDto[]> {
-    const { normalized, latestAnalysis } = await this.getPortfolioWithLatestAnalysis(id);
+  async getPortfolioHoldings(
+    id: string,
+    userId?: string,
+    filters: HoldingsFilter = {},
+  ): Promise<HoldingRowDto[]> {
+    const { normalized, latestAnalysis } = await this.getPortfolioWithLatestAnalysis(id, userId);
 
     if (!latestAnalysis) {
       throw AppError.notFound("No persisted analysis found for this portfolio.");
@@ -403,12 +423,12 @@ export class PortfolioService {
     return this.applyHoldingFilters(rows, filters);
   }
 
-  async getHoldingDetail(id: string, symbol: string): Promise<HoldingDetailDto> {
+  async getHoldingDetail(id: string, symbol: string, userId?: string): Promise<HoldingDetailDto> {
     if (!symbol?.trim()) {
       throw AppError.badRequest("Holding symbol is required.");
     }
 
-    const { normalized, latestAnalysis } = await this.getPortfolioWithLatestAnalysis(id);
+    const { normalized, latestAnalysis } = await this.getPortfolioWithLatestAnalysis(id, userId);
 
     if (!latestAnalysis) {
       throw AppError.notFound("No persisted analysis found for this portfolio.");
@@ -463,8 +483,8 @@ export class PortfolioService {
     };
   }
 
-  async getPortfolioInsights(id: string): Promise<PortfolioInsightsDto> {
-    const { normalized, latestAnalysis } = await this.getPortfolioWithLatestAnalysis(id);
+  async getPortfolioInsights(id: string, userId?: string): Promise<PortfolioInsightsDto> {
+    const { normalized, latestAnalysis } = await this.getPortfolioWithLatestAnalysis(id, userId);
 
     if (!latestAnalysis) {
       throw AppError.notFound("No persisted analysis found for this portfolio.");
@@ -525,7 +545,9 @@ export class PortfolioService {
     return filters;
   }
 
-  async createPortfolioFromFile(file?: any, name?: string) {
+  async createPortfolioFromFile(userId?: string, file?: any, name?: string) {
+    const authenticatedUserId = this.requireUserId(userId);
+
     if (!file) {
       throw AppError.validation("File is required.");
     }
@@ -577,6 +599,7 @@ export class PortfolioService {
     );
 
     return this.repo.create({
+      userId: authenticatedUserId,
       name: name.trim(),
       fileName: file.originalname || "Uploaded Portfolio",
       items: validItems,

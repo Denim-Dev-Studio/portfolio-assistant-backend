@@ -1,3 +1,4 @@
+import type {} from "../types/express";
 import { Request, Response } from "express";
 import { AppError } from "../errors/appError";
 import { PortfolioAnalysisService } from "../services/portfolioAnalysis.service";
@@ -11,7 +12,7 @@ export const analyzePortfolio = asyncHandler(async (req: Request, res: Response)
     throw AppError.badRequest("Portfolio id is required.");
   }
 
-  const analysis = await service.analyzePortfolio(id);
+  const analysis = await service.analyzePortfolio(id, req.user?.id);
 
   res.status(200).json({
     success: true,
@@ -25,7 +26,7 @@ export const getLatestAnalysis = asyncHandler(async (req: Request, res: Response
     throw AppError.badRequest("Portfolio id is required.");
   }
 
-  const analysis = await service.getLatestAnalysis(id);
+  const analysis = await service.getLatestAnalysis(id, req.user?.id);
 
   res.status(200).json({
     success: true,

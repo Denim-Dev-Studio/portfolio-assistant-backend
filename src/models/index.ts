@@ -3,8 +3,10 @@ import { PortfolioItem } from './portfolioItem.model';
 import { CacheEntry } from './cacheEntry.model';
 import { AnalysisRun } from './analysisRun.model';
 import { HoldingAnalysis } from './holdingAnalysis.model';
+import { User } from './user.model';
 
 const models = {
+  User,
   Portfolio,
   PortfolioItem,
   CacheEntry,
@@ -20,4 +22,4 @@ Object.values(models).forEach((model: any) => {
 });
 
 export default models;
-export { Portfolio, PortfolioItem, CacheEntry, AnalysisRun, HoldingAnalysis };
+export { User, Portfolio, PortfolioItem, CacheEntry, AnalysisRun, HoldingAnalysis };
